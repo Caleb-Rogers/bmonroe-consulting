@@ -95,11 +95,22 @@ body {
 .btn:visited {
   display: inline-block;
   background-color: #4dabf7;
-  color: #fff;
   text-decoration: none;
   font-size: 2rem;
   padding: 1.6rem 3.2rem;
   border-radius: 9px;
+}
+
+.btn--full:link,
+.btn--full:visited {
+  background-color: #4dabf7;
+  color: #fff;
+}
+
+.btn--outline:link,
+.btn--outline:visited {
+  background-color: #fff;
+  color: #555;
 }
 
 .hero-img {
