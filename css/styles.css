@@ -20,6 +20,7 @@ Default: 1
 #2F2E41
 
 - Tints:
+#459ade
 #edf7fe
 
 - Shades:
@@ -118,7 +119,7 @@ body {
 }
 
 /**************************/
-/* HEADERS */
+/* HEADER */
 /**************************/
 
 .header {
@@ -136,6 +137,30 @@ body {
 }
 
 /**************************/
+/* NAVIGATION */
+/**************************/
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  gap: 3.2rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  text-decoration: none;
+  color: #2f2e41;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #4dabf7;
+}
+
+/**************************/
 /* HERO SECTION */
 /**************************/
 
@@ -147,6 +172,7 @@ body {
 .hero {
   max-width: 130rem;
   margin: 0 auto;
+  padding: 0 3.2rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 9.6rem;
