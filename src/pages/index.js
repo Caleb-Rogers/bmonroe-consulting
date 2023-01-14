@@ -8,9 +8,5 @@ import WhatWeDo from "../components/WhatWeDo.js/WhatWeDo";
   crossorigin="anonymous"
 />;
 export default function Home() {
-  return (
-    <div>
-      <Homepage />
-    </div>
-  );
+  return <Homepage />;
 }
