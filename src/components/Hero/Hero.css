@@ -1,67 +1,14 @@
 /**************************/
-/* HEADER SECTION */
-/**************************/
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #edf7fe;
-
-  height: 9.6rem;
-  padding: 0 4.8rem;
-}
-
-.logo-nav {
-  font-size: 2.2rem;
-}
-
-/**************************/
-/* NAVIGATION */
-/**************************/
-
-.main-nav-list {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  gap: 3.2rem;
-}
-
-.main-nav-link:link,
-.main-nav-link:visited {
-  display: inline-block;
-  text-decoration: none;
-  color: #2f2e41;
-  font-weight: 500;
-  font-size: 1.8rem;
-  transition: all 0.3s;
-}
-
-.main-nav-link:hover,
-.main-nav-link:active {
-  color: #4dabf7;
-}
-
-.main-nav-link.nav-cta:link,
-.main-nav-link.nav-cta:visited {
-  padding: 1.2rem 2.4rem;
-  border-radius: 9px;
-  color: #edf7fe;
-  background-color: #4dabf7;
-}
-
-.main-nav-link.nav-cta:hover,
-.main-nav-link.nav-cta:active {
-  background-color: #459ade;
-}
-
-/**************************/
 /* HERO SECTION */
 /**************************/
 
 .section-hero {
-  background-color: #edf7fe;
+  font-family: "Aleo", sans-serif;
+  line-height: 1;
+  font-weight: 400;
   padding: 4.8rem 0 9.6rem 0;
+  color: #2f2e41;
+  background-color: #edf7fe;
 }
 
 .hero {
@@ -91,13 +38,6 @@
 
 .hero-img {
   width: 100%;
-}
-
-.dude {
-  font-family: "Aleo", sans-serif;
-  line-height: 1;
-  font-weight: 400;
-  color: #2f2e41;
 }
 
 /* BUTTON */
