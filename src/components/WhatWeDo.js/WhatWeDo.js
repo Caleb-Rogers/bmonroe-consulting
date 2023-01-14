@@ -4,10 +4,10 @@ import Container from "react-bootstrap/Container";
 
 function WhatWeDo() {
   return (
-    <Container className="whatWeDo p-0">
-      <h1>What We Do</h1>
+    <Container className="whatWeDo">
+      <h1 className="text-center whatWeDoText pt-4  ">What We Do</h1>
       <hr></hr>
-      <Carousel fade>
+      <Carousel fade pb-4>
         <Carousel.Item>
           <img
             className="d-block w-100 carousel"
