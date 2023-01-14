@@ -1,4 +1,4 @@
-import Homepage from "./components/Homepage/Homepage";
+import Homepage from "../components/Homepage/Homepage";
 import "bootstrap/dist/css/bootstrap.min.css";
 <link
   rel="stylesheet"
