@@ -1,6 +1,7 @@
 import Head from "next/head";
 import "@/styles/globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "../components/Navbar/Navbar.css"
 import "../components/WhatWeDo.js/WhatWeDo.css";
 import "../components/Hero/Hero.css";
 <link

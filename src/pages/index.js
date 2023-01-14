@@ -1,6 +1,5 @@
 import Homepage from "../components/Homepage/Homepage";
 import "bootstrap/dist/css/bootstrap.min.css";
-import WhatWeDo from "../components/WhatWeDo.js/WhatWeDo";
 <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
