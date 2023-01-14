@@ -4,20 +4,21 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Link from "next/link";
+import WhatWeDo from "./WhatWeDo";
 
 function Homepage() {
   return (
     <div>
       <Navbar bg="dark" variant="dark">
         <Container>
-          <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+          <Navbar.Brand href="#home">Monroe Consulting</Navbar.Brand>
           <Nav className="me-auto">
-            <Link href="/contact">Home</Link>
-            <Nav.Link href="#features">Features</Nav.Link>
+            <Nav.Link href="/contact">Features</Nav.Link>
             <Nav.Link href="#pricing">Pricing</Nav.Link>
           </Nav>
         </Container>
       </Navbar>
+      <WhatWeDo />
     </div>
   );
 }
