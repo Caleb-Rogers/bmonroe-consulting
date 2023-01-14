@@ -2,6 +2,7 @@
   width: 1200px;
   height: 600px;
   margin: auto;
+  font-size: 32px;
 }
 @media (max-width: 900px) {
   .carousel {
@@ -20,7 +21,4 @@
 .whatWeDoText {
   color: white;
   font-size: 52px;
-}
-.carousel-control-next-icon {
-  size: 52px;
 }
