@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 function Hero() {
   return (
@@ -7,11 +8,11 @@ function Hero() {
           <span class="logo-nav">B.Monroe Consulting</span>
           <nav class="main-nav">
               <ul class="main-nav-list">
-                  <li><a class="main-nav-link" href="#">Section 1</a></li>
-                  <li><a class="main-nav-link" href="#">Section 2</a></li>
-                  <li><a class="main-nav-link" href="#">Section 3</a></li>
-                  <li><a class="main-nav-link" href="#">Section 4</a></li>
-                  <li><a class="main-nav-link nav-cta" href="#">Section 5</a></li>
+                  <Link class="main-nav-link" href="#">HOME</Link>
+                  <Link class="main-nav-link" href="#">WHAT WE DO</Link>
+                  <Link class="main-nav-link" href="#">SERVICES</Link>
+                  <Link class="main-nav-link" href="#">ABOUT</Link>
+                  <Link class="main-nav-link nav-cta" href="#">CONTACT</Link>
               </ul>
           </nav>
       </header>
@@ -20,7 +21,7 @@ function Hero() {
           <section class="section-hero">
               <div class="hero">
                   <div class="hero-text-box">
-                      <h1 class="heading-primary">
+                      <h1 class="hero-heading">
                           We handle the logistics of your construction project so you can focus on what's important
                       </h1>
                       <p class="hero-description">
@@ -31,7 +32,7 @@ function Hero() {
                       <a href="#" class="btn btn--outline">LEARN MORE &darr;</a>
                   </div>
                   <div class="hero-img-box">
-                      <img src="img/hero.svg" class="herro-img" alt="Working Woman"/>
+                      <img src="hero.svg" class="herro-img" alt="Working Woman"/>
                   </div>
               </div>
           </section>
