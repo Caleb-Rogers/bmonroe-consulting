@@ -4,7 +4,7 @@ import Container from "react-bootstrap/Container";
 
 function WhatWeDo() {
   return (
-    <Container className="whatWeDo ">
+    <Container className="whatWeDo p-0">
       <h1>What We Do</h1>
       <hr></hr>
       <Carousel fade>
