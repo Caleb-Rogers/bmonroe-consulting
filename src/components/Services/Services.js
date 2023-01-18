@@ -39,16 +39,12 @@ function Services() {
   ];
   const renderCard = (card, index) => {
     return (
-      <Col className="mb-4 ">
-        <Card className="serviceCard">
+      <Col sm={3} className="mb-4 service-col   ">
+        <Card className="serviceCard h-100 w-100">
           <Card.Img variant="top" src="holder.js/100px160" />
           <Card.Body>
             <Card.Title>{card.title}</Card.Title>
-            <Card.Text>
-              This is a longer card with supporting text below as a natural
-              lead-in to additional content. This content is a little bit
-              longer.
-            </Card.Text>
+            <Card.Text>asdasdas</Card.Text>
           </Card.Body>
         </Card>
       </Col>
@@ -58,7 +54,7 @@ function Services() {
     <Container>
       <h1 className="text-center sectionHeadingBlue pt-4  ">Services</h1>
       <hr></hr>
-      <Row md={3} className="p-5">
+      <Row md={3} className="p-8">
         {cardInfo.map(renderCard)}
       </Row>
     </Container>

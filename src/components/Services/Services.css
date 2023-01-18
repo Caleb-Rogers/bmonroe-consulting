@@ -1,4 +1,14 @@
 .serviceCard {
-  color: pink;
-  background-color: black;
+  color: #253d52;
+  background-color: white;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+.serviceCard:hover {
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+}
+
+.service-col {
+  height: 30rem;
 }
