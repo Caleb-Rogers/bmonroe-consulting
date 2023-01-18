@@ -45,7 +45,7 @@
 .btn:link,
 .btn:visited {
   display: inline-block;
-  background-color: #4dabf7;
+  background-color: #3f3d56;
   text-decoration: none;
   font-size: 2rem;
   font-weight: 600;
@@ -56,13 +56,13 @@
 
 .btn--full:link,
 .btn--full:visited {
-  background-color: #4dabf7;
+  background-color: #3f3d56;
   color: #fff;
 }
 
 .btn--full:hover,
 .btn--full:active {
-  background-color: #459ade;
+  background-color: #667786;
 }
 
 .btn--outline:link,

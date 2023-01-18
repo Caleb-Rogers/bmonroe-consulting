@@ -63,3 +63,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.sectionHeadingWhite {
+  color: white;
+  font-size: 52px;
+  text-align: center;
+}
+.sectionHeadingBlue {
+  color: #253d52;
+  font-size: 52px;
+}
