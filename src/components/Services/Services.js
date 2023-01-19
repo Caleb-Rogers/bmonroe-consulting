@@ -49,7 +49,7 @@ function Services() {
             <Card.Title className="service-title" key="{card.name}">
               {card.title}
             </Card.Title>
-            <Card.Text className="service-desc lead" key="{card.name}">
+            <Card.Text className="service-desc lead px-5" key="{card.name}">
               {card.text}
             </Card.Text>
           </Card.Body>
@@ -60,7 +60,7 @@ function Services() {
 
   return (
     <Container>
-      <h1 className="text-center sectionHeadingBlue pt-4  ">Services</h1>
+      <h1 className="text-center section-heading-blue pt-4  ">Services</h1>
       <hr></hr>
 
       <Row md={3} className="p-8 w-100">

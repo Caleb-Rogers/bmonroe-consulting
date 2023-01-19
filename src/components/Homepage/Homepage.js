@@ -5,7 +5,7 @@ import WhatWeDo from "../WhatWeDo.js/WhatWeDo";
 import Hero from "../Hero/Hero.js";
 import Services from "../Services/Services";
 import AboutMe from "../AboutMe/AboutMe";
-
+import Testimonials from "../Testimonials/Testimonials";
 function Homepage() {
   return (
     <div>
@@ -14,6 +14,7 @@ function Homepage() {
       <WhatWeDo />
       <Services />
       <AboutMe />
+      <Testimonials />
     </div>
   );
 }

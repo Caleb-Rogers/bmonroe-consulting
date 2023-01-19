@@ -6,6 +6,7 @@ import "../components/WhatWeDo.js/WhatWeDo.css";
 import "../components/Hero/Hero.css";
 import "../components/Services/Services.css";
 import "../components/AboutMe/AboutMe.css";
+import "../components/Testimonials/Testimonials.css";
 
 <link
   rel="stylesheet"

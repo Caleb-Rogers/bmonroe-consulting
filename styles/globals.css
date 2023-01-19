@@ -64,12 +64,12 @@ code {
     monospace;
 }
 
-.sectionHeadingWhite {
+.section-heading-white {
   color: white;
   font-size: 52px;
   text-align: center;
 }
-.sectionHeadingBlue {
+.section-heading-blue {
   color: #253d52;
   font-size: 52px;
 }

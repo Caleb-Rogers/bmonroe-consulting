@@ -4,6 +4,7 @@
   box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   border: 1px solid #ccc;
+  overflow: hidden;
 }
 .service-card:hover {
   box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
