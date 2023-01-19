@@ -3,48 +3,51 @@ import Card from "react-bootstrap/Card";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-
+import { Wrench } from "phosphor-react";
 function Services() {
   const cardInfo = [
     {
       image: "https://i.insider.com/50f967f56bb3f7830a000019",
-      title: "Lebron James1",
-      text: "THE GOAT",
+      title: "Zoning, Land Use, & Research",
+      text: "Lorem ipsum dolor sit ametincididvenexin reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     },
     {
       image: "https://i.insider.com/50f967f56bb3f7830a000019",
       title: "Lebron James2",
-      text: "THE GOAT",
+      text: "Lorem ipsum dolor sit ametincididvenexin reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     },
     {
       image: "https://i.insider.com/50f967f56bb3f7830a000019",
       title: "Lebron James3",
-      text: "THE GOAT",
+      text: "Lorem ipsum dolor sit ametincididvenexin reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     },
     {
       image: "https://i.insider.com/50f967f56bb3f7830a000019",
       title: "Lebron James4",
-      text: "THE GOAT",
+      text: "Lorem ipsum dolor sit ametincididvenexin reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     },
     {
       image: "https://i.insider.com/50f967f56bb3f7830a000019",
       title: "Lebron James5",
-      text: "THE GOAT",
+      text: "Lorem ipsum dolor sit ametincididvenexin reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     },
     {
       image: "https://i.insider.com/50f967f56bb3f7830a000019",
       title: "Lebron James6",
-      text: "THE GOAT",
+      text: "Lorem ipsum dolor sit ametincididvenexin reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     },
   ];
   const renderCard = (card, index) => {
     return (
       <Col sm={3} className="mb-4 service-col p-3  ">
         <Card className="service-card h-100 w-100">
-          <Card.Img variant="top" src="holder.js/100px160" />
+          <div className="px-4 pt-4">
+            <Wrench className="" size={52} color="#253d52" weight="fill" />
+          </div>
+
           <Card.Body>
             <Card.Title className="service-title">{card.title}</Card.Title>
-            <Card.Text className="service-desc lead">asdasdas</Card.Text>
+            <Card.Text className="service-desc lead">{card.text}</Card.Text>
           </Card.Body>
         </Card>
       </Col>
