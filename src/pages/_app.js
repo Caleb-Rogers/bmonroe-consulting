@@ -5,6 +5,8 @@ import "../components/Navbar/Navbar.css";
 import "../components/WhatWeDo.js/WhatWeDo.css";
 import "../components/Hero/Hero.css";
 import "../components/Services/Services.css";
+import "../components/AboutMe/AboutMe.css";
+
 <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"

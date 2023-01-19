@@ -25,7 +25,7 @@ function Hero() {
             </Link>
           </div>
           <div className="hero-img-box">
-            <img src="hero.svg" className="herro-img" alt="Working Woman" />
+            <img src="hero.svg" className="hero-img" alt="Working Woman" />
           </div>
         </div>
       </section>
