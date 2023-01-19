@@ -46,8 +46,12 @@ function Services() {
           </div>
 
           <Card.Body>
-            <Card.Title className="service-title">{card.title}</Card.Title>
-            <Card.Text className="service-desc lead">{card.text}</Card.Text>
+            <Card.Title className="service-title" key="{card.name}">
+              {card.title}
+            </Card.Title>
+            <Card.Text className="service-desc lead" key="{card.name}">
+              {card.text}
+            </Card.Text>
           </Card.Body>
         </Card>
       </Col>
