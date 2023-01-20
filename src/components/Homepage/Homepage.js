@@ -8,7 +8,8 @@ import AboutMe from "../AboutMe/AboutMe";
 import Testimonials from "../Testimonials/Testimonials";
 function Homepage() {
   return (
-    <div>
+    <div className="wrapper">
+      <Testimonials />
       <Navbar />
       <Hero />
       <WhatWeDo />

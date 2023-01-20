@@ -1,7 +1,9 @@
 blockquote {
   border-left: none;
 }
-
+.testimonials {
+  background-color: black;
+}
 .quote-badge {
   background-color: #000000;
   background-color: rgba(0, 0, 0, 0.2);
@@ -11,17 +13,16 @@ blockquote {
   overflow: hidden;
   padding-top: -25px;
   border-radius: 8px;
-  background-color: #253d52;
-  color: white;
+  background-color: #edf7fe;
+  color: #3f3d56;
   width: 400px;
-  box-shadow: 2px 2px 2px 2px #e0e0e0;
 }
 
 .quotation-mark {
   margin-top: 10px;
   font-weight: bold;
   font-size: 80px;
-  color: white;
+  color: #3f3d56;
   font-family: "Times New Roman", Times, Serif;
 }
 
