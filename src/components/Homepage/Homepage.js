@@ -9,7 +9,6 @@ import Testimonials from "../Testimonials/Testimonials";
 function Homepage() {
   return (
     <div className="wrapper">
-      <Testimonials />
       <Navbar />
       <Hero />
       <WhatWeDo />
