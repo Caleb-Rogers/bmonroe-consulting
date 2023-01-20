@@ -23,7 +23,7 @@ function Testimonials() {
               <div class="blog-post-actions">
                 <p class="blog-post-bottom pull-left">Abraham Lincoln</p>
                 <p class="blog-post-bottom pull-right">
-                  <span class="badge quote-badge">743</span>  ❤
+                  <span class="badge quote-badge">743</span>  
                 </p>
               </div>
             </blockquote>

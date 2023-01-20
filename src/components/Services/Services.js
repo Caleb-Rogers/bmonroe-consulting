@@ -57,27 +57,30 @@ function Services() {
     },
   ];
   const selectIcon = (index) => {
+    let iconSize = 48;
     if (index === 1) {
-      return <PenNib size={40} color="#253d52" weight="fill" />;
+      return <PenNib size={iconSize} color="#253d52" weight="fill" />;
     } else if (index === 2) {
-      return <Barricade size={40} color="#253d52" weight="fill" />;
+      return <Barricade size={iconSize} color="#253d52" weight="fill" />;
     } else if (index === 3) {
-      return <Cube size={40} color="#253d52" weight="fill" />;
+      return <Cube size={iconSize} color="#253d52" weight="fill" />;
     } else if (index === 4) {
-      return <Leaf size={40} color="#253d52" weight="fill" />;
+      return <Leaf size={iconSize} color="#253d52" weight="fill" />;
     } else if (index === 5) {
-      return <Lightning size={40} color="#253d52" weight="fill" />;
+      return <Lightning size={iconSize} color="#253d52" weight="fill" />;
     } else if (index === 6) {
-      return <Mountains size={40} color="#253d52" weight="fill" />;
+      return <Mountains size={iconSize} color="#253d52" weight="fill" />;
     } else {
-      return <Wrench className="" size={40} color="#253d52" weight="fill" />;
+      return (
+        <Wrench className="" size={iconSize} color="#253d52" weight="fill" />
+      );
     }
   };
   const renderCard = (card, index) => {
     return (
       <Col sm={3} className="mb-4 service-col p-3  ">
         <Card className="service-card h-100 w-100">
-          <div className="px-4 pt-4">{selectIcon(card.id)}</div>
+          <div className="px-5 pt-4">{selectIcon(card.id)}</div>
 
           <Card.Body>
             <Card.Title className="service-title px-4" key="{card.name}">
@@ -93,13 +96,17 @@ function Services() {
   };
 
   return (
-    <Container>
+    <Container className="p-4">
       <h1 className="text-center section-heading-blue pt-4  ">Services</h1>
       <hr></hr>
 
       <Row md={3} className="p-8 w-100">
         {cardInfo.map(renderCard)}
       </Row>
+
+      <h1 className="view-more-btn">
+        <u>View More</u>
+      </h1>
     </Container>
   );
 }
