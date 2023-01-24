@@ -4,7 +4,7 @@ import Link from "next/link";
 const Navbar = () => {
   return (
     <header className="header">
-      <span className="logo-nav">B.Monroe Consulting</span>
+      <span className="logo-nav">B. Monroe Consulting</span>
       <nav className="main-nav">
         <ul className="main-nav-list">
           <Link className="main-nav-link" href="#">
