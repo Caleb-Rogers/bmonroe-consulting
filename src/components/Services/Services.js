@@ -83,10 +83,10 @@ function Services() {
           <div className="px-5 pt-4">{selectIcon(card.id)}</div>
 
           <Card.Body>
-            <Card.Title className="service-title px-4" key="{card.name}">
+            <Card.Title className="service-title px-4" key="{card.id}">
               {card.title}
             </Card.Title>
-            <Card.Text className="service-desc lead px-5" key="{card.name}">
+            <Card.Text className="service-desc lead px-5" key="{card.id}">
               {card.text}
             </Card.Text>
           </Card.Body>

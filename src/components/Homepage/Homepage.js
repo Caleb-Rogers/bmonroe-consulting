@@ -6,6 +6,7 @@ import Hero from "../Hero/Hero.js";
 import Services from "../Services/Services";
 import AboutMe from "../AboutMe/AboutMe";
 import Testimonials from "../Testimonials/Testimonials";
+import Footer from "../Footer/Footer";
 function Homepage() {
   return (
     <div className="wrapper">
@@ -15,6 +16,7 @@ function Homepage() {
       <Services />
       <AboutMe />
       <Testimonials />
+      <Footer />
     </div>
   );
 }
