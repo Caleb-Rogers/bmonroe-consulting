@@ -1,0 +1,35 @@
+blockquote {
+  border-left: none;
+}
+.testimonials {
+  background-color: black;
+}
+.quote-badge {
+  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.quote-box {
+  overflow: hidden;
+  padding-top: -25px;
+  border-radius: 8px;
+  background-color: #edf7fe;
+  color: #3f3d56;
+  width: 400px;
+}
+
+.quotation-mark {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 80px;
+  color: #3f3d56;
+  font-family: "Times New Roman", Times, Serif;
+}
+
+.quote-text {
+  font-size: 19px;
+  margin-top: -50px;
+}
+
+.blog-post-bottom pull-right {
+}
