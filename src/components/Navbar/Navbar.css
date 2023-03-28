@@ -11,8 +11,8 @@
   font-weight: 400;
   height: 9.6rem;
   padding: 0 4.8rem;
-  color: #2f2e41;
-  background-color: #edf7fe;
+  color: #fff;
+  background-color: #262626;
 }
 
 .logo-nav {
@@ -34,7 +34,7 @@
 .main-nav-link:visited {
   display: inline-block;
   text-decoration: none;
-  color: #2f2e41;
+  color: #fff;
   font-weight: 500;
   font-size: 1.8rem;
   transition: all 0.3s;
@@ -42,18 +42,18 @@
 
 .main-nav-link:hover,
 .main-nav-link:active {
-  color: #4dabf7;
+  color: #374dc3;
 }
 
 .main-nav-link.nav-cta:link,
 .main-nav-link.nav-cta:visited {
   padding: 1.2rem 2.4rem;
   border-radius: 9px;
-  color: #edf7fe;
-  background-color: #4dabf7;
+  color: #fff;
+  background-color: #374dc3;
 }
 
 .main-nav-link.nav-cta:hover,
 .main-nav-link.nav-cta:active {
-  background-color: #459ade;
+  background-color: #212e75;
 }
