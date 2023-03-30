@@ -6,6 +6,9 @@ function Hero() {
     <main>
       <section className="section-hero">
         <div className="hero">
+          <div className="hero-img-box">
+            <img src="hero-background-img.jpg" className="hero-img" alt="site-plan" />
+          </div>
           <div className="hero-text-box">
             <h1 className="hero-heading">
               YOUR PARTNER IN CONSTRUCTION PROJECT MANAGEMENT
@@ -22,9 +25,6 @@ function Hero() {
             <Link href="#" className="btn btn--outline">
               LEARN MORE &darr;
             </Link>
-          </div>
-          <div className="hero-img-box">
-            <img src="hero-background-img.jpg" className="hero-img" alt="site-plan" />
           </div>
         </div>
       </section>
