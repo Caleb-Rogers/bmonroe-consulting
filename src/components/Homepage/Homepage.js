@@ -7,6 +7,7 @@ import Services from "../Services/Services";
 import AboutMe from "../AboutMe/AboutMe";
 import Testimonials from "../Testimonials/Testimonials";
 import Footer from "../Footer/Footer";
+import ContactMe from "../ContactMe/ContactMe";
 function Homepage() {
   return (
     <div className="wrapper">
@@ -16,7 +17,7 @@ function Homepage() {
       <Services />
 
       <Testimonials />
-      <Footer />
+      <ContactMe />
     </div>
   );
 }
