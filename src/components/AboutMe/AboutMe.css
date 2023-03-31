@@ -56,8 +56,21 @@
   align-items: center;
 }
 
-.about-icon {
-  width: 3.2rem;
-  height: 3.2rem;
-  margin: 0 1.6rem;
+.left-icon,
+.right-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.left-icon img,
+.right-icon img {
+  width: 80px;
+}
+
+.left-icon span,
+.right-icon span {
+  margin-top: 0.5rem;
+  font-size: 1.4rem;
+  text-align: center;
 }

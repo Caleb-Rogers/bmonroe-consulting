@@ -15,8 +15,14 @@ const AboutMe = () => {
           site plans and project management.
         </h3>
         <div class="about-icons">
-          <img src="icon1.png" alt="Icon 1" class="about-icon" />
-          <img src="icon2.png" alt="Icon 2" class="about-icon" />
+          <div class="left-icon">
+            <img src="code-enforcement-logo.png" alt="NYS Licensed Code Enforcement Official LOGO" class="about-icon" />
+            <span>NYS Licensed Code Enforcement Official</span>
+          </div>
+          <div class="right-icon">
+            <img src="BPI-logo.png" alt="Building Performance Institute, Inc. IDL Certification LOGO" class="about-icon" />
+            <span>Building Performance Institute, Inc. IDL Certification</span>
+          </div>
         </div>
       </div>
     </div>
