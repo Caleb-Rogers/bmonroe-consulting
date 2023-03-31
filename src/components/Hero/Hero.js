@@ -20,9 +20,6 @@ function Hero() {
             <Link href="#" className="btn btn--full margin-right-sm">
               CONTACT
             </Link>
-            <Link href="#" className="btn btn--outline">
-              LEARN MORE &darr;
-            </Link>
           </div>
           <div className="hero-img-box">
             <img src="hero.svg" className="hero-img" alt="Working Woman" />

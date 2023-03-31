@@ -12,9 +12,9 @@ function Homepage() {
     <div className="wrapper">
       <Navbar />
       <Hero />
-      <WhatWeDo />
-      <Services />
       <AboutMe />
+      <Services />
+
       <Testimonials />
       <Footer />
     </div>

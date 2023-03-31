@@ -103,10 +103,6 @@ function Services() {
       <Row md={3} className="p-8 w-100">
         {cardInfo.map(renderCard)}
       </Row>
-
-      <h1 className="view-more-btn">
-        <u>View More</u>
-      </h1>
     </Container>
   );
 }
