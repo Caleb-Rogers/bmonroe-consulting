@@ -4,7 +4,14 @@ const AboutMe = () => {
   return (
     <div class="about-container">
       <div class="about-img-box">
-        <img src="headshot.png" class="about-img" alt="B. Monroe Headshot" />
+        <div class="about-img-bg">
+          <span>20+ years of experience</span>
+        </div>
+        <img
+          src="headshot.png"
+          class="about-img"
+          alt="B. Monroe Headshot"
+        />
       </div>
       <div class="about-text-box">
         <h2 class="about-heading">ABOUT BARB</h2>

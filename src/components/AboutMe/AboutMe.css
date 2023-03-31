@@ -15,12 +15,30 @@
 /* LEFT SIDE */
 .about-img-box {
   text-align: center;
+  height: 400px;
+}
+
+.about-img-bg {
+  background-color: blue;
+  position: relative;
+  width: 400px;
+  height: 400px;
+  translate: 100px 0;
 }
 
 .about-img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 50%;
+  background-color: blue;
+  position: relative;
+  translate: 0 -400px;
+}
+
+.about-img-bg span {
+  position: absolute;
+  bottom: 0;
+  left: -200px;
+  right: 0;
+  margin: auto;
+  font-size: 1.4rem;
 }
 
 /* RIGHT SIDE */
