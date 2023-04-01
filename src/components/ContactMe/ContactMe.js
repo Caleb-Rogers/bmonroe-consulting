@@ -1,111 +1,42 @@
 function ContactMe() {
   return (
-    <div>
-      <section id="contact">
-        <h1 className="text-center section-heading-white pt-4">Contact</h1>
-        <div className="contact-wrapper">
-          {/* Left contact page */}
-          <form id="contact-form" className="form-horizontal" role="form">
-            <div className="form-group">
-              <div className="col-sm-12">
-                <input
-                  type="text"
-                  className="form-control"
-                  id="name"
-                  placeholder="NAME"
-                  name="name"
-                  required
-                />
-              </div>
-            </div>
-            <div className="form-group">
-              <div className="col-sm-12">
-                <input
-                  type="email"
-                  className="form-control"
-                  id="email"
-                  placeholder="EMAIL"
-                  name="email"
-                  required
-                />
-              </div>
-            </div>
-            <textarea
-              className="form-control"
-              rows="10"
-              placeholder="MESSAGE"
-              name="message"
-              required
-            ></textarea>
-            <button
-              className="btn btn-primary send-button"
-              id="submit"
-              type="submit"
-              value="SEND"
-            >
-              <div className="alt-send-button">
-                <i className="fa fa-paper-plane"></i>
-                <span className="send-text">SEND</span>
-              </div>
-            </button>
-          </form>
-          {/* End of Left contact page */}
-          <div className="direct-contact-container">
-            <ul className="contact-list">
-              <li className="list-item">
-                <i className="fa fa-map-marker fa-2x">
-                  <span className="contact-text place">Lauren, NY 13796</span>
-                </i>
-              </li>
-              <li className="list-item">
-                <i className="fa fa-phone fa-2x">
-                  <span className="contact-text phone">
-                    <a href="tel:1-212-555-5555" title="Give me a call">
-                      (607) 287-4577
-                    </a>
-                  </span>
-                </i>
-              </li>
-              <li className="list-item">
-                <i className="fa fa-envelope fa-2x">
-                  <span className="contact-text gmail">
-                    <a href="mailto:#" title="Send me an email">
-                      milfordnyzeo@gmail.com
-                    </a>
-                  </span>
-                </i>
-              </li>
-            </ul>
-            <hr />
-            <ul className="social-media-list">
-              <li>
-                <a href="#" target="_blank" className="contact-icon">
-                  <i className="fa fa-github" aria-hidden="true"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#" target="_blank" className="contact-icon">
-                  <i className="fa fa-codepen" aria-hidden="true"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#" target="_blank" className="contact-icon">
-                  <i className="fa fa-twitter" aria-hidden="true"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#" target="_blank" className="contact-icon">
-                  <i className="fa fa-instagram" aria-hidden="true"></i>
-                </a>
-              </li>
-            </ul>
+    <footer className="footer-distributed">
+      <div className="footer-left">
+        <h3>B. Monroe Consulting</h3>
 
-            <hr />
-            <div className="copyright">Monroe Consulting 2023 &copy;</div>
-          </div>
+        <p className="footer-links">
+          <a href="#">Home</a>·<a href="#">Blog</a>·<a href="#">Pricing</a>·
+          <a href="#">About</a>·<a href="#">Faq</a>·<a href="#">Contact</a>
+        </p>
+
+        <p className="footer-company-name">Monroe Consulting © 2023</p>
+
+        <div className="footer-icons">
+          <a href="#">
+            <i className="fa fa-facebook"></i>
+          </a>
+          <a href="#">
+            <i className="fa fa-twitter"></i>
+          </a>
+          <a href="https://onaircode.com/html-css-footer-design-examples/">
+            <i className="fa fa-linkedin"></i>
+          </a>
+          <a href="https://onaircode.com/html-css-footer-design-examples/">
+            <i className="fa fa-github"></i>
+          </a>
         </div>
-      </section>
-    </div>
+      </div>
+
+      <div className="footer-right">
+        <p>Contact Us</p>
+
+        <form action="#" method="post">
+          <input type="text" name="email" placeholder="Email" />
+          <textarea name="message" placeholder="Message"></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </footer>
   );
 }
 
