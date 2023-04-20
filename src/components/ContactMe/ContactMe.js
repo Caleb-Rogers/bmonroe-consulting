@@ -18,7 +18,8 @@ function ContactMe() {
       {/* ... */}
       <div className="footer-left">
         <h3>B. Monroe Consulting</h3>
-
+        <p className="footer-company-name">Phone: 607-287-4577 </p>
+        <p className="footer-company-name">Email: milfordnyzeo@gmail.com</p>
         <p className="footer-company-name">Monroe Consulting © 2023</p>
 
         <div className="footer-icons">
@@ -32,7 +33,7 @@ function ContactMe() {
         </div>
       </div>
       <div className="footer-right">
-        <p>Contact Us</p>
+        <h3>Contact Us</h3>
         <form onSubmit={handleSubmit}>
           <input type="text" name="name" placeholder="Name" required />
           <input type="email" name="email" placeholder="Email" required />

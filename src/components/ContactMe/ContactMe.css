@@ -1,8 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
 
-* {
-}
-
 .footer-distributed {
   background: #253d52;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
@@ -36,7 +33,7 @@ section {
 
 .footer-distributed h3 {
   color: #ffffff;
-  font: normal 36px "Roboto", cursive;
+  font-size: 32px;
   margin: 0 0 10px;
 }
 
@@ -60,10 +57,11 @@ section {
 }
 
 .footer-distributed .footer-company-name {
-  color: #8f9296;
-  font-size: 14px;
+  color: white;
+  font-size: 20px;
   font-weight: normal;
   margin: 0;
+  padding: 2px;
 }
 
 /* Footer social icons */
@@ -74,14 +72,14 @@ section {
 
 .footer-distributed .footer-icons a {
   display: inline-block;
-  width: 35px;
-  height: 35px;
+  width: 50px;
+  height: 45px;
   cursor: pointer;
   background-color: #33383b;
   border-radius: 2px;
 
-  font-size: 28px; /* increased font size */
-  line-height: 35px; /* increased line height */
+  font-size: 30px; /* increased font size */
+  line-height: 50px; /* increased line height */
 
   color: #ffffff;
   text-align: center;
@@ -94,6 +92,7 @@ section {
 
 .footer-distributed .footer-right {
   float: right;
+  margin-right: 5%;
 }
 
 .footer-distributed .footer-right p {
@@ -196,6 +195,7 @@ section {
 
   .footer-distributed .footer-left {
     margin-bottom: 40px;
+    margin-right: 5%;
   }
 
   .footer-distributed form {
