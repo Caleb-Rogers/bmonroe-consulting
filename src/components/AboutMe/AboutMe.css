@@ -3,65 +3,85 @@
 /**************************/
 
 .about-container {
-  padding: 16rem 6rem 24rem 10rem;
+  padding: 8rem 12rem 12rem 12rem;
   background-color: #243d52;
   color: #f2f2f2;
-  display: flex;
-  align-items: center;
-  gap: 12rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
-
-/* LEFT SIDE */
-.about-img-box {
+.about-header {
+  width: 80%;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  background-color: blue;
-  width: 325px;
-  height: 325px;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 20px auto;
 }
 
-.about-img {
-  width: 300px;
-  height: auto;
-  margin: -20px 0 0 5px;
-}
-
-.about-img-bg span {
+.about-header h1 {
+  font-size: 50px;
+  margin-bottom: 25px;
   position: relative;
-  top: 290px;
-  bottom: 0;
-  left: 70px;
-  right: 0;
-  margin: auto;
-  font-size: 1.4rem;
-}
-
-/* RIGHT SIDE */
-
-.about-text-box {
-  flex: 1;
-  padding: 0 6.4rem;
-}
-
-.about-heading {
   color: #f2f2f2;
-  font-size: 2.4rem;
-  margin-bottom: 1.6rem;
 }
 
-.about-line {
+/* Same as 'hr' tag */
+.about-header h1::after {
+  content: "";
+  position: absolute;
   width: 100%;
-  height: 2px;
-  background-color: #ccc;
-  border: none;
-  margin-bottom: 1.6rem;
+  height: 4px;
+  display: block;
+  margin: 0 auto;
+  background-color: #f2f2f2;
 }
 
-.about-subheading {
-  font-size: 1.8rem;
-  line-height: 2.6rem;
-  margin-bottom: 3.2rem;
+.about-header p {
+  font-size: 18px;
+  margin-bottom: 35px;
+  color: #9fadb9;
+}
+
+.about-main-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+
+.about-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.about-main-left {
+  flex: 1;
+  margin: 0 0 40px 30px;
+  overflow: hidden;
+}
+
+.about-main-left img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.about-main-right {
+  flex: 1;
+}
+
+.about-main-right h2 {
+  font-size: 24px;
+  margin-bottom: 14px;
+  color: #f2f2f2;
+}
+
+.about-main-right p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #9fadb9;
 }
 
 .about-icons {
@@ -69,18 +89,18 @@
   justify-content: flex-start;
   align-items: center;
   gap: 35px;
-}
-
-.left-icon,
-.right-icon {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding: 10px 20px;
+  margin-top: 15px;
 }
 
 .left-icon img,
 .right-icon img {
   width: 80px;
+}
+
+.left-icon,
+.right-icon {
+  display: flex;
 }
 
 .left-icon span,
