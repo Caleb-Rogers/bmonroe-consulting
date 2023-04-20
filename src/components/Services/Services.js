@@ -96,18 +96,20 @@ function Services() {
   };
 
   return (
-    <Container className="p-4">
-      <h1 className="text-center section-heading-blue pt-4  ">Services</h1>
-      <hr></hr>
+    <div className="services">
+      <Container className="p-4">
+        <h1 className="text-center section-heading-blue pt-4  ">Services</h1>
+        <hr></hr>
 
-      <Row md={3} className="p-8 w-100">
-        {cardInfo.map(renderCard)}
-      </Row>
+        <Row md={3} className="p-8 w-100">
+          {cardInfo.map(renderCard)}
+        </Row>
 
-      <h1 className="view-more-btn">
-        <u>View More</u>
-      </h1>
-    </Container>
+        <h1 className="view-more-btn">
+          <u>View More</u>
+        </h1>
+      </Container>
+    </div>
   );
 }
 
