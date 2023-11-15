@@ -3,7 +3,7 @@ import React from "react";
 import Navbar from "./Navbar/Navbar";
 import Hero from "./Hero/Hero.js";
 import Services from "./Services/Services";
-import AboutMe from "./AboutMe/AboutMe";
+import About from "./About/AboutSection";
 import Testimonials from "./Testimonials/Testimonials";
 import Footer from "./Footer/Footer";
 function Homepage() {
@@ -11,7 +11,7 @@ function Homepage() {
     <div className="wrapper">
       <Navbar />
       <Hero />
-      <AboutMe />
+      <About />
       <Services />
       <Testimonials />
       <Footer />

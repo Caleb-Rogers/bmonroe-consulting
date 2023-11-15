@@ -4,9 +4,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../components/Navbar/Navbar.css";
 import "../components/Hero/Hero.css";
 import "../components/Services/Services.css";
-import "../components/AboutMe/AboutMe.css";
+import "../components/About/AboutSection.css";
 import "../components/Testimonials/Testimonials.css";
 import "../components/Footer/Footer.css";
+import "../components/About/AboutPage.css";
 
 <link
   rel="stylesheet"
