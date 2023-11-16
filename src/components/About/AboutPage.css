@@ -2,11 +2,10 @@
 /* ABOUT PAGE */
 /**************************/
 .about-container {
-  padding: 6rem 20rem 9rem 5rem;
+  padding: 9rem 1rem 9rem 6rem;
   background-color: #333437;
   color: #d1d0c5;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Playfair Display", serif;
 }
 
 .about-main {
@@ -15,20 +14,49 @@
 }
 
 .about-main-left {
-  flex: 8;
-  padding-right: 10rem;
+  flex: 3;
+  padding-right: 5rem;
 }
 
 .about-main-left h1 {
+  font-size: 3.8rem;
+  font-weight: 700;
+  letter-spacing: -1px;
   color: #e1b711;
 }
 
+.about-main-left h2 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-size: 2.4rem;
+  letter-spacing: 2.5px;
+}
+
+.about-main-left h3 {
+  font-style: italic;
+  font-size: 2.4rem;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+
+.about-main-left p {
+  font-size: 2.2rem;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+}
+
 .about-main-left a {
+  font-size: 2.2rem;
+  font-weight: 400;
+  letter-spacing: -0.5px;
   color: #e1b711;
 }
 
 .about-main-left ul {
   list-style-type: circle;
+  font-size: 2.2rem;
+  font-weight: 400;
+  letter-spacing: -0.5px;
 }
 
 .about-main-left li,
@@ -45,7 +73,57 @@ p {
   border-radius: 50%;
 }
 
+.about-main-right .founder {
+  color: #e1b711;
+}
+
 .about-main-right img {
   width: 30px;
   height: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.about-main-right h4 {
+  font-size: 3rem;
+}
+
+.about-main-right h5 {
+  margin-top: 0.1rem;
+  margin-bottom: 1rem;
+}
+
+.about-main-right .socials {
+  display: flex;
+  align-items: center;
+  height: 4rem;
+}
+
+.about-main-right .socials img {
+  margin-right: 0.7rem;
+}
+
+.about-main-right .socials h5 {
+  margin-left: 0.1rem;
+  margin-top: 1rem;
+  color: #e1b711;
+}
+
+.about-main-right .cta:link,
+.about-main-right .cat:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.2rem;
+  transition: all 0.3s;
+  padding: 0.8rem 1.8rem;
+  margin-top: 1.2rem;
+  border-radius: 9px;
+  color: #333437;
+  background-color: #d1d0c5;
+}
+
+.about-main-right .cta:hover,
+.about-main-right .cat:active {
+  background-color: #e1b711;
 }
