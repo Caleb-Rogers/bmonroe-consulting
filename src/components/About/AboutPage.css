@@ -33,6 +33,25 @@
   letter-spacing: 2.5px;
 }
 
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+@media (prefers-reduced-motion) {
+  .hidden {
+    transform: none;
+  }
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
 .about-main-left h3 {
   font-style: italic;
   font-size: 2.4rem;
