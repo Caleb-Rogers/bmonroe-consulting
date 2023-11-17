@@ -58,7 +58,7 @@
 
 .container .contact-info .box {
   position: relative;
-  padding: 20px 0;
+  padding: 20px 0 0 140px;
   display: flex;
 }
 
@@ -82,12 +82,77 @@
   display: flex;
   flex-direction: column;
   margin-left: 20px;
+  margin-left: 10px;
   font-size: 16px;
-  font-weight: 400;
-  color: #333437;
+  font-weight: 600;
+  color: #d1d0c5;
 }
 
 .container .contact-info .box .text h3 {
   font-weight: 600;
+  color: #333437;
+}
+
+.contact-form {
+  width: 40%;
+  padding: 40px;
+  background: #333437;
+}
+
+.contact-form h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
   color: #d1d0c5;
+  font-weight: 500;
+}
+
+.contact-form .input-field {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.contact-form .input-field input,
+.contact-form .input-field textarea {
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 3px solid #e1b711;
+  outline: none;
+  resize: none;
+  background: #333437;
+}
+
+.contact-form .input-field label {
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.5s;
+  color: #d1d0c5;
+}
+
+.contact-form .input-field input:focus ~ label,
+.contact-form .input-field input:valid ~ label,
+.contact-form .input-field textarea:focus ~ label,
+.contact-form .input-field textarea:valid ~ label {
+  opacity: 0;
+  color: #e14f4f;
+  font-size: 12px;
+  transform: translateY(-20px);
+}
+
+.contact-form button {
+  width: 115px;
+  height: 50px;
+  background: #333437;
+  color: #e1b711;
+  border-color: #e1b711;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
 }
