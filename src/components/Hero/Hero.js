@@ -15,11 +15,11 @@ function Hero() {
               with our seasoned management expertise. Let's build success together.
             </p>
             <div className="hero-btns">
-              <Link href="#" className="btn btn--full margin-right-sm">
-                CONTACT
+              <Link href="/contact" className="btn primary-btn">
+                Work With Us
               </Link>
-              <Link href="#" className="btn btn--outline">
-                LEARN MORE &darr;
+              <Link href="/services" className="btn secondary-btn">
+                Discover Our Services
               </Link>
             </div>
           </div>

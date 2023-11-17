@@ -62,12 +62,9 @@
   display: block;
 }
 
-/* BUTTON */
-
 .btn:link,
 .btn:visited {
   display: inline-block;
-  background-color: #243d52;
   text-decoration: none;
   font-size: 2rem;
   font-weight: 600;
@@ -76,50 +73,28 @@
   transition: all 0.3s;
 }
 
-.btn--full:link,
-.btn--full:visited {
-  background-color: #243d52;
-  color: #fff;
+.primary-btn:link,
+.primary-btn:visited {
+  background-color: #e1b711;
+  color: #333437;
+  margin-right: 20px;
 }
 
-.btn--full:hover,
-.btn--full:active {
-  background-color: #1d3142;
+.primary-btn:hover,
+.primary-btn:active {
+  background-color: #e8cd61;
+  margin-right: 20px;
 }
 
-.btn--outline:link,
-.btn--outline:visited {
-  background-color: #fff;
-  color: #2f2e41;
+.secondary-btn:link,
+.secondary-btn:visited {
+  background-color: #333437;
+  color: #f5f5f5;
 }
 
-.btn--outline:hover,
-.btn--outline:active {
-  background-color: #edf7fe;
-  box-shadow: inset 0 0 0 3px #fff;
-}
-
-/* REUSABLE MARGIN */
-
-.margin-right-sm {
-  margin-right: 1.6rem !important;
-}
-
-/* REUSABLE GRID */
-
-.grid {
-  display: grid;
-  gap: 9.6rem;
-}
-
-.grid--2-cols {
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.grid--3-cols {
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.grid--4-cols {
-  grid-template-columns: repeat(4, 1fr);
+.secondary-btn:hover,
+.secondary-btn:active {
+  background-color: #f5f5f5;
+  color: #333437;
+  box-shadow: inset 0 0 0 3px #333437;
 }
