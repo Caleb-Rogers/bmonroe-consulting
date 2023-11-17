@@ -34,14 +34,15 @@
   font-size: 5.2rem;
   font-weight: 700;
   line-height: 1.05;
+  letter-spacing: -2px;
   color: #333437;
-  letter-spacing: -0.5px;
   margin-bottom: 3.2rem;
 }
 
 .hero-description {
   font-size: 2rem;
   line-height: 1.6;
+  letter-spacing: 0.5px;
   margin-bottom: 4.8rem;
 }
 

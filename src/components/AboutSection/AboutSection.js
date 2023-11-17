@@ -19,8 +19,8 @@ export default function AboutSection() {
               triumphs through strategic project management.
             </p>
           </div>
-          <div className="about-cta-btn">
-            <Link href="/about" className="about-btn">
+          <div className="about-cta-btn-wrapper">
+            <Link href="/about" className="about-btn about-btn-primary">
                 Learn More About Me
               </Link>
           </div>
