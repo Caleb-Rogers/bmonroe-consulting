@@ -30,10 +30,18 @@ export default function AboutSection() {
             <img src="headshot.png" alt="B. Monroe Headshot" />
           </div>
           <div className="icons">
-            <img src="code-enforcement-logo.png" alt="NYS Licensed Code Enforcement Official LOGO" />
-          <span>NYS Licensed Code Enforcement Official</span>
-            <img src="BPI-logo.png" alt="Building Performance Institute, Inc. IDL Certification LOGO" />
-            <span>Building Performance Institute, Inc. IDL Certification</span>
+            <div className="icon-group">
+              <img src="code-enforcement-logo.png" alt="NYS Licensed Code Enforcement Official LOGO" />
+              <div className="icon-text">
+                <a href="https://dos.ny.gov/code/service-training" target="_blank">NYS Licensed Code Enforcement Official</a>
+              </div>
+            </div>
+            <div className="icon-group">
+              <img src="BPI-logo.png" alt="Building Performance Institute, Inc. IDL Certification LOGO" />
+              <div className="icon-text">
+                <a href="https://www.bpi.org/certified-professionals/infiltration-duct-leakage" target="_blank">Building Performance Institute, Inc. IDL Certification</a>
+              </div>
+            </div>
         </div>
         </div>
       </div>

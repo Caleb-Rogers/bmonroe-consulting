@@ -61,21 +61,22 @@
   letter-spacing: 1px;
 }
 
-.about-img-box {
+.about-sec-img-box {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  align-items: center;
   z-index: 1;
 }
 
-.about-img {
+.about-sec-img {
   max-width: 100%;
   height: auto;
   border-radius: 50%;
 }
 
-.about-img img {
-  width: 125px;
+.about-sec-img img {
+  width: 200px;
   height: auto;
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -85,15 +86,34 @@
 .icons {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: flex-start;
   margin-top: 1rem;
+  margin-left: 4rem;
+}
+
+.icons .icon-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
 }
 
 .icons img {
-  width: 50px;
-  height: 50px;
-  margin-bottom: 0.5rem;
+  width: 60px;
+  height: 58px;
+  margin-bottom: 1.2rem;
   margin-right: 1rem;
+}
+
+.icon-text {
+  margin-left: 0.5rem;
+}
+
+.icon-text a {
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: -0.3px;
+  color: #909090;
+  margin-top: 0.5rem;
 }
 
 .about-btn:link,
