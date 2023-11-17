@@ -1,7 +1,6 @@
 /**************************/
 /* ABOUT SECTION */
 /**************************/
-
 .about-container {
   padding: 8rem 12rem 12rem 12rem;
   background-color: #243d52;
@@ -25,7 +24,6 @@
   color: #f2f2f2;
 }
 
-/* Same as 'hr' tag */
 .about-header h1::after {
   content: "";
   position: absolute;
@@ -65,10 +63,6 @@
   max-width: 100%;
   height: auto;
   display: block;
-}
-
-.about-main-right {
-  flex: 1;
 }
 
 .about-main-right h2 {

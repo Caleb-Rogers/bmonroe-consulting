@@ -85,6 +85,7 @@ p {
 .about-main-right {
   position: sticky;
   top: 0;
+  flex: 1;
 }
 
 .about-main-right .headshot {
