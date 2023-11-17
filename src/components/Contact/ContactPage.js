@@ -1,6 +1,34 @@
-import React, { useState } from "react"
+import React, { useEffect } from "react";
 
 export default function Contact() {
+    useEffect(() => {
+        const handleFocus = function () {
+          this.parentElement.querySelector("label").style.transform = "translateY(-20px)";
+          this.parentElement.querySelector("label").style.fontSize = "14px";
+          this.parentElement.querySelector("label").style.color = "#e1b711";
+        };
+
+        const handleBlur = function () {
+          if (this.value === "") {
+            this.parentElement.querySelector("label").style.transform = "translateY(0)";
+            this.parentElement.querySelector("label").style.fontSize = "16px";
+            this.parentElement.querySelector("label").style.color = "#d1d0c5";
+          }
+        };
+
+        const inputFields = document.querySelectorAll(".contact-form .input-field input, .contact-form .input-field textarea");
+
+        inputFields.forEach((inputField) => {
+          inputField.addEventListener("focus", handleFocus);
+          inputField.addEventListener("blur", handleBlur);
+        });
+    return () => {
+        inputFields.forEach((inputField) => {
+            inputField.removeEventListener("focus", handleFocus);
+            inputField.removeEventListener("blur", handleBlur);
+        });
+        };
+    }, []);
     return (
         <section className="contact">
             <div className="content">
@@ -11,7 +39,8 @@ export default function Contact() {
             <div className="container">
                 <div className="contact-info">
                     <div className="box">
-                        <div className="icon"><img src="address-100-yellow.png" alt="Address Icon" /></div>                        <div className="text">
+                        <div className="icon"><img src="address-100-yellow.png" alt="Address Icon" /></div>
+                        <div className="text">
                             <h3>Address</h3>
                             <p>1234 Cty Hwy<br></br>Laurens, NY<br></br>13796</p>
                         </div>
@@ -33,7 +62,7 @@ export default function Contact() {
                 </div>
                 <div className="contact-form">
                     <form method="POST" action="https://www.random.com/">
-                        <h2>Send Us An Email</h2>
+                        <h2>Send Barb An Email</h2>
                         <div className="input-field">
                             <label>Full Name</label>
                             <input type="text" name="name" required />

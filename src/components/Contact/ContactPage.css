@@ -2,9 +2,6 @@
 /* CONTACT PAGE */
 /**************************/
 
-/* https://www.youtube.com/watch?v=gggB0Nq5vBk */
-/* https://monica-b-sanchez.com/?ref=onepagelove */
-
 * {
   margin: 0;
   padding: 0;
@@ -97,6 +94,7 @@
   width: 40%;
   padding: 40px;
   background: #333437;
+  border-radius: 5%;
 }
 
 .contact-form h2 {
@@ -122,6 +120,7 @@
   border-bottom: 3px solid #e1b711;
   outline: none;
   resize: none;
+  color: #fff;
   background: #333437;
 }
 
@@ -136,14 +135,16 @@
   color: #d1d0c5;
 }
 
-.contact-form .input-field input:focus ~ label,
-.contact-form .input-field input:valid ~ label,
-.contact-form .input-field textarea:focus ~ label,
-.contact-form .input-field textarea:valid ~ label {
-  opacity: 0;
-  color: #e14f4f;
-  font-size: 12px;
-  transform: translateY(-20px);
+.contact-form .input-field input:focus,
+.contact-form .input-field textarea:focus {
+  border-bottom: 3px solid #e1b711;
+}
+
+.contact-form .input-field input:not(:placeholder-shown) + label,
+.contact-form .input-field textarea:not(:placeholder-shown) + label {
+  transform: translateY(-25px);
+  font-size: 14px;
+  color: #e1b711;
 }
 
 .contact-form button {
