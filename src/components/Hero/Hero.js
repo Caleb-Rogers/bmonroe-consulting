@@ -6,26 +6,27 @@ function Hero() {
     <main>
       <section className="section-hero">
         <div className="hero">
-          <div className="hero-text-box">
+          <div className="hero-text">
             <h1 className="hero-heading">
-              We handle the logistics of your construction project so you can
-              focus on what's important
+              Navigating Complexity, Delivering Excellence: Your Trusted Project Partner
             </h1>
             <p className="hero-description">
-              Receive professional expertise on project management and delegate
-              your legal work such as processing building permits, verifying
-              building code & regulations, and performing safety & efficiency
-              tests
+              From concept to completion, we orchestrate every detail. Elevate your construction projects
+              with our seasoned management expertise. Let's build success together.
             </p>
-            <Link href="#" className="btn btn--full margin-right-sm">
-              CONTACT
-            </Link>
-            <Link href="#" className="btn btn--outline">
-              LEARN MORE &darr;
-            </Link>
+            <div className="hero-btns">
+              <Link href="#" className="btn btn--full margin-right-sm">
+                CONTACT
+              </Link>
+              <Link href="#" className="btn btn--outline">
+                LEARN MORE &darr;
+              </Link>
+            </div>
           </div>
-          <div className="hero-img-box">
-            <img src="hero.svg" className="hero-img" alt="Working Woman" />
+          <div className="hero-img-container">
+            <div className="hero-img-box">
+              <img src="hero.svg" className="hero-img" alt="Working Woman" />
+            </div>
           </div>
         </div>
       </section>
