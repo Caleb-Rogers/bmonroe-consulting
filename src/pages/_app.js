@@ -8,6 +8,7 @@ import "../components/About/AboutSection.css";
 import "../components/Testimonials/Testimonials.css";
 import "../components/Footer/Footer.css";
 import "../components/About/AboutPage.css";
+import "../components/Contact/ContactPage.css"
 
 <link
   rel="stylesheet"

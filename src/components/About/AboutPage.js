@@ -29,20 +29,6 @@ export default function About() {
           };
         }
       }, []);
-      /*
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-            console.log(entry);
-            if (entry.isIntersecting) {
-                entry.target.classList.add('show');
-            } else {
-                entry.target.classList.remove('show');
-            }
-        });
-    });
-    const hiddenElements = document.querySelectorAll('.hidden');
-    hiddenElements.forEach((element) => observer.observe(element));
-    */
     return (
       <>
         <div className="about-container">
@@ -53,8 +39,8 @@ export default function About() {
                     <h1>I’m Barbara Monroe, founder of B. Monroe Consulting. I offer zoning and project management services
                         that create happy clients through meticulous and forward-thinking plans and execution.</h1>
                     <br></br>
-                    <p>I have over two decades of experience as a zoning enforcement officer, and as of recent years, the
-                        transition and adaptation of consulting contractors on their construction projects. With my acquired
+                    <p>I have over two decades of experience as a zoning enforcement officer. As of recent years, I have
+                        transitioned and adapted to consulting contractors on their construction projects. With my acquired
                         experience, I can create site plans, dispute variance issues, and aid you through the tedious legal
                         process to getting your project APPROVED.
                     </p>
@@ -65,7 +51,7 @@ export default function About() {
                         <h2>WORK THAT I'M PROUD OF</h2>
                         <br></br>
                         <p>Mostly:</p>
-                        <p>I was the lead project manager for <a href="https://www.redpointny.com/">Red Point</a>. During my
+                        <p>I was the lead project manager for <a href="https://www.redpointny.com/" target="_blank">Red Point</a>. During my
                             time in that role I designed site plans and processed permits to get approved, allowing the business
                             to execute on their construction project. I cultivated meaningful relationships with with my clients
                             and am regarded as a efficient and effective member that can improve any team I join.
@@ -103,11 +89,12 @@ export default function About() {
                     <div className="hidden">
                         <h2>NOTEWORTHY CLIENT RELATIONSHIPS AS CONSTRUCTION PROJECT MANAGER CONSULTANT</h2>
                         <br></br>
-                        <div><a href="https://www.redpointny.com/">Client 1</a></div>
-                        <div><a href="https://www.redpointny.com/">Client 2</a></div>
-                        <div><a href="https://www.redpointny.com/">Client 3</a></div>
-                        <div><a href="https://www.redpointny.com/">Client 4</a></div>
-                        <div><a href="https://www.redpointny.com/">Client 5</a></div>
+                        <div><a href="https://www.redpointny.com/" target="_blank">Client 1</a></div>
+                        <div><a href="https://www.redpointny.com/" target="_blank">Client 2</a></div>
+                        <div><a href="https://www.redpointny.com/" target="_blank">Client 3</a></div>
+                        <div><a href="https://www.redpointny.com/" target="_blank">Client 4</a></div>
+                        <div><a href="https://www.redpointny.com/" target="_blank">Client 5</a></div>
+                        <br></br>
                         <br></br>
                         <br></br>
                     </div>
@@ -145,9 +132,9 @@ export default function About() {
                     <img className="headshot" src="headshot.png" alt="B. Monroe Headshot" />
                     <h4>Barbara Monroe</h4>
                     <h5>Founder at <Link className="founder" href="/">B. MONROE CONSULTING</Link></h5>
-                    <Link className="socials" href="https://www.linkedin.com/in/barbara-monroe-6088439a/"><img src="linkedin-500-light.png" alt="LinkedIn Icon" /><h5> LinkedIn</h5></Link>
-                    <Link className="socials" href="https://www.facebook.com/barb.monroe.18"><img src="facebook-500-light.png" alt="Facebook Icon" /><h5> Facebook</h5></Link>
-                    <Link className="socials" href="/"><img src="email-64-light.png" alt="Default Email Icon" /><h5> Email</h5></Link>
+                    <Link className="socials" href="https://www.linkedin.com/in/barbara-monroe-6088439a/" target="_blank"><img src="linkedin-500-yellow.png" alt="LinkedIn Icon" /><h5> LinkedIn</h5></Link>
+                    <Link className="socials" href="https://www.facebook.com/barb.monroe.18" target="_blank"><img src="facebook-500-yellow.png" alt="Facebook Icon" /><h5> Facebook</h5></Link>
+                    <Link className="socials" href="/"><img src="email-64-yellow.png" alt="Default Email Icon" /><h5> Email</h5></Link>
                     <Link className="cta" href="/contact">Work With Me</Link>
                 </div>
             </div>
