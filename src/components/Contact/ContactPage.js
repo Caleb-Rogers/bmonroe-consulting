@@ -15,11 +15,15 @@ export default function Contact() {
                             <h3>Address</h3>
                             <p>1234 Cty Hwy,<br></br>Laurens, NY,<br></br>13796</p>
                         </div>
+                    </div>
+                    <div className="box">
                         <div className="icon"><img src="phone-500-yellow.png" alt="Address Icon" /></div>
                         <div className="text">
                             <h3>Phone</h3>
                             <p>123-456-7890</p>
                         </div>
+                    </div>
+                    <div className="box">
                         <div className="icon"><img src="email-64-yellow.png" alt="Address Icon" /></div>
                         <div className="text">
                             <h3>Email</h3>

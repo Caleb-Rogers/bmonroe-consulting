@@ -1,0 +1,93 @@
+/**************************/
+/* CONTACT PAGE */
+/**************************/
+
+/* https://www.youtube.com/watch?v=gggB0Nq5vBk */
+/* https://monica-b-sanchez.com/?ref=onepagelove */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contact {
+  position: relative;
+  min-height: 100vh;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #e1b711;
+  background-image: linear-gradient(62deg, #e1b711 0%, #333437 100%);
+}
+
+.contact .content {
+  max-width: 800px;
+  text-align: center;
+}
+
+.contact .content h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  color: #d1d0c5;
+}
+
+.contact .content p {
+  font-size: 2.5rem;
+  font-weight: 500;
+  letter-spacing: -1px;
+  color: #d1d0c5;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.container .contact-info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container .contact-info .box {
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+}
+
+.container .contact-info .box .icon {
+  min-width: 75px;
+  height: 75px;
+  background: #333437;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 25px;
+}
+
+.container .contact-info .box .icon img {
+  width: 50px;
+  height: auto;
+}
+
+.container .contact-info .box .text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #333437;
+}
+
+.container .contact-info .box .text h3 {
+  font-weight: 600;
+  color: #d1d0c5;
+}
