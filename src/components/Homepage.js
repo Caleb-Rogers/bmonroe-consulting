@@ -3,7 +3,7 @@ import React from "react";
 import Navbar from "./Navbar/Navbar";
 import Hero from "./Hero/Hero.js";
 import Services from "./Services/Services";
-import About from "./About/AboutSection";
+import About from "./AboutSection/AboutSection";
 import Testimonials from "./Testimonials/Testimonials";
 import Footer from "./Footer/Footer";
 function Homepage() {

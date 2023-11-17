@@ -4,10 +4,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../components/Navbar/Navbar.css";
 import "../components/Hero/Hero.css";
 import "../components/Services/Services.css";
-import "../components/About/AboutSection.css";
+import "../components/AboutSection/AboutSection.css";
 import "../components/Testimonials/Testimonials.css";
 import "../components/Footer/Footer.css";
-import "../components/About/AboutPage.css";
+import "../components/AboutPage/AboutPage.css";
 import "../components/Contact/ContactPage.css"
 
 <link
