@@ -51,56 +51,86 @@ export default function Service() {
                         <h3>OUR SERVICES</h3>
                         <br></br>
                         <h2>Zoning, Land Use, & Research</h2>
-                        <p>
-                            Zoning and land use research, Location analysis, Site plan approvals, Conditional use permits, 
-                            Zoning ordinance appeals, Zoning ordinance variances, Zoning ordinance amending, Property re-zoning, 
-                            Architectural review approvals, Public Works and Transportation Approvals, Zoning violations
-                        </p>
+                        <p>Comprehensive analysis of zoning regulations and land use potential.</p>
+                        <ul>
+                            <li>Zoning and land use research</li>
+                            <li>Location analysis</li>
+                            <li>Site plan approvals</li>
+                            <li>Conditional use permits</li>
+                            <li>Zoning ordinance appeals</li>
+                            <li>Zoning ordinance variances</li>
+                            <li>Zoning ordinance amending</li>
+                            <li>Property re-zoning</li>
+                            <li>Architectural review approvals</li>
+                            <li>review approvals</li>
+                            <li>Public Works and Transportation Approvals</li>
+                            <li>Zoning violations</li>
+                        </ul>
                         <br></br>
                     </div>
                     <div className="hidden">
                         <br></br>
                         <h2>Code Enforcement</h2>
-                        <p>
-                            Demolition permits, Building Codes Analysis, Building Permits, Occupancy permits, Special Permits, 
-                            Temporary Structures permits, Code violations
-                        </p>
+                        <p>Diligent adherence to building codes for successful project outcomes.</p>
+                        <ul>
+                            <li>Demolition permits</li>
+                            <li>Building Codes Analysis</li>
+                            <li>Building Permits</li>
+                            <li>Occupancy permits</li>
+                            <li>Special Permits</li>
+                            <li>Temporary Structures permits</li>
+                            <li>Code violations</li>
+                        </ul>
                         <br></br>
                     </div>
                     <div className="hidden">
                         <br></br>
                         <h2>Design</h2>
-                        <p>
-                            Pre-design work to ensure compliance with the Code, Site plan design, Pre-design work for engineers 
-                            and architects
-                        </p>
+                        <p>Collaborative pre-design work ensuring alignment with construction codes.</p>
+                        <ul>
+                            <li>Pre-design work to ensure compliance with the Code</li>
+                            <li>Site plan design</li>
+                            <li>Pre-design work for engineers and architects</li>
+                        </ul>
                         <br></br>
                     </div>
                     <div className="hidden">
                         <br></br>
                         <h2>Environment Permitting & Meeting Representation</h2>
-                        <p>
-                            Architectural Review Boards, Historic District Commissions, Planning Commissions, Town Boards, Zoning 
-                            Board of Appeals, Building Code Board of Appeals, City and County Councils, State Regulatory Agencies
-                        </p>
+                        <p>Skilled representation before architectural review boards for project approvals.</p>
+                        <ul>
+                            <li>Architectural Review Boards</li>
+                            <li>Historic District Commissions</li>
+                            <li>Planning Commissions</li>
+                            <li>Town Boards</li>
+                            <li>Zoning Board of Appeals</li>
+                            <li>Building Code Board of Appeals</li>
+                            <li>City and County Councils</li>
+                            <li>State Regulatory Agencies</li>
+                        </ul>
                         <br></br>
                     </div>
                     <div className="hidden">
                         <br></br>
                         <h2>Energy Analysis</h2>
-                        <p>
-                            Certified BPI Infiltration and Duct Leakage(Blower Door Testing), Home efficiency analysis
-                        </p>
+                        <p>Expert certified BPI analysis for efficient project energy solutions.</p>
+                        <ul>
+                            <li>Certified BPI Infiltration and Duct Leakage (Blower Door Testing)</li>
+                            <li>Home efficiency analysis</li>
+                        </ul>
                         <br></br>
                     </div>
                     <div className="hidden">
                         <br></br>
                         <h2>Land Management</h2>
-                        <p>
-                            Analyzing feasibility for the highest and best use for the asset or land, Researching property history and 
-                            allowable uses, Coordinating permitting, Planning the scope, phasing, and project delivery method, Managing 
-                            properties for absentee landowners
-                        </p>
+                        <p>Strategic planning of scope, phasing, and project delivery for optimal results.</p>
+                        <ul>
+                            <li>Analyzing feasibility for the highest and best use for the asset or land</li>
+                            <li>Researching property history and allowable uses</li>
+                            <li>Coordinating permitting</li>
+                            <li>Planning the scope, phasing, and project delivery method</li>
+                            <li>Managing properties for absentee landowners</li>
+                        </ul>
                         <br></br>
                     </div>
                 </div>
