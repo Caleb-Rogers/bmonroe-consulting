@@ -3,12 +3,13 @@ import "@/styles/globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../components/Navbar/Navbar.css";
 import "../components/Hero/Hero.css";
-import "../components/Services/Services.css";
 import "../components/AboutSection/AboutSection.css";
+import "../components/ServicesSection/ServicesSection.css";
 import "../components/Testimonials/Testimonials.css";
 import "../components/Footer/Footer.css";
 import "../components/AboutPage/AboutPage.css";
-import "../components/Contact/ContactPage.css"
+import "../components/ServicesPage/ServicesPage.css";
+import "../components/Contact/ContactPage.css";
 
 <link
   rel="stylesheet"

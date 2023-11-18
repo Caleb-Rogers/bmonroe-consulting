@@ -1,0 +1,153 @@
+/**************************/
+/* SERVICES SECTION */
+/**************************/
+
+.serv-section {
+  font-family: "Playfair Display", serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #909090;
+}
+
+.serv-container {
+  position: relative;
+  display: flex;
+  padding: 80px 40px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 80px;
+}
+.serv-card {
+  position: relative;
+  width: 350px;
+  height: 180px;
+  background: #333437;
+  transition: 0.5s;
+}
+
+.serv-card:hover {
+  height: 450px;
+}
+
+.serv-card .serv-lines {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: #333437;
+  overflow: hidden;
+}
+
+.serv-card .serv-lines::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 600px;
+  height: 120px;
+  background: linear-gradient(
+    transparent,
+    #909090,
+    #909090,
+    #909090,
+    transparent
+  );
+  animation: animate 4s linear infinite;
+  animation-play-state: paused;
+}
+
+.serv-card:hover .serv-lines::before {
+  animation-play-state: running;
+}
+
+@keyframes animate {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.serv-card .serv-lines::after {
+  content: "";
+  position: absolute;
+  inset: 3px;
+  background: #909090;
+}
+
+.serv-card .serv-img-box {
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  width: 150px;
+  height: 150px;
+  transform: translateX(-50%);
+  background: #909090;
+  transition: 0.5s;
+  z-index: 10;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.serv-card:hover .serv-img-box {
+  top: 25px;
+  width: 250px;
+  height: 250px;
+}
+
+.serv-card .serv-img-box::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  height: 150px;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(
+    transparent,
+    #e1b711,
+    #e1b711,
+    #e1b711,
+    transparent
+  );
+  animation: animate2 6s linear infinite;
+  animation-play-state: paused;
+}
+
+.serv-card:hover .serv-img-box::before {
+  animation-play-state: running;
+}
+
+@keyframes animate2 {
+  0% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+}
+
+.serv-card .serv-img-box::after {
+  content: "";
+  position: absolute;
+  inset: 3px;
+  background: #868585;
+}
+
+.serv-card .serv-img-box img {
+  position: absolute;
+  width: 135px;
+  z-index: 1;
+  filter: invert(1);
+  opacity: 0.2;
+  transition: 0.5s;
+}
+
+.serv-card:hover .serv-img-box img {
+  opacity: 1;
+}

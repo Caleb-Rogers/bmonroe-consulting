@@ -2,7 +2,7 @@ import React from "react";
 
 import Navbar from "./Navbar/Navbar";
 import Hero from "./Hero/Hero.js";
-import Services from "./Services/Services";
+import Services from "./ServicesSection/ServicesSection";
 import About from "./AboutSection/AboutSection";
 import Testimonials from "./Testimonials/Testimonials";
 import Footer from "./Footer/Footer";
