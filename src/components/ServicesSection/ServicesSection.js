@@ -1,6 +1,9 @@
 export default function ServicesSection() {
   return (
     <section className="serv-section">
+      <div className="serv-heading">
+        <h2>Our Services</h2>
+      </div>
       <div className="serv-container">
         <div className="serv-card">
           <div className="serv-lines"></div>
