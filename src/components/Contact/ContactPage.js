@@ -1,6 +1,27 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+import { useForm } from "react-hook-form";
 
 export default function Contact() {
+
+    const {
+        register,
+        handleSubmit,
+        formState: { isSubmitting },
+      } = useForm();
+    const [successMessage, setSuccessMessage] = useState("");
+
+    function onSubmit(data) {
+        axios
+          .post("https://eobyjsq9cpket4u.m.pipedream.net", data)
+          .then((response) => {
+            setSuccessMessage(
+              `Thanks for signing up! Check your inbox for updates 😊`
+            );
+          })
+          .catch((e) => console.error(e));
+    }
+
     useEffect(() => {
         const handleFocus = function () {
           this.parentElement.querySelector("label").style.transform = "translateY(-20px)";
@@ -61,21 +82,22 @@ export default function Contact() {
                     </div>
                 </div>
                 <div className="contact-form">
-                    <form method="POST" action="https://www.random.com/">
+                    <form onSubmit={handleSubmit(onSubmit)}>
                         <h2>Send Barb An Email</h2>
                         <div className="input-field">
                             <label>Full Name</label>
-                            <input type="text" name="name" required />
+                            <input {...register("name")} type="text" name="name" required ></input>
                         </div>
                         <div className="input-field">
                             <label>Email</label>
-                            <input type="text" name="email" required />
+                            <input {...register("email")} type="text" name="email" required ></input>
                         </div>
                         <div className="input-field">
                             <label>Message</label>
-                            <textarea name="message" required></textarea>
+                            <textarea {...register("message")} type="text" name="message" required ></textarea>
                         </div>
-                        <button type="submit">SEND</button>
+                        <button role="submit">{isSubmitting ? "SENDING" : "SEND"}</button>
+                            {successMessage && <p>{successMessage}</p>}
                     </form>
                 </div>
             </div>
