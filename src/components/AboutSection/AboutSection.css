@@ -76,7 +76,7 @@
 }
 
 .about-sec-img img {
-  width: 200px;
+  width: 220px;
   height: auto;
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -93,14 +93,35 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 0.2rem;
-  margin-right: 0.5rem;
-  width: 120px;
+  padding: 2rem;
+  width: 150px;
+  height: auto;
+  border: 9px;
+  position: relative;
+  margin-right: 1.2rem;
+}
+
+.icon-group-curved {
+  position: relative;
+  border-radius: 10px; /* Adjusted border-radius for the curved border */
+  overflow: hidden;
+}
+
+.icon-group-curved:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: 5px solid #909090; /* Replace with your desired color */
+  border-radius: 10px; /* Match the border-radius from .icon-group-curved */
+  z-index: -1;
 }
 
 .icons img {
-  width: 60px;
-  height: 58px;
+  width: 75px;
+  height: 70px;
   margin-bottom: 0.5rem;
 }
 
@@ -128,7 +149,7 @@
   font-size: 2rem;
   font-weight: 600;
   padding: 1.6rem 3.2rem;
-  border-radius: 9px;
+  border-radius: 10px;
   transition: all 0.3s;
   background-color: #909090;
   color: #333437;
