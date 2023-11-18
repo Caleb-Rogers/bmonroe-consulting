@@ -103,7 +103,7 @@
 
 .icon-group-curved {
   position: relative;
-  border-radius: 10px; /* Adjusted border-radius for the curved border */
+  border-radius: 10px;
   overflow: hidden;
 }
 
@@ -114,8 +114,8 @@
   right: 0;
   bottom: 0;
   left: 0;
-  border: 5px solid #909090; /* Replace with your desired color */
-  border-radius: 10px; /* Match the border-radius from .icon-group-curved */
+  border: 5px solid #909090;
+  border-radius: 10px;
   z-index: -1;
 }
 
@@ -140,6 +140,22 @@
   letter-spacing: -0.3px;
   color: #909090;
   display: block;
+}
+
+.icon-text a:link,
+.icon-text a:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: -0.3px;
+  color: #909090;
+  transition: all 0.3s;
+}
+
+.icon-text a:hover,
+.icon-text a:active {
+  color: #e1b711;
 }
 
 .about-btn:link,
