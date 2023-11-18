@@ -50,6 +50,51 @@ export default function ServicesSection() {
               </div>
             </div>
         </div>
+        <div className="serv-card">
+          <div className="serv-lines"></div>
+            <div className="serv-img-box">
+              <img src="justice-100-light.png" alt="Zoning, Land Use, & Research ICON"></img>
+            </div>
+            <div className="serv-content">
+              <div className="serv-details">
+                <h2>Environment Permitting & Meeting Representation</h2>
+                <p>
+                  Architectural Review Boards, Historic District Commissions, Planning Commissions, Town Boards, Zoning Board of Appeals, Building Code Board of Appeals, City and County Councils, State Regulatory Agencies
+                </p>
+                <a href="/services">Read More</a>
+              </div>
+            </div>
+        </div>
+        <div className="serv-card">
+          <div className="serv-lines"></div>
+            <div className="serv-img-box">
+              <img src="nrganalysis-80-light.png" alt="Zoning, Land Use, & Research ICON"></img>
+            </div>
+            <div className="serv-content">
+              <div className="serv-details">
+                <h2>Energy Analysis</h2>
+                <p>
+                  Certified BPI Infiltration and Duct Leakage(Blower Door Testing), Home efficiency analysis
+                </p>
+                <a href="/services">Read More</a>
+              </div>
+            </div>
+        </div>
+        <div className="serv-card">
+          <div className="serv-lines"></div>
+            <div className="serv-img-box">
+              <img src="land-100-light.png" alt="Zoning, Land Use, & Research ICON"></img>
+            </div>
+            <div className="serv-content">
+              <div className="serv-details">
+                <h2>Land Management</h2>
+                <p>
+                  Analyzing feasibility for the highest and best use for the asset or land, Researching property history and allowable uses, Coordinating permitting, Planning the scope, phasing, and project delivery method, Managing properties for absentee landowners
+                </p>
+                <a href="/services">Read More</a>
+              </div>
+            </div>
+        </div>
       </div>
     </section>
   );
