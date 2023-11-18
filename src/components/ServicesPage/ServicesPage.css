@@ -1,3 +1,150 @@
 /**************************/
 /* SERVICES PAGE */
 /**************************/
+.service-container {
+  padding: 9rem 1rem 9rem 6rem;
+  background-color: #333437;
+  color: #d1d0c5;
+  font-family: "Playfair Display", serif;
+}
+
+.service-main {
+  display: flex;
+  align-items: flex-start;
+}
+
+.service-main-left {
+  flex: 3;
+  padding-right: 5rem;
+  overflow-y: auto;
+}
+
+.service-main-left h1 {
+  font-size: 3.8rem;
+  font-weight: 700;
+  letter-spacing: -1px;
+  color: #e1b711;
+}
+
+.service-main-left h2 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-size: 2.4rem;
+  letter-spacing: -1px;
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transition: all 1.2s;
+}
+
+@media (prefers-reduced-motion) {
+  .hidden {
+    transform: none;
+  }
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+}
+
+.service-main-left h3 {
+  font-style: italic;
+  font-size: 2.4rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.service-main-left p {
+  font-size: 2.2rem;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+}
+
+.service-main-left a {
+  font-size: 2.2rem;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  color: #e1b711;
+}
+
+.service-main-left ul {
+  list-style-type: circle;
+  font-size: 2.2rem;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+}
+
+.service-main-left li,
+p {
+  line-height: 1.5;
+}
+
+.service-main-right {
+  position: sticky;
+  top: 0;
+  flex: 1;
+}
+
+.service-main-right .headshot {
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.service-main-right .founder {
+  color: #e1b711;
+}
+
+.service-main-right img {
+  width: 30px;
+  height: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.service-main-right h4 {
+  font-size: 3rem;
+}
+
+.service-main-right h5 {
+  margin-top: 0.1rem;
+  margin-bottom: 1rem;
+}
+
+.service-main-right .socials {
+  display: flex;
+  align-items: center;
+  height: 4rem;
+}
+
+.service-main-right .socials img {
+  margin-right: 0.7rem;
+}
+
+.service-main-right .socials h5 {
+  margin-left: 0.1rem;
+  margin-top: 1rem;
+  color: #e1b711;
+}
+
+.service-main-right .cta:link,
+.service-main-right .cat:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.2rem;
+  transition: all 0.3s;
+  padding: 0.8rem 1.8rem;
+  margin-top: 1.2rem;
+  border-radius: 9px;
+  color: #333437;
+  background-color: #d1d0c5;
+}
+
+.service-main-right .cta:hover,
+.service-main-right .cat:active {
+  background-color: #e1b711;
+}
