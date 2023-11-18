@@ -30,7 +30,7 @@ export default function ServicesSection() {
         slides.children[prevIndex].style.transform = "translateX(-100%)";
 
         activeSlide.style.transform = offset > 0 ? "translateX(-100%)" : "translateX(100%)";
-        currentSlide.style.transform = "translateX(-30%)";
+        currentSlide.style.transform = "translateX(-50%)";
 
         setTimeout(() => {
           slides.querySelectorAll(".slide").forEach((slide) => {
