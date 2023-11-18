@@ -74,22 +74,26 @@
   border: none;
   font-size: 4rem;
   top: 50%;
-  transform: translateY(-50%);
-  color: rgba(255, 255, 255, 0.5);
+  width: 5%;
+  height: auto;
+  color: #f2f2f2;
   cursor: pointer;
-  border-radius: 0.25rem;
-  padding: 0 0.5rem;
-  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background-color: #909090;
+}
+
+.carousel-button img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: block;
+  overflow: hidden;
 }
 
 .carousel-button:hover,
 .carousel-button:focus {
-  color: white;
-  background-color: rgba(0, 0, 0, 0.2);
-}
-
-.carousel-button:focus {
-  outline: 1px solid black;
+  background-color: #333437;
+  box-shadow: inset 0 0 0 3px #909090;
 }
 
 .carousel-button.prev {
@@ -99,6 +103,7 @@
 .carousel-button.next {
   right: 15rem;
 }
+
 .serv-card {
   position: relative;
   width: 350px;

@@ -1,6 +1,10 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
+
 
 export default function ServicesSection() {
+
+  const [isButtonHovered] = useState(false);
+
   useEffect(() => {
     const buttons = document.querySelectorAll("[data-carousel-button]");
 
@@ -38,6 +42,17 @@ export default function ServicesSection() {
           });
         }, 200);
       });
+      button.addEventListener("mouseenter", () => {
+        const buttonType = button.dataset.carouselButton;
+        const imageSrc = buttonType === "prev" ? "prev-btn-100-yellow.png" : "next-btn-100-yellow.png";
+        button.querySelector("img").src = imageSrc;
+      });
+
+      button.addEventListener("mouseleave", () => {
+        const buttonType = button.dataset.carouselButton;
+        const imageSrc = buttonType === "prev" ? "prev-btn-100-dark.png" : "next-btn-100-dark.png";
+        button.querySelector("img").src = imageSrc;
+      });
     });
   }, []);
 
@@ -48,8 +63,18 @@ export default function ServicesSection() {
       </div>
       <div className="serv-container">
         <div class="carousel" data-carousel>
-          <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
-          <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
+          <button className="carousel-button prev" data-carousel-button="prev">
+            <img
+              src={isButtonHovered ? "prev-btn-100-yellow.png" : "prev-btn-100-dark.png"}
+              alt="Previous Button"
+            />
+          </button>
+          <button className="carousel-button next" data-carousel-button="next">
+            <img
+              src={isButtonHovered ? "next-btn-100-yellow.png" : "next-btn-100-dark.png"}
+              alt="Next Button"
+            />
+          </button>
           <ul data-slides>
             <li class="slide" data-active>
               <div className="serv-card">
