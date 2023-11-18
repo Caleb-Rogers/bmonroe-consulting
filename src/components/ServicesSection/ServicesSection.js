@@ -46,12 +46,14 @@ export default function ServicesSection() {
         const buttonType = button.dataset.carouselButton;
         const imageSrc = buttonType === "prev" ? "prev-btn-100-yellow.png" : "next-btn-100-yellow.png";
         button.querySelector("img").src = imageSrc;
+        button.style.backgroundColor = "#333437";
       });
 
       button.addEventListener("mouseleave", () => {
         const buttonType = button.dataset.carouselButton;
         const imageSrc = buttonType === "prev" ? "prev-btn-100-dark.png" : "next-btn-100-dark.png";
         button.querySelector("img").src = imageSrc;
+        button.style.backgroundColor = "#909090";
       });
     });
   }, []);
