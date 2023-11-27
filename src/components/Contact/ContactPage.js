@@ -62,8 +62,8 @@ export default function Contact() {
                     <div className="box">
                         <div className="icon"><img src="address-100-yellow.png" alt="Address Icon" /></div>
                         <div className="text">
-                            <h3>Address</h3>
-                            <p>1234 Cty Hwy<br></br>Laurens, NY<br></br>13796</p>
+                            <h3>Location</h3>
+                            <p>Laurens, NY, 13796<br></br>Otsego County</p>
                         </div>
                     </div>
                     <div className="box">
@@ -77,7 +77,7 @@ export default function Contact() {
                         <div className="icon"><img src="email-64-yellow.png" alt="Address Icon" /></div>
                         <div className="text">
                             <h3>Email</h3>
-                            <p>milfordnyzeo@gmail.com</p>
+                            <p>bmonroeconsulting@gmail.com</p>
                         </div>
                     </div>
                 </div>
