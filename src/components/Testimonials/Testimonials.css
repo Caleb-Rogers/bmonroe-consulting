@@ -2,39 +2,66 @@
 /* TESTIMONIALS SECTION */
 /**************************/
 
-blockquote {
-  border-left: none;
+.test-sec {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #f5f5f5;
 }
-.testimonials {
-  padding-bottom: 140px;
+
+.test-heading {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
   font-family: "Playfair Display", serif;
-}
-.quote-badge {
-  background-color: #000000;
-  background-color: rgba(0, 0, 0, 0.2);
+  color: #909090;
 }
 
-.quote-box {
-  overflow: hidden;
-  padding-top: -25px;
-  border-radius: 8px;
-  background-color: #edf7fe;
-  color: #3f3d56;
-  width: 400px;
+.test-heading h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: -2px;
+  margin: 60px 0 20px 0;
 }
 
-.quotation-mark {
-  margin-top: 10px;
-  font-weight: bold;
-  font-size: 80px;
-  color: #3f3d56;
-  font-family: "Times New Roman", Times, Serif;
+.test-container {
+  display: flex;
+  margin-left: 150px;
 }
 
-.quote-text {
-  font-size: 19px;
-  margin-top: -50px;
+.test-row {
+  display: flex;
+  width: 3200px;
 }
 
-.blog-post-bottom pull-right {
+.test-col {
+  width: 800px;
+  height: 400px;
+  position: relative;
+}
+
+.test-img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 30rem;
+}
+
+.test-img img {
+  height: 100%;
+  border-radius: 10%;
+}
+
+.test-content {
+  background: #333437;
+  color: #f5f5f5;
+  width: 520px;
+  height: 270px;
+  position: absolute;
+  top: 0;
+  right: 50%;
+  border-radius: 10px;
+  padding: 45px;
+  z-index: 2;
 }
