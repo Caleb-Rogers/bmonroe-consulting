@@ -21,7 +21,7 @@ export default function Testimonials() {
             </div>
             <div className="test-row">
               <div className="test-img">
-                <img src="test-1-img.svg" alt="First Testimonial Image" />
+                <img src="test-img-1.png" alt="First Testimonial Image" />
               </div>
             </div>
           </div>
@@ -39,7 +39,7 @@ export default function Testimonials() {
             </div>
             <div className="test-row">
               <div className="test-img">
-                <img src="test-1-img.svg" alt="First Testimonial Image" />
+                <img src="test-img-2.png" alt="First Testimonial Image" />
               </div>
             </div>
           </div>
@@ -57,7 +57,7 @@ export default function Testimonials() {
             </div>
             <div className="test-row">
               <div className="test-img">
-                <img src="test-1-img.svg" alt="First Testimonial Image" />
+                <img src="test-img-3.png" alt="First Testimonial Image" />
               </div>
             </div>
           </div>
@@ -75,10 +75,13 @@ export default function Testimonials() {
             </div>
             <div className="test-row">
               <div className="test-img">
-                <img src="test-1-img.svg" alt="First Testimonial Image" />
+                <img src="test-img-4.png" alt="First Testimonial Image" />
               </div>
             </div>
           </div>
+        </div>
+        <div className="indicator">
+          
         </div>
       </div>
     </section>

@@ -27,7 +27,14 @@
 
 .test-container {
   display: flex;
-  margin-left: 150px;
+  flex-direction: column;
+  margin-left: 25%;
+  width: 800px;
+  height: 400px;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  background-color: #2bb126;
 }
 
 .test-row {
@@ -60,7 +67,7 @@
   height: 415px;
   position: absolute;
   top: 0;
-  right: 50%;
+  right: 47%;
   border-radius: 10px;
   padding: 45px;
   z-index: 2;
@@ -77,4 +84,21 @@
   font-weight: 800;
   letter-spacing: -0.75px;
   margin: 35px 0 5px;
+}
+
+.indicator {
+  position: absolute;
+  left: 50%;
+  height: 15px;
+  width: 15px;
+  margin: 450px 2px 4px 2px;
+  display: inline-block;
+  border-radius: 15px;
+  background-color: #f04c4c;
+  cursor: pointer;
+  z-index: 10;
+  transform: translateX(33%);
+}
+
+.indicator .btn {
 }
