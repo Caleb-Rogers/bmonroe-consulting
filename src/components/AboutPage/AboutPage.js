@@ -34,7 +34,7 @@ export default function About() {
         <div className="about-container">
             <div className="about-main">
                 <div className="about-main-left">
-                    <p>hiya 👋</p>
+                    <p>Hello 👋</p>
                     <br></br>
                     <h1>I’m Barbara Monroe, founder of B. Monroe Consulting. I offer zoning and project management services
                         that create happy clients through meticulous and forward-thinking plans and execution.</h1>
@@ -132,9 +132,10 @@ export default function About() {
                     <img className="headshot" src="headshot.png" alt="B. Monroe Headshot" />
                     <h4>Barbara Monroe</h4>
                     <h5>Founder at <Link className="founder" href="/">B. MONROE CONSULTING</Link></h5>
-                    <Link className="socials" href="https://www.linkedin.com/in/barbara-monroe-6088439a/" target="_blank"><img src="linkedin-500-yellow.png" alt="LinkedIn Icon" /><h5> LinkedIn</h5></Link>
-                    <Link className="socials" href="https://www.facebook.com/barb.monroe.18" target="_blank"><img src="facebook-500-yellow.png" alt="Facebook Icon" /><h5> Facebook</h5></Link>
-                    <Link className="socials" href="/"><img src="email-64-yellow.png" alt="Default Email Icon" /><h5> Email</h5></Link>
+                    <div className="socials">
+                      <Link href="https://www.linkedin.com/in/barbara-monroe-6088439a/" target="_blank"><img src="linkedin-500-yellow.png" alt="LinkedIn Icon" /></Link>
+                      <Link href="https://www.facebook.com/barb.monroe.18" target="_blank"><img src="facebook-500-yellow.png" alt="Facebook Icon" /></Link>
+                    </div>
                     <Link className="cta" href="/contact">Work With Me</Link>
                 </div>
             </div>

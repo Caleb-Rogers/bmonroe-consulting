@@ -81,7 +81,10 @@ export default function Testimonials() {
           </div>
         </div>
         <div className="indicator">
-          
+          <span className="btn"></span>
+          <span className="btn"></span>
+          <span className="btn"></span>
+          <span className="btn"></span>
         </div>
       </div>
     </section>

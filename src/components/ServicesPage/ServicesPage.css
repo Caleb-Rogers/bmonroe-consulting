@@ -114,24 +114,19 @@ p {
   margin-bottom: 1rem;
 }
 
-.service-main-right .socials {
+.socials {
   display: flex;
-  align-items: center;
-  height: 4rem;
+  align-items: flex-start;
+  height: 3rem;
+  gap: 2px;
 }
 
-.service-main-right .socials img {
-  margin-right: 0.7rem;
-}
-
-.service-main-right .socials h5 {
-  margin-left: 0.1rem;
-  margin-top: 1rem;
-  color: #e1b711;
+.socials img {
+  margin: 0 0 20px 0;
 }
 
 .service-main-right .cta:link,
-.service-main-right .cat:visited {
+.service-main-right .cta:visited {
   display: inline-block;
   text-decoration: none;
   font-weight: 500;
@@ -145,6 +140,6 @@ p {
 }
 
 .service-main-right .cta:hover,
-.service-main-right .cat:active {
+.service-main-right .cta:active {
   background-color: #e1b711;
 }

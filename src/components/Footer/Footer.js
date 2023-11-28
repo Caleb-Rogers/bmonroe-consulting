@@ -59,7 +59,6 @@ function Footer() {
           <div className="socials">
             <Link href="https://www.linkedin.com/in/barbara-monroe-6088439a/" target="_blank"><img src="linkedin-500-yellow.png" alt="LinkedIn Icon" /></Link>
             <Link href="https://www.facebook.com/barb.monroe.18" target="_blank"><img src="facebook-500-yellow.png" alt="Facebook Icon" /></Link>
-            <Link href="/"><img src="email-64-yellow.png" alt="Default Email Icon" /></Link>
           </div>
         </div>
         <div className="foot-row">
@@ -69,20 +68,5 @@ function Footer() {
     </section>
   );
 };
-
-<div className="col item social">
-              <a href="#">
-                <i className="icon ion-social-facebook"></i>
-              </a>
-              <a href="#">
-                <i className="icon ion-social-twitter"></i>
-              </a>
-              <a href="#">
-                <i className="icon ion-social-snapchat"></i>
-              </a>
-              <a href="#">
-                <i className="icon ion-social-instagram"></i>
-              </a>
-            </div>
 
 export default Footer;
