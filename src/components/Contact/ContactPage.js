@@ -13,7 +13,7 @@ export default function Contact() {
 
     function onSubmit(data) {
         axios
-          .post("https://eobyjsq9cpket4u.m.pipedream.net", data)
+          .post("https://eow6tlxc2ivnglb.m.pipedream.net", data)
           .then((response) => {
             setSuccessMessage(
               `Thanks for signing up! Check your inbox for updates 😊`
