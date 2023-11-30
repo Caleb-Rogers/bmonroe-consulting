@@ -128,8 +128,8 @@ p {
   margin: 0 0 20px 0;
 }
 
-.service-main-right .serv-pg-cta:link,
-.service-main-right .serv-pg-cta:visited {
+.service-main-right .service-pg-cta:link,
+.service-main-right .service-pg-cta:visited {
   display: inline-block;
   text-decoration: none;
   font-weight: 500;
@@ -142,8 +142,8 @@ p {
   background-color: #d1d0c5;
 }
 
-.service-main-right .serv-pg-cta:hover,
-.service-main-right .serv-pg-cta:active {
+.service-main-right .service-pg-cta:hover,
+.service-main-right .service-pg-cta:active {
   background-color: #e1b711;
 }
 
