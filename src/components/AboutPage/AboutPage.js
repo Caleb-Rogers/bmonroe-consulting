@@ -136,7 +136,7 @@ export default function About() {
                       <Link href="https://www.linkedin.com/in/barbara-monroe-6088439a/" target="_blank"><img src="linkedin-500-yellow.png" alt="LinkedIn Icon" /></Link>
                       <Link href="https://www.facebook.com/barb.monroe.18" target="_blank"><img src="facebook-500-yellow.png" alt="Facebook Icon" /></Link>
                     </div>
-                    <Link className="cta" href="/contact">Work With Me</Link>
+                    <Link className="about-sec-cta" href="/contact">Work With Me</Link>
                 </div>
             </div>
         </div>
