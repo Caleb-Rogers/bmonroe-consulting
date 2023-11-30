@@ -130,8 +130,10 @@ export default function About() {
                 </div>
                 <div className="about-main-right">
                     <img className="headshot" src="headshot.png" alt="B. Monroe Headshot" />
-                    <h4>Barbara Monroe</h4>
-                    <h5>Founder at <Link className="founder" href="/">B. MONROE CONSULTING</Link></h5>
+                    <div className="client-text">
+                      <h4>Barbara Monroe</h4>
+                      <h5>Founder at <Link className="founder" href="/">B. MONROE CONSULTING</Link></h5>
+                    </div>
                     <div className="socials">
                       <Link href="https://www.linkedin.com/in/barbara-monroe-6088439a/" target="_blank"><img src="linkedin-500-yellow.png" alt="LinkedIn Icon" /></Link>
                       <Link href="https://www.facebook.com/barb.monroe.18" target="_blank"><img src="facebook-500-yellow.png" alt="Facebook Icon" /></Link>
