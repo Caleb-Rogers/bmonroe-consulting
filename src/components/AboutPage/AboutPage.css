@@ -128,8 +128,8 @@ p {
   margin: 0 0 20px 0;
 }
 
-.about-main-right .about-sec-cta:link,
-.about-main-right .about-sec-cta:visited {
+.about-main-right .about-pg-cta:link,
+.about-main-right .about-pg-cta:visited {
   display: inline-block;
   text-decoration: none;
   font-weight: 500;
@@ -142,8 +142,8 @@ p {
   background-color: #d1d0c5;
 }
 
-.about-main-right .about-sec-cta:hover,
-.about-main-right .about-sec-cta:active {
+.about-main-right .about-pg-cta:hover,
+.about-main-right .about-pg-cta:active {
   background-color: #e1b711;
 }
 
@@ -185,8 +185,8 @@ p {
     margin: 65px 0 0 20px;
   }
 
-  .about-main-right .about-sec-cta:link,
-  .about-main-right .about-sec-cta:visited {
+  .about-main-right .about-pg-cta:link,
+  .about-main-right .about-pg-cta:visited {
     display: inline-block;
     text-decoration: none;
     font-weight: 500;
@@ -202,8 +202,8 @@ p {
     padding: 10px 0 0 0;
   }
 
-  .about-main-right .about-sec-cta:hover,
-  .about-main-right .about-sec-cta:active {
+  .about-main-right .about-pg-cta:hover,
+  .about-main-right .about-pg-cta:active {
     background-color: #e1b711;
   }
 }
@@ -233,8 +233,8 @@ p {
     margin: 15px 10px 0 0;
   }
 
-  .about-main-right .about-sec-cta:link,
-  .about-main-right .about-sec-cta:visited {
+  .about-main-right .about-pg-cta:link,
+  .about-main-right .about-pg-cta:visited {
     margin: 20px 8px 40px 0;
   }
 
