@@ -96,8 +96,10 @@ export default function Contact() {
                             <label>Message</label>
                             <textarea {...register("message")} type="text" name="message" required ></textarea>
                         </div>
-                        <button role="submit">{isSubmitting ? "SENDING" : "SEND"}</button>
-                            {successMessage && <p>{successMessage}</p>}
+                        <div className="send-btn">
+                            <button role="submit">{isSubmitting ? "SENDING" : "SEND"}</button>
+                                {successMessage && <p>{successMessage}</p>}
+                        </div>
                     </form>
                 </div>
             </div>
