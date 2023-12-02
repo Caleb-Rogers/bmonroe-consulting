@@ -13,6 +13,8 @@ const Navbar = () => {
       <div className="logo-nav" onClick={handleLogoClick}>
         B. Monroe Consulting
       </div>
+      <input type="checkbox" class="toggle-menu"></input>
+      <div className="hamburger"></div>
       <nav className="main-nav">
         <ul className="main-nav-list">
           <Link className="main-nav-link" href="/">

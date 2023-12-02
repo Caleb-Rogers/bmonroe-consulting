@@ -21,6 +21,84 @@
   font-family: "Cormorant Garamond", serif;
 }
 
+.main-nav {
+  padding-top: 20px;
+  transition: 0.3s;
+}
+
+.hamburger {
+  position: absolute;
+  top: 5%;
+  right: 4%;
+  width: 30px;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  z-index: 24;
+  transition: 0.3s;
+  display: none;
+}
+
+.hamburger:before,
+.hamburger:after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  right: 0;
+  background-color: #fff;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.hamburger:before {
+  top: -10px;
+  width: 20px;
+}
+
+.hamburger:after {
+  top: 10px;
+  width: 25px;
+}
+
+.toggle-menu {
+  position: absolute;
+  top: 3%;
+  right: 4%;
+  width: 30px;
+  height: 40px;
+  padding-left: 50px;
+  z-index: 25;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.hamburger,
+.toggle-menu {
+  display: none;
+}
+
+.header input:checked ~ .hamburger {
+  background: transparent;
+}
+
+.header input:checked ~ .hamburger:before {
+  top: 0;
+  transform: rotate(-45deg);
+  width: 30px;
+}
+
+.header input:checked ~ .hamburger:after {
+  top: 0;
+  transform: rotate(45deg);
+  width: 30px;
+}
+
+.header input:checked ~ .main-nav {
+  display: block;
+  right: 0;
+}
+
 /**************************/
 /* NAVIGATION */
 /**************************/
@@ -58,4 +136,54 @@
 .main-nav-link.nav-cta:hover,
 .main-nav-link.nav-cta:active {
   background-color: #e8cd61;
+}
+
+/* Responsiveness */
+
+@media (max-width: 873px) {
+  .header {
+    padding-left: 15px;
+  }
+  .logo-nav {
+    font-size: 2.75rem;
+  }
+  .main-nav {
+    display: none;
+  }
+
+  .hamburger,
+  .toggle-menu {
+    display: block;
+  }
+
+  .main-nav-list {
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #28292c;
+    width: 250px;
+    height: 100%;
+    padding-top: 125px;
+    z-index: 20;
+  }
+
+  .main-nav .main-nav-link {
+    width: 100%;
+    padding: 30px;
+  }
+
+  .main-nav-link.nav-cta:link,
+  .main-nav-link.nav-cta:visited {
+    color: #d1d0c5;
+    background-color: #28292c;
+  }
+
+  .main-nav-link.nav-cta:hover,
+  .main-nav-link.nav-cta:active {
+    color: #e1b711;
+  }
 }
