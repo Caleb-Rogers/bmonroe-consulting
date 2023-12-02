@@ -1,15 +1,15 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
-const Navbar = () => {
+const Navbar = ({ visible }) => {
   const router = useRouter();
   const handleLogoClick = () => {
     router.push("/");
   };
 
   return (
-    <header className="header">
+    <header className={`header ${visible ? "visible" : "hidden"}`}>
       <div className="logo-nav" onClick={handleLogoClick}>
         B. Monroe Consulting
       </div>

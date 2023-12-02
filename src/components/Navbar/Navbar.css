@@ -13,6 +13,18 @@
   color: #d1d0c5;
   background-color: #333437;
   font-family: "Playfair Display", serif;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  transition: top 0.3s;
+}
+
+.visible {
+  top: 0;
+}
+
+.hidden {
+  top: -100px;
 }
 
 .logo-nav {
@@ -28,7 +40,7 @@
 
 .hamburger {
   position: absolute;
-  top: 5%;
+  top: 40px;
   right: 4%;
   width: 30px;
   height: 4px;
@@ -63,10 +75,11 @@
 
 .toggle-menu {
   position: absolute;
-  top: 3%;
+  top: 23px;
   right: 4%;
   width: 30px;
   height: 40px;
+  padding-top: 50px;
   padding-left: 50px;
   z-index: 25;
   cursor: pointer;
