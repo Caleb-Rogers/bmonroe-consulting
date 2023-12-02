@@ -221,14 +221,19 @@
     text-align: center;
     margin: 12rem 3.2rem 2rem;
   }
-  .about-sec-heading {
+  .about-sec-heading h2 {
+    font-size: 2.8rem;
+  }
+  .about-sec-sub-heading h3 {
+    font-size: 1.4rem;
+  }
+  .about-sec-description p {
     font-size: 2rem;
-  }
-  .about-sec-sub-heading {
-    font-size: 1rem;
-  }
-  .about-sec-description {
-    font-size: 1.8rem;
     letter-spacing: 0;
+  }
+  .about-btn:link,
+  .about-btn:visited {
+    font-size: 1.6rem;
+    padding: 1.6rem 1.8rem;
   }
 }
