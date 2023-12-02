@@ -97,6 +97,7 @@
 .header input:checked ~ .main-nav {
   display: block;
   right: 0;
+  box-shadow: inset 0 0 0 3px #333437;
 }
 
 /**************************/
