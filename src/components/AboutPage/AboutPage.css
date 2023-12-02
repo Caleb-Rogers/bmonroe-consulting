@@ -154,14 +154,21 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2px;
+    padding: 2px 20px;
   }
 
   .about-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
   }
 
   .about-main-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     padding: 20px 0 0 0;
   }
 
@@ -216,6 +223,13 @@ p {
     flex-direction: column;
     height: auto;
     width: auto;
+  }
+
+  .about-main-left {
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 
   .about-main-right .headshot {
