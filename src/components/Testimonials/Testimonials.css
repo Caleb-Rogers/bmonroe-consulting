@@ -28,12 +28,10 @@
 .test-container {
   display: flex;
   flex-direction: column;
-  margin-left: 25%;
-  width: 800px;
-  height: 425px;
-  top: 0;
-  left: 0;
-  z-index: 5;
+  align-items: center;
+  max-width: 3200px;
+  min-height: 375px;
+  margin: 3rem auto;
   overflow: hidden;
 }
 
@@ -44,15 +42,18 @@
 }
 
 .test-col {
-  width: 1000px;
+  width: 100%;
+  max-width: 1000px;
   height: 300px;
   position: relative;
+  margin: 0 auto;
 }
 
 .test-img {
   position: absolute;
   top: 0;
-  left: 51.5%;
+  left: 88.5%;
+  transform: translateX(-50%);
   height: 30rem;
 }
 
@@ -64,13 +65,13 @@
 .test-content {
   background: #333437;
   color: #f5f5f5;
-  width: 520px;
-  height: 415px;
+  max-width: 520px;
   position: absolute;
   top: 0;
-  right: 47%;
+  left: 50%;
+  transform: translateX(-50%);
   border-radius: 10px;
-  padding: 45px;
+  padding: 45px 30px 25px;
   z-index: 2;
 }
 
@@ -91,7 +92,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
   gap: 5px;
 }
 
@@ -107,4 +107,67 @@
 
 .active {
   width: 45px;
+}
+
+@media (max-width: 1020px) {
+  .test-row {
+    margin-right: 20rem;
+  }
+}
+
+@media (max-width: 920px) {
+  .test-row {
+    margin-right: 40rem;
+  }
+}
+@media (max-width: 873px) {
+  .test-heading h2 {
+    font-size: 2.5rem;
+  }
+  .test-content p {
+    font-size: 1.3rem;
+  }
+  .test-content h3 {
+    font-size: 1.6rem;
+  }
+  .test-container {
+    min-height: 375px;
+    max-width: 3200px;
+  }
+  .test-row {
+    width: 3450px;
+    margin: 0 15rem 0 0;
+  }
+  .test-col {
+    width: 100%;
+    max-width: 1000px;
+  }
+  .test-img {
+    left: 85%;
+    height: 22rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .test-row {
+    margin-right: 24rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .test-content {
+    max-width: 350px;
+  }
+  .test-img {
+    left: 77.5%;
+  }
+  .test-row {
+    margin-right: 24rem;
+  }
+}
+
+@media (max-width: 630px) {
+  .test-row {
+    margin-right: 38rem;
+  }
 }
