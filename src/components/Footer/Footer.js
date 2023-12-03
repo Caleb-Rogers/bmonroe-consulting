@@ -1,33 +1,33 @@
 import React from "react";
 import Link from "next/link";
 
-function Footer() {
+function Footer({ backgroundColor }) {
   return (
-    <section className="foot-sec">
+    <section className="foot-sec" style={{ backgroundColor: backgroundColor }}>
       <div className="foot-container">
         <div className="foot-row">
           <div className="foot-col first-col">
             <h3>Services</h3>
             <ul>
               <li>
-                <a href="#">Zoning, Land Use, & Research</a>
+                <a href="/services">Zoning, Land Use, & Research</a>
               </li>
               <li>
-                <a href="#">Code Enforcement</a>
+                <a href="/services">Code Enforcement</a>
               </li>
               <li>
-                <a href="#">Design</a>
+                <a href="/services">Design</a>
               </li>
               <li>
-                <a href="#">
+                <a href="/services">
                   Environment Permitting & Meeting Representation
                 </a>
               </li>
               <li>
-                <a href="#">Energy Analysis</a>
+                <a href="/services">Energy Analysis</a>
               </li>
               <li>
-                <a href="#">Land management</a>
+                <a href="/services">Land management</a>
               </li>
             </ul>
           </div>
@@ -35,13 +35,19 @@ function Footer() {
             <h3>About</h3>
             <ul>
               <li>
-                <a href="#">Me</a>
+                <a href="/about">Barb Monroe</a>
               </li>
               <li>
-                <a href="#">Testimonials</a>
+                <a href="/about">Experience</a>
               </li>
               <li>
-                <a href="#">Career</a>
+                <a href="/about">Career Archives</a>
+              </li>
+              <li>
+                <a href="/about">Connections</a>
+              </li>
+              <li>
+                <a href="/about">Personal Development</a>
               </li>
             </ul>
           </div>

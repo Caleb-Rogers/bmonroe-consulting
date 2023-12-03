@@ -2,7 +2,7 @@
 /* SERVICES PAGE */
 /**************************/
 .service-container {
-  padding: 9rem 1rem 9rem 6rem;
+  padding: 9rem 1rem 9rem;
   background-color: #333437;
   color: #d1d0c5;
   font-family: "Playfair Display", serif;
@@ -155,7 +155,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2px 20px;
+    padding: 2rem 2rem 9rem;
   }
 
   .service-main {

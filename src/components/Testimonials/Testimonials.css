@@ -8,6 +8,7 @@
   min-height: 80vh;
   background: #f5f5f5;
   font-family: "Playfair Display", serif;
+  overflow: hidden;
 }
 
 .test-heading {
@@ -32,7 +33,6 @@
   max-width: 3200px;
   min-height: 375px;
   margin: 3rem auto;
-  overflow: hidden;
 }
 
 .test-row {

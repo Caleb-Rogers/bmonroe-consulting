@@ -1,7 +1,7 @@
-
 import React, { useState, useEffect } from "react";
 import Navbar from "../components/Navbar/Navbar";
 import About from "../components/AboutPage/AboutPage";
+import Footer from "../components/Footer/Footer";
 
 export default function AboutPage() {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
@@ -24,6 +24,7 @@ export default function AboutPage() {
     <>
       <Navbar visible={visible}/>
       <About />
+      <Footer backgroundColor={"#28292c"} />
     </>
   );
-};
+}
