@@ -204,3 +204,32 @@
     margin-top: 20px;
   }
 }
+
+@media (max-width: 460px) {
+  .contact-form {
+    min-width: 325px;
+  }
+  .contact-form h2 {
+    font-size: 2rem;
+  }
+  .contact-form label {
+    font-size: 1px;
+  }
+  .contact-form .input-field input,
+  .contact-form .input-field textarea {
+    font-size: 1.5rem;
+  }
+  .contact-form .input-field label {
+    font-size: 1.5rem;
+  }
+  .contact-form button {
+    font-size: 1.75rem;
+  }
+  .contact .content h2 {
+    font-size: 3rem;
+  }
+  .contact .content p {
+    font-size: 1.75rem;
+    line-height: 1.3;
+  }
+}

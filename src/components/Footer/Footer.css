@@ -25,18 +25,21 @@
 .foot-col {
   display: flex;
   flex-direction: row;
-  margin: 2.5rem 0.5rem 0 2rem;
+  margin: 2.5rem 0 0 0;
 }
 
 .foot-col.first-col {
+  flex-direction: column;
   min-width: 38rem;
 }
 
 .foot-col.second-col {
+  flex-direction: column;
   min-width: 22rem;
 }
 
 .foot-col.third-col {
+  flex-direction: column;
   min-width: 55rem;
 }
 
@@ -44,6 +47,7 @@
   font-size: 2.5rem;
   font-weight: 700;
   letter-spacing: -1px;
+  padding-left: 1.75rem;
 }
 
 .foot-col ul {
@@ -86,4 +90,16 @@
   height: 25px;
   width: auto;
   margin: 0 2px 0 2px;
+}
+
+@media (max-width: 1200px) {
+  .foot-col.first-col {
+    min-width: 22rem;
+  }
+  .foot-col.second-col {
+    min-width: 8rem;
+  }
+  .foot-col.third-col {
+    min-width: 35rem;
+  }
 }
