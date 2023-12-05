@@ -100,9 +100,9 @@
   box-shadow: inset 0 0 0 3px #333437;
 }
 
-/* Responsiveness */
+/* RESPONSIVENESS */
 
-@media (max-width: 1130px) {
+@media only screen and (max-width: 1130px) {
   .section-hero {
     display: flex;
     justify-content: space-between;
@@ -133,7 +133,7 @@
   }
 }
 
-@media (max-width: 873px) {
+@media only screen and (max-width: 873px) {
   .section-hero,
   .hero {
     display: flex;

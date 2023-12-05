@@ -244,9 +244,9 @@
   color: #333437;
 }
 
-/* Responsiveness */
+/* RESPONSIVENESS */
 
-@media (max-width: 1130px) {
+@media only screen and (max-width: 1130px) {
   .serv-section {
     display: flex;
     justify-content: center;
@@ -260,7 +260,7 @@
   }
 }
 
-@media (max-width: 873px) {
+@media only screen and (max-width: 873px) {
   .serv-heading h2 {
     font-size: 2.8rem;
   }

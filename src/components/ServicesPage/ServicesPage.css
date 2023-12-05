@@ -2,7 +2,7 @@
 /* SERVICES PAGE */
 /**************************/
 .service-container {
-  padding: 9rem 1rem 9rem;
+  padding: 9rem 2rem 9rem;
   background-color: #333437;
   color: #d1d0c5;
   font-family: "Playfair Display", serif;
@@ -13,6 +13,8 @@
   align-items: flex-start;
   flex-wrap: wrap;
 }
+
+/* LEFT PAGE */
 
 .service-main-left {
   flex: 3;
@@ -34,23 +36,6 @@
   font-weight: 700;
   font-size: 2.4rem;
   letter-spacing: -1px;
-}
-
-.hidden {
-  opacity: 0;
-  filter: blur(5px);
-  transition: all 1.2s;
-}
-
-@media (prefers-reduced-motion) {
-  .hidden {
-    transform: none;
-  }
-}
-
-.show {
-  opacity: 1;
-  filter: blur(0);
 }
 
 .service-main-left h3 {
@@ -84,6 +69,8 @@
 p {
   line-height: 1.5;
 }
+
+/* RIGHT PAGE */
 
 .service-main-right {
   position: sticky;
@@ -148,9 +135,28 @@ p {
   background-color: #e1b711;
 }
 
+/* SCROLL ANIMATION */
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transition: all 1.2s;
+}
+
+@media (prefers-reduced-motion) {
+  .hidden {
+    transform: none;
+  }
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+}
+
 /* RESPONSIVENESS */
 
-@media (max-width: 1200px) {
+@media only screen and (max-width: 1200px) {
   .service-container {
     display: flex;
     justify-content: center;
@@ -163,10 +169,6 @@ p {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-  }
-
-  .service-main-left {
-    padding-top: 20px;
   }
 
   .service-main-right {
@@ -212,7 +214,7 @@ p {
   }
 }
 
-@media (max-width: 873px) {
+@media only screen and (max-width: 873px) {
   .service-main-right {
     display: flex;
     justify-content: center;

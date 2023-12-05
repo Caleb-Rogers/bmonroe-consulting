@@ -109,18 +109,20 @@
   width: 45px;
 }
 
-@media (max-width: 1020px) {
+/* RESPONSIVENESS */
+
+@media only screen and (max-width: 1020px) {
   .test-row {
     margin-right: 20rem;
   }
 }
 
-@media (max-width: 920px) {
+@media only screen and (max-width: 920px) {
   .test-row {
     margin-right: 40rem;
   }
 }
-@media (max-width: 873px) {
+@media only screen and (max-width: 873px) {
   .test-heading h2 {
     font-size: 2.5rem;
   }
@@ -148,13 +150,13 @@
   }
 }
 
-@media (max-width: 750px) {
+@media only screen and (max-width: 750px) {
   .test-row {
     margin-right: 24rem;
   }
 }
 
-@media (max-width: 750px) {
+@media only screen and (max-width: 750px) {
   .test-content {
     max-width: 350px;
   }
@@ -166,7 +168,7 @@
   }
 }
 
-@media (max-width: 630px) {
+@media only screen and (max-width: 630px) {
   .test-row {
     margin-right: 38rem;
   }

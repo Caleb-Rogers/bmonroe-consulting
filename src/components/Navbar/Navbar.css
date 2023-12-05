@@ -114,9 +114,7 @@
   box-shadow: inset 0 0 0 3px #333437;
 }
 
-/**************************/
 /* NAVIGATION */
-/**************************/
 
 .main-nav-list {
   list-style: none;
@@ -153,9 +151,9 @@
   background-color: #e8cd61;
 }
 
-/* Responsiveness */
+/* RESPONSIVENESS */
 
-@media (max-width: 873px) {
+@media only screen and (max-width: 873px) {
   .header {
     padding-left: 15px;
   }
