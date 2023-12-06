@@ -13,7 +13,7 @@ const Navbar = ({ visible }) => {
       <div className="logo-nav" onClick={handleLogoClick}>
         B. Monroe Consulting
       </div>
-      <input type="checkbox" class="toggle-menu"></input>
+      <input type="checkbox" className="toggle-menu"></input>
       <div className="hamburger"></div>
       <nav className="main-nav">
         <ul className="main-nav-list">
