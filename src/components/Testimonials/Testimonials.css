@@ -5,9 +5,10 @@
 .test-sec {
   display: flex;
   flex-direction: column;
-  min-height: 80vh;
+  min-height: 100vh;
   background: #f5f5f5;
   font-family: "Playfair Display", serif;
+  width: 100%;
   overflow: hidden;
 }
 
@@ -29,147 +30,142 @@
 .test-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  max-width: 3200px;
-  min-height: 375px;
-  margin: 3rem auto;
+  width: 100%;
+  margin: 20px 20px;
+  padding: 0 15px;
 }
 
-.test-row {
-  display: flex;
-  width: 3200px;
-  transition: 0.5s;
+.test-row .owl-carousel {
+  overflow: hidden;
+  padding: 0 40px 0 20px;
+  margin: 0 -40px;
+}
+
+.owl-carousel .owl-stage-outer {
+  padding: 30px 50px;
+  margin-left: -35px;
+  width: calc(100% + 100px);
 }
 
 .test-col {
-  width: 100%;
-  max-width: 1000px;
-  height: 300px;
+  border: 7px solid #909090;
+  text-align: center;
+  border-radius: 45px;
   position: relative;
-  margin: 0 auto;
-}
-
-.test-img {
-  position: absolute;
-  top: 0;
-  left: 88.5%;
-  transform: translateX(-50%);
-  height: 30rem;
-}
-
-.test-img img {
-  height: 100%;
-  border-radius: 10%;
-}
-
-.test-content {
-  background: #333437;
-  color: #f5f5f5;
-  max-width: 520px;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  border-radius: 10px;
-  padding: 45px 30px 25px;
   z-index: 2;
 }
 
-.test-content p {
-  font-size: 1.6rem;
-  font-weight: 500;
-  letter-spacing: 1px;
+.owl-item {
+  max-height: 350px;
 }
 
-.test-content h3 {
-  font-size: 2.1rem;
-  font-weight: 800;
-  letter-spacing: -0.75px;
-  margin: 35px 0 5px;
+.test-col p {
+  position: relative;
+  color: #333437;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 24px;
+  padding: 50px 50px 30px;
+  z-index: 3;
 }
 
-.indicator {
+.test-content {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 5px;
+  text-align: left;
+  padding-bottom: 50px;
 }
 
-.test-btn {
-  height: 15px;
+.test-content .test-details h3 {
+  color: #909090;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.test-content .test-details span {
+  display: inline-block;
+  color: #333437;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.test-content .test-img {
+  margin-right: 8px;
+}
+
+.test-content .test-img a img {
+  width: 75px;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.owl-nav {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.owl-nav button {
+  background-color: #909090 !important;
+  width: 40px;
+  height: 40px;
+  border-radius: 25px;
+  margin: 0 200px;
+  transition: 0.3s;
+}
+
+.owl-nav button span {
+  font-size: 50px;
+  font-weight: 800;
+  color: #c11e1e;
+  margin-top: -30px;
+  padding-top: 10px;
+}
+
+.owl-dots {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.owl-dots button {
+  background-color: #909090 !important;
   width: 15px;
-  border-radius: 15px;
-  background-color: #909090;
-  cursor: pointer;
-  z-index: 10;
-  transition: 0.5s;
+  height: 15px;
+  border-radius: 25px;
+  margin: 0 5px;
+  transition: 0.3s;
 }
 
-.active {
-  width: 45px;
+.owl-dots button.active {
+  width: 35px;
 }
 
-/* RESPONSIVENESS */
-
-@media only screen and (max-width: 1020px) {
-  .test-row {
-    margin-right: 20rem;
-  }
+.test-col:before {
+  content: "\f10d";
+  position: absolute;
+  font-family: FontAwesome;
+  left: -35px;
+  top: -35px;
+  background-color: #f5f5f5;
+  color: #909090;
+  font-size: 60px;
+  width: 115px;
+  height: 95px;
 }
 
-@media only screen and (max-width: 920px) {
-  .test-row {
-    margin-right: 40rem;
-  }
-}
-@media only screen and (max-width: 873px) {
-  .test-heading h2 {
-    font-size: 2.5rem;
-  }
-  .test-content p {
-    font-size: 1.3rem;
-  }
-  .test-content h3 {
-    font-size: 1.6rem;
-  }
-  .test-container {
-    min-height: 375px;
-    max-width: 3200px;
-  }
-  .test-row {
-    width: 3450px;
-    margin: 0 15rem 0 0;
-  }
-  .test-col {
-    width: 100%;
-    max-width: 1000px;
-  }
-  .test-img {
-    left: 85%;
-    height: 22rem;
-  }
-}
-
-@media only screen and (max-width: 750px) {
-  .test-row {
-    margin-right: 24rem;
-  }
-}
-
-@media only screen and (max-width: 750px) {
-  .test-content {
-    max-width: 350px;
-  }
-  .test-img {
-    left: 77.5%;
-  }
-  .test-row {
-    margin-right: 24rem;
-  }
-}
-
-@media only screen and (max-width: 630px) {
-  .test-row {
-    margin-right: 38rem;
-  }
+.test-col:after {
+  content: "\f10e";
+  position: absolute;
+  font-family: FontAwesome;
+  right: -35px;
+  bottom: -35px;
+  background-color: #f5f5f5;
+  color: #909090;
+  font-size: 60px;
+  width: 115px;
+  height: 95px;
 }

@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBookOpenReader, faGavel, faCompassDrafting, faScaleBalanced, faBolt, faEarthAmericas } from '@fortawesome/free-solid-svg-icons';
+import { faFileInvoice, faGavel, faCompassDrafting, faScaleBalanced, faBolt, faEarthAmericas } from '@fortawesome/free-solid-svg-icons';
 
 export default function ServicesSection() {
   return (
@@ -10,7 +10,7 @@ export default function ServicesSection() {
       <div className="serv-container">
         <div className="serv-row">
           <div className="serv-box">
-            <FontAwesomeIcon icon={faBookOpenReader} className="serv-icon" />
+            <FontAwesomeIcon icon={faFileInvoice} className="serv-icon" />
             <h2>Zoning, Land Use, & Research</h2>
             <p>Comprehensive analysis of zoning regulations and land use potential.</p>
             <a href="/services">Read More</a>
