@@ -11,7 +11,7 @@ const Navbar = ({ visible }) => {
   return (
     <header className={`header ${visible ? "visible" : "hidden"}`}>
       <div className="logo-nav" onClick={handleLogoClick}>
-        B. Monroe Consulting
+        Monroe Consulting
       </div>
       <input type="checkbox" className="toggle-menu"></input>
       <div className="hamburger"></div>

@@ -7,12 +7,13 @@ function Hero() {
       <section className="section-hero">
         <div className="hero">
           <div className="hero-text">
-            <h1 className="hero-heading">
-              Navigating Complexity, Delivering Excellence: Your Trusted Project Partner
-            </h1>
+            <h2 className="hero-sub-heading">
+              Navigating Complexity, Delivering Excellence:
+            </h2>
+            <h1 className="hero-heading">Your Trusted Project Partner</h1>
             <p className="hero-description">
-              From concept to completion, we orchestrate every detail. Elevate your construction projects
-              with our seasoned management expertise. Let's build success together.
+              Hire me to streamline your construction project from conception to completion.
+              With 20+ years of experience in this field, I can establish your project's design, permitting, and development to surpass standards.
             </p>
             <div className="hero-btns">
               <Link href="/contact" className="btn primary-btn">
