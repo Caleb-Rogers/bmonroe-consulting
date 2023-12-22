@@ -111,6 +111,9 @@
 /* RESPONSIVENESS */
 
 @media only screen and (max-width: 1675px) {
+  .hero-section {
+    padding-left: 14rem;
+  }
   .hero-sub-heading {
     font-size: 2.8rem;
   }
@@ -125,7 +128,7 @@
 
 @media only screen and (max-width: 1622px) {
   .hero-section {
-    padding-left: 14rem;
+    padding-left: 12rem;
   }
   .hero-sub-heading {
     font-size: 2.6rem;
@@ -140,24 +143,6 @@
   .hero-img {
     width: 140%;
     transform: translate(-28%, -6%);
-  }
-}
-
-@media only screen and (max-width: 1442px) {
-  .hero-section {
-    padding-left: 12rem;
-  }
-  .hero-sub-heading {
-    font-size: 2.6rem;
-  }
-  .hero-heading {
-    font-size: 6rem;
-  }
-  .hero-description {
-    margin-right: 10rem;
-  }
-  .hero-img {
-    transform: translate(-28%, -8%);
   }
 }
 

@@ -9,8 +9,8 @@
   line-height: 1;
   font-weight: 400;
   height: 9.6rem;
-  padding: 0 4.8rem;
-  color: #d1d0c5;
+  padding: 0 16rem;
+  color: #fff;
   background-color: #333437;
   font-family: "Playfair Display", serif;
   position: sticky;
@@ -153,9 +153,39 @@
 
 /* RESPONSIVENESS */
 
-@media only screen and (max-width: 873px) {
+@media only screen and (max-width: 1675px) {
   .header {
-    padding-left: 15px;
+    padding: 0 14rem;
+  }
+}
+
+@media only screen and (max-width: 1622px) {
+  .header {
+    padding: 0 12rem;
+  }
+}
+
+@media only screen and (max-width: 1442px) {
+  .header {
+    padding: 0 10rem;
+  }
+}
+
+@media only screen and (max-width: 1202px) {
+  .header {
+    padding: 0 8rem;
+  }
+}
+
+@media only screen and (max-width: 1062px) {
+  .header {
+    padding: 0 6rem;
+  }
+}
+
+@media only screen and (max-width: 998px) {
+  .header {
+    padding: 0 2rem;
   }
   .logo-nav {
     font-size: 2.75rem;
@@ -163,12 +193,10 @@
   .main-nav {
     display: none;
   }
-
   .hamburger,
   .toggle-menu {
     display: block;
   }
-
   .main-nav-list {
     justify-content: flex-start;
     flex-direction: column;
@@ -183,18 +211,15 @@
     padding-top: 125px;
     z-index: 20;
   }
-
   .main-nav .main-nav-link {
     width: 100%;
     padding: 30px;
   }
-
   .main-nav-link.nav-cta:link,
   .main-nav-link.nav-cta:visited {
     color: #d1d0c5;
     background-color: #28292c;
   }
-
   .main-nav-link.nav-cta:hover,
   .main-nav-link.nav-cta:active {
     color: #e1b711;
