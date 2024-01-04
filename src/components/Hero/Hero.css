@@ -13,11 +13,11 @@
 }
 
 .hero-section {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
   max-width: 2080px;
   margin: 40px 0;
   padding-left: 16rem;
-  display: grid;
-  grid-template-columns: 2fr 1fr;
 }
 
 /* LEFT PAGE */

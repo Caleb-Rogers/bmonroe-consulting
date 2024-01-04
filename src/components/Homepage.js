@@ -29,7 +29,6 @@ function Homepage() {
       <Hero />
       <About />
       <Services />
-      <Testimonials />
       <Footer />
     </div>
   );
