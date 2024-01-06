@@ -8,14 +8,13 @@
   min-height: 100vh;
   width: 100%;
   font-family: "Playfair Display", serif;
-  background: #909090;
+  background-color: #333437;
   color: #f5f5f5;
 }
 
 .serv-sec-text {
   position: relative;
   text-align: center;
-  padding-top: 60px;
   margin-bottom: 20px;
 }
 
@@ -50,14 +49,14 @@
   padding: 25px 10px;
   border-radius: 5px;
   background: transparent;
-  box-shadow: 2px 2px 5px #333437;
+  box-shadow: 2px 2px 5px #909090;
   transition: all 0.4s;
 }
 
 .serv-icon {
   height: 38px;
   margin: 15px 0;
-  color: #333437;
+  color: #909090;
 }
 
 .serv-title {
@@ -80,15 +79,19 @@
 }
 
 .serv-box:hover .serv-title {
-  color: #909090;
+  color: #333437;
 }
 
 .serv-box:hover .serv-desc {
-  color: #909090;
+  color: #333437;
 }
 
 .serv-box:hover .serv-btn {
-  box-shadow: 0px 0px 3px #333437;
+  box-shadow: 0px 0px 3px #909090;
+}
+
+.serv-box:hover .serv-icon {
+  color: #333437;
 }
 
 .serv-box .serv-btn:link,
