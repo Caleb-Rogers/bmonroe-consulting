@@ -24,7 +24,7 @@ export default function AboutSection() {
                 <span className="about-sec-icon-text">NYS Licensed Code Enforcement Official</span>
               </a>
             </div>
-            <div className="about-sec-icon-group icon-group-2">
+            <div className="about-sec-icon-group">
               <a href="https://www.bpi.org/certified-professionals/infiltration-duct-leakage" target="_blank">
                 <img src="BPI-logo.png" className="about-sec-icon" alt="Building Performance Institute, Inc. IDL Certification LOGO" />
                 <span className="about-sec-icon-text">Building Performance Institute, Inc. IDL Certification</span>

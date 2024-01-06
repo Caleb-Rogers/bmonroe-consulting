@@ -65,23 +65,22 @@
 }
 
 .about-sec-icons {
+  display: flex;
 }
 
 .about-sec-icon-group {
-  display: inline-block;
+  align-items: center;
+  width: 115px;
 }
 
 .about-sec-icon-group a {
   text-decoration: none;
 }
 
-.about-sec-icon-group.icon-group-2 {
-  transform: translateX(-17px);
-}
-
 .about-sec-icon-group .about-sec-icon {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 70px;
   margin-bottom: 5px;
 }
@@ -92,7 +91,6 @@
   letter-spacing: -0.3px;
   color: #909090;
   opacity: 0;
-  margin-left: -48px;
   transition: all 0.3s;
 }
 
@@ -105,8 +103,7 @@
 }
 
 .about-sec-btn {
-  display: inline-block;
-  margin: 0 0 10px -70px;
+  margin: 0 0 45px 10px;
 }
 
 .about-sec-btn .about-sec-btn-primary {
@@ -140,13 +137,9 @@
 }
 
 .about-sec-img {
+  width: 100%;
   height: auto;
   border-radius: 50%;
-}
-
-.about-sec-img img {
-  width: 220px;
-  height: auto;
   margin-top: 2rem;
   margin-bottom: 2rem;
   border-radius: 50%;
@@ -189,6 +182,9 @@
   .about-sec-description {
     font-size: 2rem;
     margin-right: 12rem;
+  }
+  .about-sec-img {
+    width: 90%;
   }
 }
 
@@ -248,7 +244,7 @@
     flex-direction: column;
   }
   .about-sec-container {
-    margin: 16rem 0 0;
+    margin: 8rem 0 0;
     padding: 0;
     height: 100%;
   }
@@ -267,26 +263,151 @@
     flex-direction: column;
     justify-content: center;
   }
+  .about-sec-btn {
+    margin: 0 0 0 0;
+  }
   .about-sec-icons {
-    text-align: center;
-    align-items: flex-end;
-    align-content: flex-end;
+    margin-left: 30px;
+  }
+  .about-sec-icon-group {
+    align-items: center;
+    align-content: center;
     justify-content: center;
+    text-align: center;
   }
   .about-sec-img-box {
     text-align: center;
-    align-items: flex-end;
-    align-content: flex-end;
-    justify-content: center;
-    margin: 10rem 0 0;
-    padding: 0;
+    margin: 4rem 0 0;
+    padding: 0 0 8rem;
   }
   .about-sec-img {
     width: 60%;
     height: auto;
-    display: block;
-    align-items: flex-end;
-    align-content: flex-end;
-    transform: translate(34%, 0.3%);
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 772px) {
+  .about-sec-sub-heading {
+    font-size: 2rem;
+  }
+  .about-sec-heading {
+    font-size: 4.6rem;
+  }
+  .about-sec-titles {
+    font-size: 1.8rem;
+  }
+  .about-sec-description {
+    font-size: 1.7rem;
+    padding: 0 6rem 2rem;
+  }
+  .about-sec-btn .about-sec-btn-primary {
+    font-size: 1.6rem;
+    padding: 1.4rem 3rem;
+  }
+}
+
+@media only screen and (max-width: 626px) {
+  .about-sec-sub-heading {
+    font-size: 1.9rem;
+  }
+  .about-sec-heading {
+    font-size: 4.2rem;
+  }
+  .about-sec-titles {
+    font-size: 1.6rem;
+  }
+  .about-sec-description {
+    font-size: 1.6rem;
+    padding: 0 4rem 2rem;
+  }
+  .about-sec-btn .about-sec-btn-primary {
+    font-size: 1.4rem;
+    padding: 1.4rem 2.8rem;
+  }
+  .about-sec-img {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 508px) {
+  .about-sec-sub-heading {
+    font-size: 1.8rem;
+  }
+  .about-sec-heading {
+    font-size: 3.6rem;
+  }
+  .about-sec-titles {
+    font-size: 1.4rem;
+  }
+  .about-sec-description {
+    font-size: 1.4rem;
+    padding: 0 2rem 2rem;
+  }
+  .about-sec-btn .about-sec-btn-primary {
+    padding: 1.4rem 2.6rem;
+  }
+  .about-sec-img {
+    width: 45%;
+  }
+}
+
+@media only screen and (max-width: 435px) {
+  .about-sec-sub-heading {
+    font-size: 1.7rem;
+  }
+  .about-sec-heading {
+    font-size: 3.2rem;
+  }
+  .about-sec-titles {
+    font-size: 1.5rem;
+  }
+  .about-sec-description {
+    font-size: 1.3rem;
+  }
+  .about-sec-btn .about-sec-btn-primary {
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 372px) {
+  .about-sec-sub-heading {
+    font-size: 1.6rem;
+  }
+  .about-sec-heading {
+    font-size: 3rem;
+  }
+  .about-sec-titles {
+    font-size: 1.4rem;
+  }
+  .about-sec-description {
+    font-size: 1.2rem;
+  }
+  .about-sec-btn .about-sec-btn-primary {
+    font-size: 1.2rem;
+  }
+  .about-sec-img {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 345px) {
+  .about-sec-sub-heading {
+    font-size: 1.5rem;
+  }
+  .about-sec-heading {
+    font-size: 2.7rem;
+  }
+  .about-sec-titles {
+    font-size: 1.3rem;
+  }
+  .about-sec-description {
+    font-size: 1.1rem;
+  }
+  .about-sec-btn .about-sec-btn-primary {
+    font-size: 1.1rem;
+  }
+  .about-sec-img {
+    width: 50%;
   }
 }
