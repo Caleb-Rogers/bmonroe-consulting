@@ -1,7 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Link from "next/link";
 
 function Hero() {
+
+  useEffect(() => {
+    const primaryBtn = document.querySelector(".primary-btn");
+    primaryBtn.onmousemove = function (e) {
+      const x = e.pageX - primaryBtn.offsetLeft;
+      const y = e.pageY - primaryBtn.offsetTop;
+  
+      primaryBtn.style.setProperty("--x", x + "px");
+      primaryBtn.style.setProperty("--y", y + "px");
+    };
+  }, []);
+
   return (
     <main className="hero">
       <section className="hero-section">
