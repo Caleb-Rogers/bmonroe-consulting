@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import Swiper from 'swiper';
-import { Navigation, Pagination } from 'swiper/modules';
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 
 export default function Testimonials() {
 
@@ -11,13 +11,13 @@ export default function Testimonials() {
         return;
       }
       var swiper = new Swiper(".mySwiper", {
-        modules: [Navigation, Pagination],
+        modules: [Navigation, Pagination, Autoplay],
         slidesPerView: 1,
         grabCursor: true,
         loop: true,
         centeredSlides: true,
         autoplay: {
-          delay: 2500,
+          delay: 5000,
           disableOnInteraction: false
         },
         pagination: {

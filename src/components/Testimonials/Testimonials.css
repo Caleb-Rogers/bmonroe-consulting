@@ -143,9 +143,14 @@
   width: 100%;
   height: 100%;
   stroke-width: 4px;
-  stroke: #333437;
+  stroke: #d1d1d2;
   fill: none;
   stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
   stroke-dasharray: 125.6;
   transform: rotate(-90deg);
+}
+
+.autoplay-progress span {
+  color: #909090;
+  font-size: 14px;
 }
