@@ -6,11 +6,20 @@ export default function Testimonials() {
 
   useEffect(() => {
     try {
+      if (typeof Swiper === "undefined") {
+        console.error("Swiper is not defined. Make sure it is properly loaded.");
+        return;
+      }
       var swiper = new Swiper(".mySwiper", {
         modules: [Navigation, Pagination],
         slidesPerView: 1,
         grabCursor: true,
         loop: true,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false
+        },
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
@@ -19,6 +28,14 @@ export default function Testimonials() {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
+        on: {
+          autoplayTimeLeft(s, time, progress) {
+            const progressCircle = document.querySelector(".autoplay-progress svg");
+            const progressContent = document.querySelector(".autoplay-progress span");
+            progressCircle.style.setProperty("--progress", 1 - progress);
+            progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+          }
+        }
       });
       console.log("Swiper initialization performed");
     } catch (error) {
@@ -35,7 +52,7 @@ export default function Testimonials() {
       <div className="test-container swiper mySwiper">
         <div className="test-row swiper-wrapper">
           <div className="test-box swiper-slide">
-            <img className="test-img" src="test-img-1.png" alt="Testimonial Image" ></img>
+            <img className="test-img" src="stagliano.png" alt="Testimonial Image" ></img>
             <p className="test-quote">
               We highly recommend Barb Monroe and Monroe Consulting to anyone to build a new structure, renovate an existing structure,
               or help coordinating projects and navigating the permitting and codes process. Barb's expertise is exceptional, and is
@@ -62,7 +79,7 @@ export default function Testimonials() {
             </div>
           </div>
           <div className="test-box swiper-slide">
-            <img className="test-img" src="test-img-1.png" alt="Testimonial Image" ></img>
+            <img className="test-img" src="test-img-3.png" alt="Testimonial Image" ></img>
             <p className="test-quote">
               We had the pleasure of working with Barb Monroe on our recent construction project, and we cannot recommend her highly enough. 
               Barb's knowledge of construction project management is unmatched, and her ability to navigate the complexities of permits and 
@@ -75,7 +92,7 @@ export default function Testimonials() {
             </div>
           </div>
           <div className="test-box swiper-slide">
-            <img className="test-img" src="test-img-1.png" alt="Testimonial Image" ></img>
+            <img className="test-img" src="test-img-4.png" alt="Testimonial Image" ></img>
             <p className="test-quote">
               Choosing Barb Monroe for our construction project was one of the best decisions we made. Barb's extensive knowledge of project management, 
               coupled with her attention to detail, proved to be invaluable throughout the entire process. She skillfully guided us through the complexities 
@@ -91,6 +108,12 @@ export default function Testimonials() {
         <div className="swiper-button-next nav-btn"></div>
         <div className="swiper-button-prev nav-btn"></div>
         <div className="swiper-pagination"></div>
+        <div className="autoplay-progress">
+          <svg viewBox="0 0 48 48">
+            <circle cx="24" cy="24" r="20"></circle>
+          </svg>
+          <span></span>
+        </div>
       </div>
       <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

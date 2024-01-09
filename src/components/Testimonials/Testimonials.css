@@ -46,14 +46,14 @@
   position: relative;
   max-width: 900px;
   width: 100%;
-  padding: 30px 0;
   text-align: center;
+  margin-bottom: 35px;
 }
 
 .test-row img {
   height: 170px;
   width: 170px;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 50%;
 }
 
@@ -63,7 +63,6 @@
   justify-content: center;
   flex-direction: column;
   row-gap: 30px;
-  overflow: hidden;
 }
 
 .test-quote {
@@ -119,4 +118,34 @@
 
 .swiper-pagination-bullet {
   background-color: #333437;
+}
+
+.autoplay-progress {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  z-index: 10;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #333437;
+}
+
+.autoplay-progress svg {
+  --progress: 0.7;
+  position: absolute;
+  left: 0;
+  top: 0px;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  stroke-width: 4px;
+  stroke: #333437;
+  fill: none;
+  stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
+  stroke-dasharray: 125.6;
+  transform: rotate(-90deg);
 }
