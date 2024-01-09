@@ -48,14 +48,14 @@
   padding: 25px 10px;
   border-radius: 5px;
   background: transparent;
-  box-shadow: 2px 2px 5px #909090;
-  transition: all 0.4s;
+  box-shadow: 2px 2px 5px #e1b711;
+  transition: background-color 0.4s, transform 0.4s, box-shadow 0.3s;
 }
 
 .serv-icon {
   height: 38px;
   margin: 15px 0;
-  color: #909090;
+  color: #e1b711;
 }
 
 .serv-title {
@@ -73,8 +73,9 @@
 }
 
 .serv-box:hover {
-  background: #f5f5f5;
+  background-color: #f5f5f5;
   transform: scale(1.05);
+  box-shadow: 1px 1px 4px #f5f5f5;
 }
 
 .serv-box:hover .serv-title {

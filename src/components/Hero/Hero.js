@@ -15,11 +15,11 @@ function Hero() {
             With 20+ years of experience in this field, I can establish your project's designs, permitting, and development to surpass standards.
           </p>
           <div className="hero-btns">
-            <Link href="/contact" className="btn primary-btn">
-              Work With Us
+            <Link href="/contact" className="hero-btn primary-btn">
+              <span>Work With Us</span>
             </Link>
-            <Link href="/services" className="btn secondary-btn">
-              Discover Our Services
+            <Link href="/services" className="hero-btn secondary-btn">
+              <span>Discover Our Services</span>
             </Link>
           </div>
         </div>

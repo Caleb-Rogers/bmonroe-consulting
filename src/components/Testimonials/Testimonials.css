@@ -100,13 +100,13 @@
 .nav-btn {
   height: 40px;
   width: 40px;
-  background-color: #d1d1d2;
+  background-color: #333437;
   border-radius: 50%;
   transform: translateY(15px);
 }
 
 .nav-btn:hover {
-  background-color: #333437;
+  background-color: #e1b711;
   transition: 0.2s;
 }
 
@@ -143,7 +143,7 @@
   width: 100%;
   height: 100%;
   stroke-width: 4px;
-  stroke: #d1d1d2;
+  stroke: #ff6584;
   fill: none;
   stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
   stroke-dasharray: 125.6;
@@ -151,6 +151,6 @@
 }
 
 .autoplay-progress span {
-  color: #909090;
+  color: #333437;
   font-size: 14px;
 }
