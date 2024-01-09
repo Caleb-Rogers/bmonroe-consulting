@@ -29,8 +29,8 @@ function Hero() {
     const heroText = document.getElementById("hero-text");
     const heroImg = document.getElementById("hero-img-box");
     const overlay = document.getElementById("overlay");
-    const primaryColors = ["#e1b711", "#ff6584", "#909090", "#333437", "#AA8D28"];
-    const secondaryColors = ["#ff6584", "#e1b711", "#909090", "#333437", "#333437"];
+    const primaryColors = ["#e1b711", "#ff6584", "#f5f5f5", "#333437"];
+    const secondaryColors = ["#ff6584", "#e1b711", "#f5f5f5", "#333437"];
     let colorIndex = 0;
 
     const animatePrimaryOverlay = () => {
@@ -48,7 +48,7 @@ function Hero() {
           clearInterval(intervalId);
         }
       }, 400); // Color Traversal Interval
-      const delay = primaryColors.length * 470;
+      const delay = primaryColors.length * 480;
       setTimeout(() => {
         router.push("/contact");
       }, delay);
@@ -69,7 +69,7 @@ function Hero() {
           clearInterval(intervalId);
         }
       }, 400); // Color Traversal Interval
-      const delay = secondaryColors.length * 430;
+      const delay = secondaryColors.length * 480;
       setTimeout(() => {
         router.push("/services");
       }, delay);
