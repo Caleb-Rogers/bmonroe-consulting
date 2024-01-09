@@ -8,9 +8,18 @@ function Hero() {
     primaryBtn.onmousemove = function (e) {
       const x = e.pageX - primaryBtn.offsetLeft;
       const y = e.pageY - primaryBtn.offsetTop;
-  
+
       primaryBtn.style.setProperty("--x", x + "px");
       primaryBtn.style.setProperty("--y", y + "px");
+    };
+
+    const secondaryBtn = document.querySelector(".secondary-btn");
+    secondaryBtn.onmousemove = function (e) {
+      const x = e.pageX - secondaryBtn.offsetLeft;
+      const y = e.pageY - secondaryBtn.offsetTop;
+
+      secondaryBtn.style.setProperty("--x", x + "px");
+      secondaryBtn.style.setProperty("--y", y + "px");
     };
   }, []);
 
