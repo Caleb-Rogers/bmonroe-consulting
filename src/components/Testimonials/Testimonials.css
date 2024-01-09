@@ -5,7 +5,7 @@
 .test-sec {
   display: flex;
   flex-direction: column;
-  min-height: 72vh;
+  min-height: 82vh;
   width: 100%;
   overflow: hidden;
   background: #f5f5f5;
@@ -39,6 +39,7 @@
   position: relative;
   justify-content: center;
   align-items: center;
+  width: 900px;
 }
 
 .test-row {
@@ -63,7 +64,6 @@
   flex-direction: column;
   row-gap: 30px;
   overflow: hidden;
-  width: 800px;
 }
 
 .test-quote {
@@ -96,4 +96,27 @@
 .swiper {
   margin-left: auto;
   margin-right: auto;
+}
+
+.nav-btn {
+  height: 40px;
+  width: 40px;
+  background-color: #d1d1d2;
+  border-radius: 50%;
+  transform: translateY(15px);
+}
+
+.nav-btn:hover {
+  background-color: #333437;
+  transition: 0.2s;
+}
+
+.nav-btn::after,
+.nav-btn::before {
+  font-size: 20px;
+  color: #fff;
+}
+
+.swiper-pagination-bullet {
+  background-color: #333437;
 }

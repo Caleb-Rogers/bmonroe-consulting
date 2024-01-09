@@ -88,8 +88,8 @@ export default function Testimonials() {
             </div>
           </div>
         </div>
-        <div className="swiper-button-next"></div>
-        <div className="swiper-button-prev"></div>
+        <div className="swiper-button-next nav-btn"></div>
+        <div className="swiper-button-prev nav-btn"></div>
         <div className="swiper-pagination"></div>
       </div>
       <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
