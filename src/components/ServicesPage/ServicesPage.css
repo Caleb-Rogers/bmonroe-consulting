@@ -2,7 +2,7 @@
 /* SERVICES PAGE */
 /**************************/
 .service-container {
-  padding: 9rem 2rem 9rem;
+  padding: 9rem 6rem 9rem 16rem;
   background-color: #333437;
   color: #d1d0c5;
   font-family: "Playfair Display", serif;
@@ -18,7 +18,6 @@
 
 .service-main-left {
   flex: 3;
-  padding-right: 5rem;
   overflow-y: auto;
   width: 100%;
   box-sizing: border-box;
@@ -73,6 +72,9 @@ p {
 /* RIGHT PAGE */
 
 .service-main-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: sticky;
   top: 0;
   flex: 1;
@@ -92,8 +94,7 @@ p {
 .service-main-right img {
   width: 30px;
   height: auto;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin: 2rem 1rem 1rem 0;
 }
 
 .service-main-right h4 {
@@ -105,17 +106,6 @@ p {
   margin-bottom: 1rem;
 }
 
-.socials {
-  display: flex;
-  align-items: flex-start;
-  height: 3rem;
-  gap: 2px;
-}
-
-.socials img {
-  margin: 0 0 20px 0;
-}
-
 .service-main-right .service-pg-cta:link,
 .service-main-right .service-pg-cta:visited {
   display: inline-block;
@@ -123,8 +113,8 @@ p {
   font-weight: 500;
   font-size: 1.2rem;
   transition: all 0.3s;
-  padding: 0.8rem 1.8rem;
-  margin-top: 1.2rem;
+  padding: 1rem 1.8rem;
+  margin: 1rem 1.5rem 0 0;
   border-radius: 9px;
   color: #333437;
   background-color: #d1d0c5;
