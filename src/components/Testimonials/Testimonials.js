@@ -10,15 +10,25 @@ export default function Testimonials() {
         console.error("Swiper is not defined. Make sure it is properly loaded.");
         return;
       }
-      var swiper = new Swiper(".mySwiper", {
+
+      const swiperContainer = document.querySelector(".mySwiper");
+      const progressCircle = document.querySelector(".autoplay-progress circle");
+      const progressNumber = document.querySelector(".autoplay-progress span");
+
+      if (!swiperContainer || !progressCircle || !progressNumber) {
+        return;
+      }
+
+      var swiper = new Swiper(swiperContainer, {
         modules: [Navigation, Pagination, Autoplay],
         slidesPerView: 1,
         grabCursor: true,
         loop: true,
         centeredSlides: true,
         autoplay: {
-          delay: 5000,
-          disableOnInteraction: false
+          delay: 7000,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true
         },
         pagination: {
           el: ".swiper-pagination",
@@ -30,13 +40,12 @@ export default function Testimonials() {
         },
         on: {
           autoplayTimeLeft(s, time, progress) {
-            const progressCircle = document.querySelector(".autoplay-progress svg");
-            const progressContent = document.querySelector(".autoplay-progress span");
             progressCircle.style.setProperty("--progress", 1 - progress);
-            progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+            progressNumber.textContent = `${Math.ceil(time / 1000)}s`;
           }
         }
       });
+
       console.log("Swiper initialization performed");
     } catch (error) {
       console.error("Swiper initialization error:", error);
