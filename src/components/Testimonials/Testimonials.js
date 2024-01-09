@@ -1,6 +1,30 @@
 import React, { useEffect } from "react";
+import Swiper from 'swiper';
+import { Navigation, Pagination } from 'swiper/modules';
 
 export default function Testimonials() {
+
+  useEffect(() => {
+    try {
+      var swiper = new Swiper(".mySwiper", {
+        modules: [Navigation, Pagination],
+        slidesPerView: 1,
+        grabCursor: true,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+      console.log("Swiper initialization performed");
+    } catch (error) {
+      console.error("Swiper initialization error:", error);
+    }
+  }, []);
 
   return (
     <section className="test-sec">
@@ -8,9 +32,9 @@ export default function Testimonials() {
         <h2 className="test-sub-heading">Testimonials:</h2>
         <h1 className="test-heading">What Past Clients Have Said</h1>
       </div>
-      <div className="test-container">
-        <div className="test-row">
-          <div className="test-box">
+      <div className="test-container swiper mySwiper">
+        <div className="test-row swiper-wrapper">
+          <div className="test-box swiper-slide">
             <img className="test-img" src="test-img-1.png" alt="Testimonial Image" ></img>
             <p className="test-quote">
               We highly recommend Barb Monroe and Monroe Consulting to anyone to build a new structure, renovate an existing structure,
@@ -24,7 +48,7 @@ export default function Testimonials() {
               <span className="test-title">Stagliano Inc.</span>
             </div>
           </div>
-          <div className="test-box">
+          <div className="test-box swiper-slide">
             <img className="test-img" src="test-img-1.png" alt="Testimonial Image" ></img>
             <p className="test-quote">
               Barb Monroe and Monroe Consulting were instrumental in the success of our building project. From the initial planning stages to 
@@ -37,7 +61,7 @@ export default function Testimonials() {
               <span className="test-title">Random, LLC.</span>
             </div>
           </div>
-          <div className="test-box">
+          <div className="test-box swiper-slide">
             <img className="test-img" src="test-img-1.png" alt="Testimonial Image" ></img>
             <p className="test-quote">
               We had the pleasure of working with Barb Monroe on our recent construction project, and we cannot recommend her highly enough. 
@@ -50,7 +74,7 @@ export default function Testimonials() {
               <span className="test-title">Random, LLC.</span>
             </div>
           </div>
-          <div className="test-box">
+          <div className="test-box swiper-slide">
             <img className="test-img" src="test-img-1.png" alt="Testimonial Image" ></img>
             <p className="test-quote">
               Choosing Barb Monroe for our construction project was one of the best decisions we made. Barb's extensive knowledge of project management, 
@@ -64,8 +88,12 @@ export default function Testimonials() {
             </div>
           </div>
         </div>
+        <div className="swiper-button-next"></div>
+        <div className="swiper-button-prev"></div>
+        <div className="swiper-pagination"></div>
       </div>
       <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     </section>
   );
 };

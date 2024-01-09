@@ -1,6 +1,9 @@
 import Head from "next/head";
 import "@/styles/globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 import "../components/Navbar/Navbar.css";
 import "../components/Hero/Hero.css";
