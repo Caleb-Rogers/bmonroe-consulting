@@ -54,7 +54,8 @@
 }
 
 .hero-btns {
-  display: inline-block;
+  display: inline-flex;
+  gap: 5px;
 }
 
 .hero-btn:link,
@@ -75,30 +76,6 @@
   position: relative;
   background-color: #333437;
   color: #f5f5f5;
-  margin-right: 10px;
-}
-
-.primary-btn span {
-  position: relative;
-  z-index: 1;
-}
-
-.primary-btn::before {
-  content: "";
-  position: absolute;
-  top: var(--y);
-  left: var(--x);
-  transform: translate(-50%, -50%);
-  width: 0;
-  height: 0;
-  border-radius: 50%;
-  background-color: #e1b711;
-  transition: width 0.5s, height 0.5s;
-}
-
-.primary-btn:hover::before {
-  width: 150px;
-  height: 150px;
 }
 
 .secondary-btn:link,
@@ -108,11 +85,13 @@
   color: #f5f5f5;
 }
 
+.primary-btn span,
 .secondary-btn span {
   position: relative;
   z-index: 1;
 }
 
+.primary-btn::before,
 .secondary-btn::before {
   content: "";
   position: absolute;
@@ -122,10 +101,18 @@
   width: 0;
   height: 0;
   border-radius: 50%;
-  background-color: #ff6584;
   transition: width 0.3s, height 0.3s;
 }
 
+.primary-btn::before {
+  background-color: #ff6584;
+}
+
+.secondary-btn::before {
+  background-color: #e1b711;
+}
+
+.primary-btn:hover::before,
 .secondary-btn:hover::before {
   width: 150px;
   height: 150px;
