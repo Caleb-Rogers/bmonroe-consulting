@@ -1,7 +1,11 @@
 import React, { useEffect } from "react";
 import Link from "next/link";
+import { useRouter } from "next/router";
+
 
 function Hero() {
+
+  const router = useRouter();
 
   useEffect(() => {
     const primaryBtn = document.querySelector(".primary-btn");
@@ -25,8 +29,8 @@ function Hero() {
     const heroText = document.getElementById("hero-text");
     const heroImg = document.getElementById("hero-img-box");
     const overlay = document.getElementById("overlay");
-    const primaryColors = ["#e1b711", "#ff6584", "#909090", "#333437"];
-    const secondaryColors = ["#ff6584", "#e1b711", "#909090", "#333437"];
+    const primaryColors = ["#e1b711", "#ff6584", "#909090", "#333437", "#AA8D28"];
+    const secondaryColors = ["#ff6584", "#e1b711", "#909090", "#333437", "#333437"];
     let colorIndex = 0;
 
     const animatePrimaryOverlay = () => {
@@ -43,7 +47,11 @@ function Hero() {
         if (primaryColors === primaryColors.length) {
           clearInterval(intervalId);
         }
-      }, 450); // Color Traversal Interval
+      }, 400); // Color Traversal Interval
+      const delay = primaryColors.length * 470;
+      setTimeout(() => {
+        router.push("/contact");
+      }, delay);
     };
 
     const animateSecondaryOverlay = () => {
@@ -60,7 +68,11 @@ function Hero() {
         if (secondaryColors === secondaryColors.length) {
           clearInterval(intervalId);
         }
-      }, 450); // Color Traversal Interval
+      }, 400); // Color Traversal Interval
+      const delay = secondaryColors.length * 430;
+      setTimeout(() => {
+        router.push("/services");
+      }, delay);
     };
 
     primaryBtn.addEventListener("click", (e) => {
@@ -97,14 +109,14 @@ function Hero() {
             With 20+ years of experience in this field, I can establish your project's designs, permitting, and development to surpass standards.
           </p>
           <div className="hero-btns">
-            <Link href="#" className="hero-btn primary-btn">
+            <Link href="/contact" className="hero-btn primary-btn">
               <span>Work With Us</span>
               <span className="color color--blue"></span>
               <span className="color color--orange"></span>
               <span className="color color--green"></span>
               <span className="color color--white"></span>
             </Link>
-            <Link href="#" className="hero-btn secondary-btn">
+            <Link href="/services" className="hero-btn secondary-btn">
               <span>Discover Our Services</span>
             </Link>
           </div>
