@@ -43,7 +43,7 @@ const Navbar = () => {
 
   return (
     <header className="header">
-      <div className="logo">Monroe Consulting</div>
+      <div className="nav-logo">Monroe Consulting</div>
       <div className="hamburger-pos">
         <div className="hamburger">
           <div className="line1"></div>
