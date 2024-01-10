@@ -8,26 +8,19 @@ body {
   box-sizing: border-box;
 }
 
-.content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  height: 20vh;
-  width: 100vw;
-  z-index: 1;
-  text-align: center;
-  font-family: "Roboto", sans-serif;
-  color: black;
+.logo {
+  position: fixed;
+  top: 3rem;
+  left: 16rem;
 }
 
 .nav-container {
-  z-index: 2;
-  position: relative;
+  z-index: 20;
+  position: fixed;
   display: flex;
   align-items: stretch;
   overflow: hidden;
-  height: 100vh;
+  height: 10vh;
   width: 100vw;
   pointer-events: none;
 }
@@ -36,10 +29,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
+  position: fixed;
   height: 100vh;
   width: 100vw;
-  z-index: 3;
+  z-index: 30;
   top: 0;
   left: 0;
   right: 0;
@@ -82,10 +75,10 @@ body {
 }
 
 .hamburger-pos {
-  position: absolute;
+  position: fixed;
   top: 20px;
   right: 20px;
-  z-index: 5;
+  z-index: 40;
 }
 
 .hamburger {
@@ -127,6 +120,10 @@ body {
 
 .hamburger:active {
   box-shadow: none;
+}
+
+.nav-open .nav-container {
+  height: 100vh;
 }
 
 .nav-open .nav-sliders:nth-child(2) {

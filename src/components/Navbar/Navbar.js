@@ -20,19 +20,13 @@ const Navbar = () => {
 
   return (
     <header className="header">
+      <div className="logo">Monroe Consulting</div>
       <div className="hamburger-pos">
         <div className="hamburger">
           <div className="line1"></div>
           <div className="line2"></div>
         </div>
       </div>
-
-      <div className="content">
-        <div>
-          <h1>In-progress Navbar</h1>
-        </div>
-      </div>
-
       <div className="nav-container">
         {[...Array(3)].map((_, i) => (
           <div key={i} className="nav-sliders"></div>
