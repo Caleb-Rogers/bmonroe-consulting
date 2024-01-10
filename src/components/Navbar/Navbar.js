@@ -2,32 +2,44 @@
 
 import React, { useEffect } from "react";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 const Navbar = () => {
+  const router = useRouter();
 
   useEffect(() => {
     const handleHamburgerClick = () => {
       document.body.classList.toggle('nav-open');
     };
 
-    const handleNavLinkClick = () => {
+    const handleNavLinkClick = (path) => {
       document.body.classList.remove('nav-open');
+      setTimeout(() => {
+        router.push(path);
+      }, 300);
     };
 
     document.querySelector('.hamburger').addEventListener('click', handleHamburgerClick);
 
     document.querySelectorAll('.nav-menu-link').forEach((link) => {
-      link.addEventListener('click', handleNavLinkClick);
+      const path = link.getAttribute("href");
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        handleNavLinkClick(path);
+      });
     });
 
     return () => {
       document.querySelector('.hamburger').removeEventListener('click', handleHamburgerClick);
 
       document.querySelectorAll('.nav-menu-link').forEach((link) => {
-        link.removeEventListener('click', handleNavLinkClick);
+        link.removeEventListener('click', (e) => {
+          e.preventDefault();
+          handleNavLinkClick(link.getAttribute("href"));
+        });
       });
     };
-  }, []);
+  }, [router]);
 
   return (
     <header className="header">

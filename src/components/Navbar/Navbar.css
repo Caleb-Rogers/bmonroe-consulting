@@ -27,6 +27,7 @@ body {
   height: 10vh;
   width: 100vw;
   pointer-events: none;
+  transition-delay: 0.45s;
 }
 
 .nav-menu {
@@ -136,6 +137,7 @@ body {
 
 .nav-open .nav-container {
   height: 100vh;
+  transition-delay: 0s;
 }
 
 .nav-open .nav-sliders:nth-child(2) {
