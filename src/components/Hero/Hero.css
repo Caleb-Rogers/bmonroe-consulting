@@ -34,7 +34,6 @@ body {
   align-items: flex-start;
   z-index: 2;
   margin-bottom: 12%;
-  font-family: "Playfair Display", serif;
   color: #333437;
   opacity: 1;
 }
@@ -54,6 +53,7 @@ body {
   font-size: 8rem;
   font-weight: 800;
   letter-spacing: -2px;
+  line-height: 1;
   margin-left: -12px;
 }
 
@@ -61,7 +61,8 @@ body {
   font-size: 2.6rem;
   font-weight: 500;
   letter-spacing: 0;
-  margin: 0.5rem 30rem 4rem 0rem;
+  line-height: 1.25;
+  margin: 0.5rem 30rem 4rem 0;
 }
 
 .hero-btns {
