@@ -1,38 +1,59 @@
 // Navbar.js
 
-import React from "react";
+import React, { useEffect } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
-const Navbar = ({ visible }) => {
-  const router = useRouter();
-  const handleLogoClick = () => {
-    router.push("/");
-  };
+const Navbar = () => {
+
+  useEffect(() => {
+    const handleHamburgerClick = () => {
+      document.body.classList.toggle('nav-open');
+    };
+
+    document.querySelector('.hamburger').addEventListener('click', handleHamburgerClick);
+
+    return () => {
+      document.querySelector('.hamburger').removeEventListener('click', handleHamburgerClick);
+    };
+  }, []);
 
   return (
-    <header className={`header ${visible ? "visible" : "hidden"}`}>
-      <div className="logo-nav" onClick={handleLogoClick}>
-        Monroe Consulting
+    <header className="header">
+      <div className="hamburger-pos">
+        <div className="hamburger">
+          <div className="line1"></div>
+          <div className="line2"></div>
+        </div>
       </div>
-      <input type="checkbox" className="toggle-menu"></input>
-      <div className="hamburger"></div>
-      <nav className="main-nav">
-        <ul className="main-nav-list">
-          <Link className="main-nav-link" href="/">
-            HOME
-          </Link>
-          <Link className="main-nav-link" href="/about">
-            ABOUT
-          </Link>
-          <Link className="main-nav-link" href="/services">
-            SERVICES
-          </Link>
-          <Link className="main-nav-link nav-cta" href="/contact">
-            CONTACT
-          </Link>
-        </ul>
-      </nav>
+
+      <div className="content">
+        <div>
+          <h1>In-progress Navbar</h1>
+        </div>
+      </div>
+
+      <div className="nav-container">
+        {[...Array(3)].map((_, i) => (
+          <div key={i} className="nav-sliders"></div>
+        ))}
+        <div className="nav-menu">
+          <ul>
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Work</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
   );
 };
