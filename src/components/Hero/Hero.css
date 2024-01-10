@@ -143,8 +143,20 @@ body {
 
 .primary-btn:hover::before,
 .secondary-btn:hover::before {
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
+  transition: width 0.3s ease, height 0.3s ease;
+}
+
+.primary-btn:active::before,
+.secondary-btn:active::before,
+.primary-btn--clicked::before,
+.secondary-btn--clicked::before,
+.primary-btn--clicked:hover::before,
+.secondary-btn--clicked:hover::before {
+  width: 550px;
+  height: 300px;
+  transition: width 0.5s ease, height 0.5s ease;
 }
 
 /* RIGHT PAGE */
@@ -285,6 +297,35 @@ body {
     align-items: flex-end;
     align-content: flex-end;
     transform: translate(34%, 0.3%);
+  }
+  .primary-btn:hover::before,
+  .secondary-btn:hover::before {
+    width: 0;
+    height: 0;
+  }
+  .primary-btn:link,
+  .primary-btn:visited {
+    color: #e1b711;
+    background-position: center;
+    transition: background-color 0.3s;
+  }
+
+  .secondary-btn:link,
+  .secondary-btn:visited {
+    color: #ff6584;
+    background-position: center;
+    transition: background-color 0.3s;
+  }
+  .primary-btn:hover,
+  .secondary-btn:hover {
+    background-color: #909090 radial-gradient(circle, transparent 1%, red 1%)
+      center/15000%;
+  }
+  .primary-btn:active,
+  .secondary-btn:active {
+    background-color: #6eb9f7;
+    background-size: 100%;
+    transition: background-color 0.3s;
   }
 }
 
