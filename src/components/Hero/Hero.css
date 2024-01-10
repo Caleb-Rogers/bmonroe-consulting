@@ -118,10 +118,6 @@ body {
   background-color: #ff6584;
 }
 
-.overlay--active {
-  background-color: rgba(0, 0, 0, 0.9);
-}
-
 .primary-btn span,
 .secondary-btn span {
   position: relative;

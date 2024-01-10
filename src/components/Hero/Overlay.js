@@ -8,10 +8,6 @@ export const animatePrimaryOverlay = (heroText, heroImg, overlay, router) => {
     const intervalId = setInterval(() => {
       overlay.classList.remove("overlay--primary-initial");
       overlay.style.backgroundColor = primaryColors[index];
-      overlay.classList.add("overlay--active");
-      setTimeout(() => {
-        overlay.classList.remove("overlay--active");
-      }, 100);
       index++;
       if (primaryColors === primaryColors.length) {
         clearInterval(intervalId);
