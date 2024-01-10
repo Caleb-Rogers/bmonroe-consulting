@@ -11,7 +11,7 @@ body {
 
 .logo {
   font-family: "Sacramento", cursive;
-  position: fixed;
+  position: absolute;
   top: 3rem;
   left: 12.5rem;
   font-size: 6rem;
@@ -52,7 +52,6 @@ body {
   flex-direction: column;
   gap: 4rem;
   list-style: none;
-  color: white;
   padding: 15px;
   text-align: center;
 }
@@ -63,7 +62,11 @@ body {
   text-decoration: none;
   font-size: 4rem;
   font-weight: 600;
-  color: #fff;
+  color: #f5f5f5;
+}
+
+.nav-menu-link:hover {
+  color: #e1b711;
 }
 
 .nav-sliders {
@@ -86,15 +89,15 @@ body {
 .hamburger-pos {
   position: fixed;
   top: 20px;
-  right: 20px;
+  right: 40px;
   z-index: 40;
 }
 
 .hamburger {
-  width: 40px;
-  height: 40px;
+  width: 70px;
+  height: 70px;
   border-radius: 40px;
-  background-color: white;
+  background-color: #333437;
   position: relative;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   cursor: pointer;
@@ -104,9 +107,9 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 16px;
+  width: 25px;
   height: 3px;
-  background-color: rgba(2, 89, 165, 1);
+  background-color: #e1b711;
   transition: transform 0.3s;
   transition-delay: 0.5s;
 }
@@ -120,11 +123,11 @@ body {
 }
 
 .hamburger:hover {
-  background-color: rgba(2, 89, 165, 1);
+  background-color: #ff6584;
 }
 
 .hamburger:hover div {
-  background-color: white;
+  background-color: #333437;
 }
 
 .hamburger:active {

@@ -2,7 +2,6 @@
 
 import React, { useEffect } from "react";
 import Link from "next/link";
-import { useRouter } from "next/router";
 
 const Navbar = () => {
 
@@ -11,10 +10,22 @@ const Navbar = () => {
       document.body.classList.toggle('nav-open');
     };
 
+    const handleNavLinkClick = () => {
+      document.body.classList.remove('nav-open');
+    };
+
     document.querySelector('.hamburger').addEventListener('click', handleHamburgerClick);
+
+    document.querySelectorAll('.nav-menu-link').forEach((link) => {
+      link.addEventListener('click', handleNavLinkClick);
+    });
 
     return () => {
       document.querySelector('.hamburger').removeEventListener('click', handleHamburgerClick);
+
+      document.querySelectorAll('.nav-menu-link').forEach((link) => {
+        link.removeEventListener('click', handleNavLinkClick);
+      });
     };
   }, []);
 
