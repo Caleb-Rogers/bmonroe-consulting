@@ -110,8 +110,16 @@ body {
   transition: background-color 1s ease;
 }
 
+.overlay--primary-initial {
+  background-color: #e1b711;
+}
+
+.overlay--secondary-initial {
+  background-color: #ff6584;
+}
+
 .overlay--active {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 .primary-btn span,
@@ -298,34 +306,23 @@ body {
     align-content: flex-end;
     transform: translate(34%, 0.3%);
   }
-  .primary-btn:hover::before,
-  .secondary-btn:hover::before {
-    width: 0;
-    height: 0;
-  }
   .primary-btn:link,
   .primary-btn:visited {
     color: #e1b711;
-    background-position: center;
-    transition: background-color 0.3s;
   }
-
   .secondary-btn:link,
   .secondary-btn:visited {
     color: #ff6584;
-    background-position: center;
-    transition: background-color 0.3s;
   }
-  .primary-btn:hover,
-  .secondary-btn:hover {
-    background-color: #909090 radial-gradient(circle, transparent 1%, red 1%)
-      center/15000%;
-  }
-  .primary-btn:active,
-  .secondary-btn:active {
-    background-color: #6eb9f7;
-    background-size: 100%;
-    transition: background-color 0.3s;
+  .primary-btn:active::before,
+  .secondary-btn:active::before,
+  .primary-btn--clicked::before,
+  .secondary-btn--clicked::before,
+  .primary-btn--clicked:hover::before,
+  .secondary-btn--clicked:hover::before {
+    width: 550px;
+    height: 550px;
+    transition: width 0.5s ease, height 0.5s ease;
   }
 }
 

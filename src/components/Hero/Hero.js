@@ -37,12 +37,14 @@ function Hero() {
     primaryBtn.addEventListener("click", (e) => {
       e.preventDefault();
       primaryBtn.classList.add("primary-btn--clicked");
+      overlay.classList.add("overlay--primary-initial");
       animatePrimaryOverlay(heroText, heroImg, overlay, router);
     });
     // Animate Color Traversal Overlay Upon Secondary Button Click
     secondaryBtn.addEventListener("click", (e) => {
       e.preventDefault();
       secondaryBtn.classList.add("secondary-btn--clicked");
+      overlay.classList.add("overlay--secondary-initial");
       animateSecondaryOverlay(heroText, heroImg, overlay, router);
     });
   }, []);

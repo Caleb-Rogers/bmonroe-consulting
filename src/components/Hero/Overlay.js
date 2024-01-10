@@ -6,6 +6,7 @@ export const animatePrimaryOverlay = (heroText, heroImg, overlay, router) => {
     heroImg.classList.add("hero-img-box--hidden");
     let index = 0;
     const intervalId = setInterval(() => {
+      overlay.classList.remove("overlay--primary-initial");
       overlay.style.backgroundColor = primaryColors[index];
       overlay.classList.add("overlay--active");
       setTimeout(() => {
@@ -15,8 +16,8 @@ export const animatePrimaryOverlay = (heroText, heroImg, overlay, router) => {
       if (primaryColors === primaryColors.length) {
         clearInterval(intervalId);
       }
-    }, 380); // Color Traversal Interval
-    const delay = primaryColors.length * 480; // Router Trigger Interval
+    }, 350); // Color Traversal Interval
+    const delay = primaryColors.length * 470; // Router Trigger Interval
     setTimeout(() => {
       router.push("/contact");
     }, delay);
@@ -28,6 +29,7 @@ export const animateSecondaryOverlay = (heroText, heroImg, overlay, router) => {
     heroImg.classList.add("hero-img-box--hidden");
     let index = 0;
     const intervalId = setInterval(() => {
+      overlay.classList.remove("overlay--secondary-initial");
       overlay.style.backgroundColor = secondaryColors[index];
       overlay.classList.add("overlay--active");
       setTimeout(() => {
@@ -37,8 +39,8 @@ export const animateSecondaryOverlay = (heroText, heroImg, overlay, router) => {
       if (secondaryColors === secondaryColors.length) {
         clearInterval(intervalId);
       }
-    }, 380); // Color Traversal Interval
-    const delay = secondaryColors.length * 480; // Router Trigger Interval
+    }, 350); // Color Traversal Interval
+    const delay = secondaryColors.length * 470; // Router Trigger Interval
     setTimeout(() => {
       router.push("/services");
     }, delay);
