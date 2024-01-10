@@ -32,19 +32,19 @@ const Navbar = () => {
           <div key={i} className="nav-sliders"></div>
         ))}
         <div className="nav-menu">
-          <ul>
-            <li>
-              <a href="#">Home</a>
-            </li>
-            <li>
-              <a href="#">About</a>
-            </li>
-            <li>
-              <a href="#">Work</a>
-            </li>
-            <li>
-              <a href="#">Contact</a>
-            </li>
+          <ul className="nav-menu-list">
+            <Link className="nav-menu-link" href="/">
+              HOME
+            </Link>
+            <Link className="nav-menu-link" href="/about">
+              ABOUT
+            </Link>
+            <Link className="nav-menu-link" href="/services">
+              SERVICES
+            </Link>
+            <Link className="nav-menu-link" href="/contact">
+              CONTACT
+            </Link>
           </ul>
         </div>
       </div>
