@@ -1,6 +1,13 @@
-/**************************/
-/* ABOUT PAGE */
-/**************************/
+/** AboutPage.css **/
+
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .about-container {
   padding: 9rem 6rem 9rem 16rem;
   background-color: #333437;

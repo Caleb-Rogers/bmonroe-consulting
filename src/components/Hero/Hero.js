@@ -1,6 +1,9 @@
+// Hero.js
+
 import React, { useEffect } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { animatePrimaryOverlay, animateSecondaryOverlay } from "./Overlay";
 
 
 function Hero() {
@@ -8,20 +11,20 @@ function Hero() {
   const router = useRouter();
 
   useEffect(() => {
+
+    // Primary Button Spotlight Effect
     const primaryBtn = document.querySelector(".primary-btn");
     primaryBtn.onmousemove = function (e) {
       const x = e.pageX - primaryBtn.offsetLeft;
       const y = e.pageY - primaryBtn.offsetTop;
-
       primaryBtn.style.setProperty("--x", x + "px");
       primaryBtn.style.setProperty("--y", y + "px");
     };
-
+    // Secondary Button Spotlight Effect
     const secondaryBtn = document.querySelector(".secondary-btn");
     secondaryBtn.onmousemove = function (e) {
       const x = e.pageX - secondaryBtn.offsetLeft;
       const y = e.pageY - secondaryBtn.offsetTop;
-
       secondaryBtn.style.setProperty("--x", x + "px");
       secondaryBtn.style.setProperty("--y", y + "px");
     };
@@ -29,68 +32,24 @@ function Hero() {
     const heroText = document.getElementById("hero-text");
     const heroImg = document.getElementById("hero-img-box");
     const overlay = document.getElementById("overlay");
-    const primaryColors = ["#e1b711", "#ff6584", "#f5f5f5", "#333437"];
-    const secondaryColors = ["#ff6584", "#e1b711", "#f5f5f5", "#333437"];
-    let colorIndex = 0;
 
-    const animatePrimaryOverlay = () => {
-      heroText.classList.add("hero-text--hidden");
-      heroImg.classList.add("hero-img-box--hidden");
-      let index = 0;
-      const intervalId = setInterval(() => {
-        overlay.style.backgroundColor = primaryColors[index];
-        overlay.classList.add("overlay--active");
-        setTimeout(() => {
-          overlay.classList.remove("overlay--active");
-        }, 100);
-        index++;
-        if (primaryColors === primaryColors.length) {
-          clearInterval(intervalId);
-        }
-      }, 400); // Color Traversal Interval
-      const delay = primaryColors.length * 480;
-      setTimeout(() => {
-        router.push("/contact");
-      }, delay);
-    };
-
-    const animateSecondaryOverlay = () => {
-      heroText.classList.add("hero-text--hidden");
-      heroImg.classList.add("hero-img-box--hidden");
-      let index = 0;
-      const intervalId = setInterval(() => {
-        overlay.style.backgroundColor = secondaryColors[index];
-        overlay.classList.add("overlay--active");
-        setTimeout(() => {
-          overlay.classList.remove("overlay--active");
-        }, 100);
-        index++;
-        if (secondaryColors === secondaryColors.length) {
-          clearInterval(intervalId);
-        }
-      }, 400); // Color Traversal Interval
-      const delay = secondaryColors.length * 480;
-      setTimeout(() => {
-        router.push("/services");
-      }, delay);
-    };
-
+    // Animate Color Traversal Overlay Upon Primary Button Click
     primaryBtn.addEventListener("click", (e) => {
       e.preventDefault();
       primaryBtn.classList.add("primary-btn--clicked");
       document.querySelectorAll("span").forEach((element) => {
         element.classList.add("expanded");
       });
-      animatePrimaryOverlay();
+      animatePrimaryOverlay(heroText, heroImg, overlay, router);
     });
-
+    // Animate Color Traversal Overlay Upon Secondary Button Click
     secondaryBtn.addEventListener("click", (e) => {
       e.preventDefault();
       secondaryBtn.classList.add("secondary-btn--clicked");
       document.querySelectorAll("span").forEach((element) => {
         element.classList.add("expanded");
       });
-      animateSecondaryOverlay();
+      animateSecondaryOverlay(heroText, heroImg, overlay, router);
     });
   }, []);
 

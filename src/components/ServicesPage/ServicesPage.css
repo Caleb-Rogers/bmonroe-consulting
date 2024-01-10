@@ -1,6 +1,13 @@
-/**************************/
-/* SERVICES PAGE */
-/**************************/
+/** ServicesPage.css **/
+
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .service-container {
   padding: 9rem 6rem 9rem 16rem;
   background-color: #333437;

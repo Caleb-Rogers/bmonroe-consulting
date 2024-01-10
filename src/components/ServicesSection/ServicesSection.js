@@ -1,3 +1,5 @@
+// ServicesSection.js
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFileInvoice, faGavel, faCompassDrafting, faScaleBalanced, faBolt, faEarthAmericas } from '@fortawesome/free-solid-svg-icons';
 

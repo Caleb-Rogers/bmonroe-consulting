@@ -1,3 +1,5 @@
+// Homepage.js
+
 import React, { useState, useEffect } from "react";
 import Navbar from "./Navbar/Navbar";
 import Hero from "./Hero/Hero.js";
