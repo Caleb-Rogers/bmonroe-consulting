@@ -10,7 +10,7 @@ export default function AboutSection() {
         <div className="about-sec-text">
           <h2 className="about-sec-sub-heading">About Barbara Monroe:</h2>
           <h1 className="about-sec-heading">Mastering Construction<br></br>Project Success</h1>
-          <h3 className="about-sec-titles">Zoning & Code Enforcement Officer • Construction PM Consultant • Site Plan Designer</h3>
+          <h3 className="about-sec-titles"><span>Zoning & Code Enforcement Officer</span><span className="dot">•</span><span>Construction PM Consultant</span><span className="dot">•</span><span>Site Plan Designer</span></h3>
           <p className="about-sec-description">
             With a track record of steering projects over obstacles to approval,
             I, Barbara Monroe, blend expertise with passion. My commitment is simple:

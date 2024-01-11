@@ -141,14 +141,12 @@ body {
 
 .about-sec-img-box {
   max-width: 100%;
+  transform: translate(-18%, 8%);
 }
 
 .about-sec-img {
   width: 65%;
   height: auto;
-  border-radius: 50%;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
   border-radius: 50%;
   box-shadow: 0 16px 30px 0 rgba(0, 0, 0, 0.16),
     0 22px 35px 0 rgba(0, 0, 0, 0.12);
@@ -156,93 +154,103 @@ body {
 
 /* RESPONSIVENESS */
 
-@media only screen and (max-width: 1675px) {
+@media only screen and (max-width: 1622px) {
   .about-sec-container {
-    padding-left: 14rem;
+    padding-left: 12rem;
+  }
+  .about-sec-sub-heading {
+    font-size: 3rem;
+  }
+  .about-sec-heading {
+    font-size: 7.8rem;
+  }
+  .about-sec-titles {
+    font-size: 2.5rem;
+  }
+  .about-sec-description {
+    font-size: 2.4rem;
+    margin: 0.5rem 14rem 0 0;
+  }
+  .about-sec-img-box {
+    transform: translate(-4%, 4%);
+  }
+  .about-sec-img {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 1494px) {
+  .about-sec-container {
+    padding-left: 10rem;
   }
   .about-sec-sub-heading {
     font-size: 2.8rem;
   }
   .about-sec-heading {
-    font-size: 7.4rem;
+    font-size: 7.2rem;
   }
   .about-sec-titles {
     font-size: 2.4rem;
   }
   .about-sec-description {
     font-size: 2.2rem;
-    margin-right: 24rem;
+    margin: 0.5rem 12rem 0 0;
+  }
+  .about-sec-img-box {
+    transform: translate(-2%, 5%);
+  }
+  .about-sec-img {
+    width: 75%;
   }
 }
 
-@media only screen and (max-width: 1622px) {
+@media only screen and (max-width: 1305px) {
   .about-sec-container {
-    padding-left: 12rem;
+    padding-left: 8rem;
   }
   .about-sec-sub-heading {
     font-size: 2.6rem;
   }
   .about-sec-heading {
-    font-size: 7rem;
+    font-size: 6.6rem;
   }
   .about-sec-titles {
     font-size: 2.2rem;
   }
   .about-sec-description {
     font-size: 2rem;
-    margin-right: 12rem;
+    margin: 0.5rem 10rem 0 0;
+  }
+  .about-sec-img-box {
+    transform: translate(2%, 6%);
   }
   .about-sec-img {
     width: 80%;
   }
 }
 
-@media only screen and (max-width: 1442px) {
+@media only screen and (max-width: 1142px) {
   .about-sec-container {
-    padding-left: 10rem;
+    padding-left: 6rem;
   }
   .about-sec-sub-heading {
     font-size: 2.4rem;
   }
   .about-sec-heading {
-    font-size: 5.8rem;
+    font-size: 6rem;
   }
   .about-sec-titles {
     font-size: 2rem;
   }
   .about-sec-description {
-    font-size: 2rem;
-    margin-right: 12rem;
-  }
-}
-
-@media only screen and (max-width: 1202px) {
-  .about-sec-container {
-    padding-left: 8rem;
-  }
-  .about-sec-heading {
-    font-size: 5.4rem;
-  }
-  .about-sec-description {
-    font-size: 1.9rem;
-  }
-}
-
-@media only screen and (max-width: 1062px) {
-  .about-sec-container {
-    padding-left: 6rem;
-  }
-  .about-sec-sub-heading {
-    font-size: 2.2rem;
-  }
-  .about-sec-heading {
-    font-size: 5rem;
-  }
-  .about-sec-titles {
     font-size: 1.8rem;
+    margin: 0.5rem 8rem 0 0;
   }
-  .about-sec-description {
-    font-size: 1.8rem;
+  .about-sec-img-box {
+    transform: translate(8%, 2%);
+  }
+  .about-sec-img {
+    width: 75%;
   }
 }
 
@@ -262,6 +270,14 @@ body {
     align-items: center;
     margin: 0;
     padding: 0;
+  }
+  .about-sec-titles span {
+    display: flex;
+    flex-direction: column;
+    line-height: 0.6;
+  }
+  .dot {
+    visibility: collapse;
   }
   .about-sec-description {
     margin: 0;
@@ -288,6 +304,7 @@ body {
     text-align: center;
     margin: 4rem 0 0;
     padding: 0 0 8rem;
+    transform: translate(0, 0);
   }
   .about-sec-img {
     width: 60%;
@@ -376,6 +393,40 @@ body {
   }
   .about-sec-btn .about-sec-btn-primary {
     font-size: 1.3rem;
+  }
+}
+
+/* iPhone 14 */
+@media only screen and (max-width: 390px) {
+  .about-sec-sub-heading {
+    font-size: 2rem;
+  }
+  .about-sec-heading {
+    font-size: 4.2rem;
+  }
+  .about-sec-titles {
+    font-size: 1.7rem;
+  }
+  .about-sec-description {
+    font-size: 1.8rem;
+    transform: translateY(200px);
+  }
+  .about-sec-btn,
+  .about-sec-btn-primary {
+    transform: translateY(210px);
+  }
+  .about-sec-btn .about-sec-btn-primary {
+    font-size: 1.6rem;
+    padding: 1.6rem 2rem;
+  }
+  .about-sec-img-box {
+    transform: translateY(-320px);
+  }
+  .about-sec-img {
+    width: 50%;
+  }
+  .about-sec-icons {
+    transform: translateY(200px);
   }
 }
 
