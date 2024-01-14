@@ -13,7 +13,7 @@ export const animatePrimaryOverlay = (heroText, heroImg, overlay, router) => {
         clearInterval(intervalId);
       }
     }, 350); // Color Traversal Interval
-    const delay = primaryColors.length * 470; // Router Trigger Interval
+    const delay = primaryColors.length * 460; // Router Trigger Interval
     setTimeout(() => {
       router.push("/contact");
     }, delay);
@@ -36,7 +36,7 @@ export const animateSecondaryOverlay = (heroText, heroImg, overlay, router) => {
         clearInterval(intervalId);
       }
     }, 350); // Color Traversal Interval
-    const delay = secondaryColors.length * 470; // Router Trigger Interval
+    const delay = secondaryColors.length * 460; // Router Trigger Interval
     setTimeout(() => {
       router.push("/services");
     }, delay);

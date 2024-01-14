@@ -5,7 +5,12 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 
 const Navbar = () => {
+
   const router = useRouter();
+
+  const handleLogoClick = () => {
+    router.push("/");
+  };
 
   useEffect(() => {
     const handleHamburgerClick = () => {
@@ -43,7 +48,9 @@ const Navbar = () => {
 
   return (
     <header className="header">
-      <div className="nav-logo">Monroe Consulting</div>
+      <div className="nav-logo" onClick={handleLogoClick}>
+        Monroe Consulting
+      </div>
       <div className="hamburger-pos">
         <div className="hamburger">
           <div className="line1"></div>

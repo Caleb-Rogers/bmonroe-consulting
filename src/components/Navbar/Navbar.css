@@ -17,6 +17,7 @@ body {
   font-size: 6rem;
   font-weight: 900;
   cursor: pointer;
+  z-index: 20;
 }
 
 .nav-container {
