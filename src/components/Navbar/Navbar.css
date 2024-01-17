@@ -6,7 +6,6 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Cormorant Garamond", serif;
 }
 
 .nav-logo {
@@ -29,6 +28,7 @@ body {
   width: 100vw;
   pointer-events: none;
   transition-delay: 0.45s;
+  font-family: "Cormorant Garamond", serif;
 }
 
 .nav-menu {
