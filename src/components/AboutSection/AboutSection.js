@@ -36,7 +36,6 @@ export default function AboutSection() {
     // Check viewport width on load and resize
     function checkViewportWidth() {
       var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
-      console.log("Check Viewport Width CALLED");
       if (viewportWidth <= 998) {
         tertiaryBtn.classList.remove("tertiary-btn");
         tertiaryBtn.classList.add("tertiary-btn--mobile");

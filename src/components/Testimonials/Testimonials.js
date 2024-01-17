@@ -47,8 +47,6 @@ export default function Testimonials() {
           }
         }
       });
-
-      console.log("Swiper initialization performed");
     } catch (error) {
       console.error("Swiper initialization error:", error);
     }
