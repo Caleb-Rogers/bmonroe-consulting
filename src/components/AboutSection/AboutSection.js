@@ -11,8 +11,9 @@ export default function AboutSection() {
 
   useEffect(() => {
 
+    const tertiaryBtn = document.getElementById("tertiary-btn");
+
     // Tertiary Button Spotlight Effect
-    const tertiaryBtn = document.querySelector(".tertiary-btn");
     tertiaryBtn.onmousemove = function (e) {
       const x = e.pageX - tertiaryBtn.offsetLeft;
       const y = e.pageY - tertiaryBtn.offsetTop;
@@ -31,6 +32,23 @@ export default function AboutSection() {
       heroOverlay.classList.add("hero-overlay--tertiary-initial");
       animateTertiaryOverlay(aboutText, aboutImg, heroOverlay, router);
     });
+
+    // Check viewport width on load and resize
+    function checkViewportWidth() {
+      var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+      console.log("Check Viewport Width CALLED");
+      if (viewportWidth <= 998) {
+        tertiaryBtn.classList.remove("tertiary-btn");
+        tertiaryBtn.classList.add("tertiary-btn--mobile");
+      } else {
+        tertiaryBtn.classList.add("tertiary-btn");
+        tertiaryBtn.classList.remove("tertiary-btn--mobile");
+      }
+    }
+
+    // Call the function on initial load and when the window is resized
+    window.addEventListener('resize', checkViewportWidth);
+    checkViewportWidth();
   }, []);
 
   return (
@@ -65,7 +83,7 @@ export default function AboutSection() {
             </div>
           </div>
           <div className="about-sec-btn">
-            <Link href="/about" className="tertiary-btn">
+            <Link href="/about" className="tertiary-btn" id="tertiary-btn">
               <span>Learn More About Me</span>
             </Link>
           </div>
