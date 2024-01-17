@@ -243,7 +243,7 @@ body {
 }
 
 .about-sec-img {
-  width: 75%;
+  width: 140%;
   height: auto;
   border-radius: 50%;
   box-shadow: 0 16px 30px 0 rgba(0, 0, 0, 0.16),
@@ -269,9 +269,12 @@ body {
     font-size: 2.7rem;
     margin: 0.5rem 14rem 0 0;
   }
-  .about-sec-btn .tertiary-btn {
+  .about-sec-btn {
+    padding: 1.8rem 0;
+  }
+  .tertiary-btn {
     font-size: 2.3rem;
-    padding: 2rem 3rem;
+    padding: 2.4rem 4rem;
   }
   .about-sec-img-box {
     transform: translate(-2%, 5%);
@@ -298,9 +301,12 @@ body {
     font-size: 2.6rem;
     margin: 0.5rem 12rem 0 0;
   }
-  .about-sec-btn .tertiary-btn {
+  .about-sec-btn {
+    padding: 1.8rem 0;
+  }
+  .tertiary-btn {
     font-size: 2.2rem;
-    padding: 2rem 3rem;
+    padding: 2.4rem 4rem;
   }
   .about-sec-img-box {
     transform: translate(2%, 4%);
@@ -327,9 +333,12 @@ body {
     font-size: 2.4rem;
     margin: 0.5rem 10rem 0 0;
   }
-  .about-sec-btn .tertiary-btn {
+  .about-sec-btn {
+    padding: 1.8rem 0;
+  }
+  .tertiary-btn {
     font-size: 2rem;
-    padding: 2rem 3rem;
+    padding: 2.4rem 4rem;
   }
   .about-sec-img-box {
     transform: translate(2%, 5%);
@@ -407,15 +416,20 @@ body {
   .about-sec-cta {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+    transform: translate(0, 80%);
   }
   .about-sec-btn {
-    margin: 0 0 0 0;
-    transform: translate(0, 790%);
+    padding: 1.8rem 0;
+    transform: translate(0, 120%);
+  }
+  .tertiary-btn {
+    font-size: 2rem;
+    padding: 2.4rem 4rem;
   }
   .about-sec-icons {
     margin-left: 30px;
-    transform: translate(0, 215%);
+    transform: translate(0, 85%);
   }
   .about-sec-icon-group {
     align-items: center;
@@ -427,7 +441,7 @@ body {
     text-align: center;
     margin: 4rem 0 0;
     padding: 0 0 8rem;
-    transform: translate(0, -105%);
+    transform: translate(0, -117%);
   }
   .about-sec-img {
     width: 60%;
@@ -440,14 +454,8 @@ body {
   .about-sec-description {
     transform: translate(0, 140%);
   }
-  .about-sec-btn {
-    transform: translate(0, 800%);
-  }
-  .about-sec-icons {
-    transform: translate(0, 215%);
-  }
   .about-sec-img-box {
-    transform: translate(0, -115%);
+    transform: translate(0, -127%);
   }
 }
 
@@ -466,33 +474,21 @@ body {
     padding: 0 6rem 2rem;
     transform: translate(0, 180%);
   }
-  .about-sec-btn {
-    transform: translate(0, 740%);
-  }
   .about-sec-btn .tertiary-btn {
     font-size: 2.1rem;
     padding: 1.8rem 2.8rem;
   }
-  .about-sec-icons {
-    transform: translate(0, 215%);
-  }
   .about-sec-img-box {
-    transform: translate(0, -107%);
+    transform: translate(0, -115%);
   }
 }
 
 @media only screen and (max-width: 741px) {
   .about-sec-description {
-    transform: translate(0, 155%);
-  }
-  .about-sec-btn {
-    transform: translate(0, 765%);
-  }
-  .about-sec-icons {
-    transform: translate(0, 222%);
+    transform: translate(0, 150%);
   }
   .about-sec-img-box {
-    transform: translate(0, -110%);
+    transform: translate(0, -125%);
   }
 }
 
@@ -509,20 +505,14 @@ body {
   .about-sec-description {
     font-size: 2rem;
     padding: 0 4rem 2rem;
-    transform: translate(0, 200%);
-  }
-  .about-sec-btn {
-    transform: translate(0, 805%);
+    transform: translate(0, 210%);
   }
   .about-sec-btn .tertiary-btn {
     font-size: 1.8rem;
     padding: 1.6rem 2.6rem;
   }
-  .about-sec-icons {
-    transform: translate(0, 205%);
-  }
   .about-sec-img-box {
-    transform: translate(0, -132%);
+    transform: translate(0, -125%);
   }
   .about-sec-img {
     width: 55%;
@@ -531,7 +521,7 @@ body {
 
 @media only screen and (max-width: 605px) {
   .about-sec-description {
-    transform: translate(0, 165%);
+    transform: translate(0, 170%);
   }
 }
 
@@ -548,20 +538,14 @@ body {
   .about-sec-description {
     font-size: 1.8rem;
     padding: 0 2rem 2rem;
-    transform: translate(0, 175%);
-  }
-  .about-sec-btn {
-    transform: translate(0, 880%);
+    transform: translate(0, 185%);
   }
   .about-sec-btn .tertiary-btn {
     font-size: 1.6rem;
     padding: 1.4rem 2.2rem;
   }
-  .about-sec-icons {
-    transform: translate(0, 195%);
-  }
   .about-sec-img-box {
-    transform: translate(0, -155%);
+    transform: translate(0, -145%);
   }
   .about-sec-img {
     width: 50%;
@@ -580,17 +564,11 @@ body {
   }
   .about-sec-description {
     font-size: 1.9rem;
-    transform: translate(0, 145%);
-  }
-  .about-sec-btn {
-    transform: translate(0, 850%);
+    transform: translate(0, 150%);
   }
   .about-sec-btn .tertiary-btn {
     font-size: 1.7rem;
     padding: 1.3rem 2rem;
-  }
-  .about-sec-icons {
-    transform: translate(0, 205%);
   }
   .about-sec-img-box {
     transform: translate(0, -135%);
@@ -610,20 +588,14 @@ body {
   }
   .about-sec-description {
     font-size: 1.8rem;
-    transform: translate(0, 145%);
-  }
-  .about-sec-btn {
-    transform: translate(0, 850%);
+    transform: translate(0, 155%);
   }
   .about-sec-btn .tertiary-btn {
     font-size: 1.6rem;
     padding: 1.6rem 2rem;
   }
-  .about-sec-icons {
-    transform: translate(0, 190%);
-  }
   .about-sec-img-box {
-    transform: translate(0, -140%);
+    transform: translate(0, -130%);
   }
 }
 
@@ -639,19 +611,13 @@ body {
   }
   .about-sec-description {
     font-size: 1.6rem;
-    transform: translate(0, 140%);
-  }
-  .about-sec-btn {
-    transform: translate(0, 760%);
+    transform: translate(0, 170%);
   }
   .about-sec-img {
     width: 175px;
   }
-  .about-sec-icons {
-    transform: translate(0, 165%);
-  }
   .about-sec-img-box {
-    transform: translate(0, -147%);
+    transform: translate(0, -135%);
   }
 }
 
@@ -667,19 +633,13 @@ body {
   }
   .about-sec-description {
     font-size: 1.4rem;
-    transform: translate(0, 165%);
-  }
-  .about-sec-btn {
-    transform: translate(0, 775%);
+    transform: translate(0, 190%);
   }
   .about-sec-img {
     width: 170px;
   }
-  .about-sec-icons {
-    transform: translate(0, 175%);
-  }
   .about-sec-img-box {
-    transform: translate(0, -157%);
+    transform: translate(0, -145%);
   }
 }
 
@@ -695,33 +655,21 @@ body {
   }
   .about-sec-description {
     font-size: 1.3rem;
-    transform: translate(0, 165%);
-  }
-  .about-sec-btn {
-    transform: translate(0, 750%);
+    transform: translate(0, 195%);
   }
   .about-sec-img {
     width: 160px;
   }
-  .about-sec-icons {
-    transform: translate(0, 165%);
-  }
   .about-sec-img-box {
-    transform: translate(0, -175%);
+    transform: translate(0, -160%);
   }
 }
 
-@media only screen and (max-width: 274px) {
+@media only screen and (max-width: 275px) {
   .about-sec-description {
-    transform: translate(0, 150%);
-  }
-  .about-sec-btn {
-    transform: translate(0, 750%);
-  }
-  .about-sec-icons {
-    transform: translate(0, 170%);
+    transform: translate(0, 175%);
   }
   .about-sec-img-box {
-    transform: translate(0, -175%);
+    transform: translate(0, -160%);
   }
 }
