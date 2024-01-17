@@ -12,7 +12,7 @@ export default function AboutSection() {
   useEffect(() => {
 
     // Tertiary Button Spotlight Effect
-    const tertiaryBtn = document.querySelector(".about-sec-btn-tertiary");
+    const tertiaryBtn = document.querySelector(".tertiary-btn");
     tertiaryBtn.onmousemove = function (e) {
       const x = e.pageX - tertiaryBtn.offsetLeft;
       const y = e.pageY - tertiaryBtn.offsetTop;
@@ -66,7 +66,7 @@ export default function AboutSection() {
               </div>
             </div>
             <div className="about-sec-btn">
-              <Link href="/about" className="about-sec-btn-tertiary">
+              <Link href="/about" className="tertiary-btn">
                 <span>Learn More About Me</span>
               </Link>
             </div>

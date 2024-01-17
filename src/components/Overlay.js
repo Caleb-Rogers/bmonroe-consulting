@@ -1,7 +1,7 @@
 // Overlay.js
 
 export const animatePrimaryOverlay = (heroText, heroImg, heroOverlay, router) => {
-    const primaryColors = ["#e1b711", "#ff6584", "#f5f5f5", "#333437"];
+    const primaryColors = ["#e1b711", "#ff6584", "#4b77bc", "#333437"];
     heroText.classList.add("hero-text--hidden");
     heroImg.classList.add("hero-img-box--hidden");
     let index = 0;
@@ -24,7 +24,7 @@ export const animatePrimaryOverlay = (heroText, heroImg, heroOverlay, router) =>
   };
 
 export const animateSecondaryOverlay = (heroText, heroImg, heroOverlay, router) => {
-    const secondaryColors = ["#ff6584", "#e1b711", "#f5f5f5", "#333437"];
+    const secondaryColors = ["#ff6584", "#e1b711", "#4b77bc", "#333437"];
     heroText.classList.add("hero-text--hidden");
     heroImg.classList.add("hero-img-box--hidden");
     let index = 0;
@@ -47,9 +47,9 @@ export const animateSecondaryOverlay = (heroText, heroImg, heroOverlay, router) 
 };
 
 export const animateTertiaryOverlay = (aboutText, aboutImg, aboutOverlay, router) => {
-  const tertiaryColors = ["#4b77bc", "#e1b711", "#f5f5f5", "#333437"];
+  const tertiaryColors = ["#4b77bc", "#e1b711", "#ff6584", "#333437"];
   aboutImg.classList.add("about-sec-icon-group--hidden");
-  aboutImg.classList.add("about-sec-btn-tertiary--hidden");
+  aboutImg.classList.add("tertiary-btn--hidden");
   aboutText.classList.add("about-text--hidden");
   aboutImg.classList.add("about-sec-img-box--hidden");
   aboutOverlay.classList.add("about-overlay--active");
