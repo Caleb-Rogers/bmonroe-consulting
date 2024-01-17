@@ -106,7 +106,7 @@ body {
   color: #f5f5f5;
 }
 
-.overlay {
+.hero-overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -118,11 +118,15 @@ body {
   transition: background-color 1s ease;
 }
 
-.overlay--primary-initial {
+.hero-overlay--active {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-overlay--primary-initial {
   background-color: #e1b711;
 }
 
-.overlay--secondary-initial {
+.hero-overlay--secondary-initial {
   background-color: #ff6584;
 }
 

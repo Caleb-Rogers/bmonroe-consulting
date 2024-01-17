@@ -3,7 +3,7 @@
 import React, { useEffect } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { animatePrimaryOverlay, animateSecondaryOverlay } from "./Overlay";
+import { animatePrimaryOverlay, animateSecondaryOverlay } from "../Overlay";
 
 
 function Hero() {
@@ -31,28 +31,27 @@ function Hero() {
 
     const heroText = document.getElementById("hero-text");
     const heroImg = document.getElementById("hero-img-box");
-    const overlay = document.getElementById("overlay");
+    const heroOverlay = document.getElementById("hero-overlay");
 
     // Animate Color Traversal Overlay Upon Primary Button Click
     primaryBtn.addEventListener("click", (e) => {
       e.preventDefault();
       primaryBtn.classList.add("primary-btn--clicked");
-      overlay.classList.add("overlay--primary-initial");
-      animatePrimaryOverlay(heroText, heroImg, overlay, router);
+      heroOverlay.classList.add("hero-overlay--primary-initial");
+      animatePrimaryOverlay(heroText, heroImg, heroOverlay, router);
     });
     // Animate Color Traversal Overlay Upon Secondary Button Click
     secondaryBtn.addEventListener("click", (e) => {
       e.preventDefault();
       secondaryBtn.classList.add("secondary-btn--clicked");
-      overlay.classList.add("overlay--secondary-initial");
-      animateSecondaryOverlay(heroText, heroImg, overlay, router);
+      heroOverlay.classList.add("hero-overlay--secondary-initial");
+      animateSecondaryOverlay(heroText, heroImg, heroOverlay, router);
     });
   }, []);
 
   return (
     <main className="hero">
-      <div id="overlay" className="overlay"></div>
-      <div id="app"></div>
+      <div id="hero-overlay" className="hero-overlay"></div>
       <section className="hero-section">
         <div className="hero-text" id="hero-text">
           <div className="hero-line"></div>
@@ -67,10 +66,6 @@ function Hero() {
           <div className="hero-btns">
             <Link href="/contact" className="hero-btn primary-btn">
               <span>Work With Us</span>
-              <span className="color color--blue"></span>
-              <span className="color color--orange"></span>
-              <span className="color color--green"></span>
-              <span className="color color--white"></span>
             </Link>
             <Link href="/services" className="hero-btn secondary-btn">
               <span>Discover Our Services</span>
