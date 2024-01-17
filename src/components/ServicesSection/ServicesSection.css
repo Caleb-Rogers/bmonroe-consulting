@@ -23,6 +23,15 @@ body {
   margin-bottom: 20px;
 }
 
+.serv-sec-line {
+  width: 115px;
+  height: 5px;
+  background-color: #e1b711;
+  border-radius: 9px;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
 .serv-sec-sub-heading {
   font-size: 3.2rem;
   font-weight: 600;

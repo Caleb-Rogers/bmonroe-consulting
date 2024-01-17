@@ -43,6 +43,14 @@ body {
   transition: opacity 1s ease;
 }
 
+.hero-line {
+  width: 115px;
+  height: 5px;
+  background-color: #ff6584;
+  border-radius: 9px;
+  margin-bottom: 1rem;
+}
+
 .hero-sub-heading {
   font-size: 3.2rem;
   font-weight: 600;

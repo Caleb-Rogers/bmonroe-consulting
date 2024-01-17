@@ -28,7 +28,12 @@ body {
 
 /* LEFT PAGE */
 
-.about-sec-content {
+.about-sec-line {
+  width: 115px;
+  height: 5px;
+  background-color: #4b77bc;
+  border-radius: 9px;
+  margin-bottom: 1rem;
 }
 
 .about-sec-text {
@@ -55,6 +60,10 @@ body {
   letter-spacing: -1.5px;
   color: #909090;
   margin: 2rem 0;
+}
+
+.dot {
+  color: #4b77bc;
 }
 
 .about-sec-description {

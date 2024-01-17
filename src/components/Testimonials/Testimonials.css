@@ -24,6 +24,15 @@ body {
   margin: 40px 0 20px;
 }
 
+.test-sec-line {
+  width: 115px;
+  height: 5px;
+  background-color: #ff6584;
+  border-radius: 9px;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
 .test-sub-heading {
   font-size: 3.2rem;
   font-weight: 600;
@@ -112,7 +121,7 @@ body {
 }
 
 .nav-btn:hover {
-  background-color: #e1b711;
+  background-color: #4b77bc;
   transition: 0.2s;
 }
 

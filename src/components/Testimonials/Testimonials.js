@@ -57,7 +57,8 @@ export default function Testimonials() {
   return (
     <section className="test-sec">
       <div className="test-text">
-        <h2 className="test-sub-heading">Testimonials:</h2>
+        <div className="test-sec-line"></div>
+        <h2 className="test-sub-heading">Testimonials</h2>
         <h1 className="test-heading">What Past Clients Have Said</h1>
       </div>
       <div className="test-container swiper mySwiper">

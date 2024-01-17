@@ -55,8 +55,9 @@ function Hero() {
       <div id="app"></div>
       <section className="hero-section">
         <div className="hero-text" id="hero-text">
+          <div className="hero-line"></div>
           <h2 className="hero-sub-heading">
-            Navigating Complexity, Delivering Excellence:
+            Navigating Complexity, Delivering Excellence
           </h2>
           <h1 className="hero-heading">Your Trusted Project Partner</h1>
           <p className="hero-description">
