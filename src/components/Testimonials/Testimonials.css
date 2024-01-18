@@ -25,7 +25,7 @@ body {
 }
 
 .test-sec-line {
-  width: 115px;
+  width: 95px;
   height: 5px;
   background-color: #ff6584;
   border-radius: 9px;
@@ -55,6 +55,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 900px;
+  margin-bottom: 30px;
 }
 
 .test-row {
