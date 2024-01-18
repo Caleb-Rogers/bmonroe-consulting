@@ -1,77 +1,27 @@
 import React from "react";
 import Link from "next/link";
 
-function Footer({ backgroundColor }) {
+function Footer() {
   return (
-    <section className="foot-sec" style={{ backgroundColor: backgroundColor }}>
+    <footer className="footer">
       <div className="foot-container">
-        <div className="foot-row">
-          <div className="foot-col first-col">
-            <h3>Services</h3>
-            <ul>
-              <li>
-                <a href="/services">Zoning, Land Use, & Research</a>
-              </li>
-              <li>
-                <a href="/services">Code Enforcement</a>
-              </li>
-              <li>
-                <a href="/services">Design</a>
-              </li>
-              <li>
-                <a href="/services">
-                  Environment Permitting & Meeting Representation
-                </a>
-              </li>
-              <li>
-                <a href="/services">Energy Analysis</a>
-              </li>
-              <li>
-                <a href="/services">Land management</a>
-              </li>
-            </ul>
-          </div>
-          <div className="foot-col second-col">
-            <h3>About</h3>
-            <ul>
-              <li>
-                <a href="/about">Barb Monroe</a>
-              </li>
-              <li>
-                <a href="/about">Experience</a>
-              </li>
-              <li>
-                <a href="/about">Career Archives</a>
-              </li>
-              <li>
-                <a href="/about">Connections</a>
-              </li>
-              <li>
-                <a href="/about">Personal Development</a>
-              </li>
-            </ul>
-          </div>
-          <div className="foot-col third-col">
-            <h3>Monroe Consulting</h3>
-            <p>
-              Receive professional expertise on project management and
-              delegate your legal work such as processing building permits,
-              verifying building code & regulations, and performing safety &
-              efficiency tests
-            </p>
-          </div>
-        </div>
-        <div className="foot-row">
-          <div className="socials">
-            <Link href="https://www.linkedin.com/in/barbara-monroe-6088439a/" target="_blank"><img src="linkedin-500-yellow.png" alt="LinkedIn Icon" /></Link>
-            <Link href="https://www.facebook.com/barb.monroe.18" target="_blank"><img src="facebook-500-yellow.png" alt="Facebook Icon" /></Link>
-          </div>
-        </div>
-        <div className="foot-row">
-          <p>Monroe Consulting © 2023</p>
-        </div>
+        <ul className="foot-icons">
+          <li className="foot-icon-item">
+            <a className="foot-icon" href="https://www.facebook.com/profile.php?id=100067359234865"><img className="foot-icon-img" src="linkedin-icon-blue.png" alt="Blue LinkedIn Icon" /></a>
+          </li>
+          <li className="foot-icon-item">
+            <a className="foot-icon" href="https://www.linkedin.com/in/barbara-monroe-6088439a"><img className="foot-icon-img" src="facebook-icon-blue.png" alt="Blue Facebook Icon" /></a>
+          </li>
+        </ul>
+        <ul className="foot-nav">
+          <li className="foot-nav-item"><a className="foot-nav-link" href="/">Home</a></li>
+          <li className="foot-nav-item"><a className="foot-nav-link" href="/about">About</a></li>
+          <li className="foot-nav-item"><a className="foot-nav-link" href="/services">Services</a></li>
+          <li className="foot-nav-item"><a className="foot-nav-link" href="/contact">Contact</a></li>
+        </ul>
+        <p className="foot-nav-text">@2024 Monroe Consulting | All Rights Reserved</p>
       </div>
-    </section>
+    </footer>
   );
 };
 
