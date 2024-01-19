@@ -21,7 +21,7 @@ export default function Contact() {
 
   return (
     <>
-      <Navbar visible={visible}/>
+      <Navbar visible={visible} logoColor={"#333437"} />
       <ContactPage />
     </>
   );

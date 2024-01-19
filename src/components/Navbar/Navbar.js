@@ -4,7 +4,7 @@ import React, { useEffect } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
-const Navbar = () => {
+const Navbar = ({ logoColor }) => {
 
   const router = useRouter();
 
@@ -48,7 +48,7 @@ const Navbar = () => {
 
   return (
     <header className="header">
-      <div className="nav-logo" onClick={handleLogoClick}>
+      <div className="nav-logo" onClick={handleLogoClick} style={{ color: logoColor }}>
         Monroe Consulting
       </div>
       <div className="hamburger-pos">

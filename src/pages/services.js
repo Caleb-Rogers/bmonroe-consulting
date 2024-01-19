@@ -22,7 +22,7 @@ export default function Services() {
 
   return (
     <>
-      <Navbar visible={visible}/>
+      <Navbar visible={visible} logoColor={"#f5f5f5"} />
       <ServicesPage />
       <Footer backgroundColor={"#28292c"} />
     </>

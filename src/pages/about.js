@@ -22,7 +22,7 @@ export default function AboutPage() {
 
   return (
     <>
-      <Navbar visible={visible}/>
+      <Navbar visible={visible} logoColor={"#f5f5f5"} />
       <About />
       <Footer backgroundColor={"#28292c"} />
     </>
