@@ -27,6 +27,7 @@ function Hero() {
       const y = e.pageY - secondaryBtn.offsetTop;
       secondaryBtn.style.setProperty("--x", x + "px");
       secondaryBtn.style.setProperty("--y", y + "px");
+      console.log("On Mouse Move [SECONDARY]");
     };
 
     const heroText = document.getElementById("hero-text");

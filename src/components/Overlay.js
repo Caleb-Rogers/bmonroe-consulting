@@ -71,3 +71,27 @@ export const animateTertiaryOverlay = (aboutText, aboutImg, aboutOverlay, router
     router.push("/services");
   }, delay);
 };
+
+export const animateServiceOverlay = (serviceText, serviceGrid, serviceOverlay, router) => {
+  const serviceColors = ["#ff6584", "#e1b711", "#4b77bc", "#333437"];
+  serviceText.classList.add("serv-sec-text--hidden");
+  serviceGrid.classList.add("serv-row--hidden");
+  serviceOverlay.classList.add("service-overlay--active");
+  let index = 0;
+  const intervalId = setInterval(() => {
+    serviceOverlay.classList.remove("service-overlay--serv-initial");
+    serviceOverlay.style.backgroundColor = serviceColors[index];
+    serviceOverlay.classList.add("service-overlay--active");
+    setTimeout(() => {
+      serviceOverlay.classList.remove("service-overlay--active");
+    }, 100);
+    index++;
+    if (serviceColors === serviceColors.length) {
+      clearInterval(intervalId);
+    }
+  }, 350); // Color Traversal Interval
+  const delay = serviceColors.length * 460; // Router Trigger Interval
+  setTimeout(() => {
+    router.push("/services");
+  }, delay);
+};
