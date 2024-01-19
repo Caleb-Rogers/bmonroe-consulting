@@ -52,7 +52,7 @@ export default function About() {
                         <h2 className="about-sub-heading">WORK THAT I'M PROUD OF</h2>
                         <br></br>
                         <p className="about-text">Mostly:</p>
-                        <p className="about-text">I was the lead project manager for <a href="https://www.redpointny.com/" target="_blank">Red Point</a>. During my
+                        <p className="about-text">I was the lead project manager for <a className="about-link" href="https://www.redpointny.com/" target="_blank">Red Point</a>. During my
                             time in that role I designed site plans and processed permits to get approved, allowing the business
                             to execute on their construction project. I cultivated meaningful relationships with with my clients
                             and am regarded as a efficient and effective member that can improve any team I join.
@@ -133,7 +133,7 @@ export default function About() {
                     <img className="headshot" src="headshot.png" alt="B. Monroe Headshot" />
                     <div className="client-text">
                       <h4 className="about-name">Barbara Monroe</h4>
-                      <h5 className="about-info">Founder at <Link className="founder" href="/">B. MONROE CONSULTING</Link></h5>
+                      <h5 className="about-info">Founder at <Link className="founder" href="/">MONROE CONSULTING</Link></h5>
                     </div>
                     <Link className="about-pg-cta" href="/contact">Work With Me</Link>
                 </div>

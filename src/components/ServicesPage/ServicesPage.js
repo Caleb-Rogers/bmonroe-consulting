@@ -139,7 +139,7 @@ export default function Service() {
                     <img className="headshot" src="headshot.png" alt="B. Monroe Headshot" />
                     <div className="client-text">
                       <h4 className="serv-name">Barbara Monroe</h4>
-                      <h5 className="serv-info">Founder at <Link className="founder" href="/">B. MONROE CONSULTING</Link></h5>
+                      <h5 className="serv-info">Founder at <Link className="founder" href="/">MONROE CONSULTING</Link></h5>
                     </div>
                     <Link className="service-pg-cta" href="/contact">Work With Me</Link>
                 </div>

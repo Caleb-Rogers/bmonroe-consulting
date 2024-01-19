@@ -63,6 +63,12 @@ body {
   font-weight: 400;
   letter-spacing: -0.5px;
   color: #e1b711;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.about-link:hover {
+  color: #e1b71190;
 }
 
 .about-list {
@@ -93,10 +99,6 @@ body {
   border-radius: 50%;
 }
 
-.about-main-right .founder {
-  color: #e1b711;
-}
-
 .about-main-right img {
   width: 30px;
   height: auto;
@@ -105,11 +107,27 @@ body {
 
 .about-name {
   font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  color: #d1d0c5;
 }
 
 .about-info {
-  margin-top: 0.1rem;
+  font-size: 1.4rem;
   margin-bottom: 1rem;
+}
+
+.founder {
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: #e1b711;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.founder:hover {
+  color: #e1b71190;
 }
 
 .about-main-right .about-pg-cta:link,
