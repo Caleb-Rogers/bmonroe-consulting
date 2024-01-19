@@ -9,7 +9,7 @@ body {
 }
 
 .about-container {
-  padding: 9rem 6rem 9rem 16rem;
+  padding: 16rem 12rem 9rem;
   background-color: #333437;
   color: #d1d0c5;
   font-family: "Cormorant Garamond", serif;
@@ -30,49 +30,49 @@ body {
   box-sizing: border-box;
 }
 
-.about-main-left h1 {
+.about-heading {
   font-size: 3.8rem;
   font-weight: 700;
   letter-spacing: -1px;
   color: #e1b711;
 }
 
-.about-main-left h2 {
+.about-sub-heading {
   font-family: "Oswald", sans-serif;
   font-weight: 700;
   font-size: 2.4rem;
   letter-spacing: 2.5px;
 }
 
-.about-main-left h3 {
+.about-title {
   font-style: italic;
   font-size: 2.4rem;
   font-weight: 600;
   letter-spacing: -0.5px;
 }
 
-.about-main-left p {
+.about-text {
   font-size: 2.2rem;
   font-weight: 400;
   letter-spacing: -0.5px;
+  line-height: 1.5;
 }
 
-.about-main-left a {
+.about-link {
   font-size: 2.2rem;
   font-weight: 400;
   letter-spacing: -0.5px;
   color: #e1b711;
 }
 
-.about-main-left ul {
+.about-list {
   list-style-type: circle;
   font-size: 2.2rem;
   font-weight: 400;
   letter-spacing: -0.5px;
 }
 
-.about-main-left li,
-p {
+.about-list-item {
   line-height: 1.5;
 }
 
@@ -103,11 +103,11 @@ p {
   margin: 2rem 1rem 1rem 0;
 }
 
-.about-main-right h4 {
+.about-name {
   font-size: 3rem;
 }
 
-.about-main-right h5 {
+.about-info {
   margin-top: 0.1rem;
   margin-bottom: 1rem;
 }
