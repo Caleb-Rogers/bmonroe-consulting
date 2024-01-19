@@ -9,7 +9,7 @@ body {
 }
 
 .service-container {
-  padding: 9rem 6rem 9rem 16rem;
+  padding: 16rem 12rem 9rem;
   background-color: #333437;
   color: #d1d0c5;
   font-family: "Cormorant Garamond", serif;
@@ -30,49 +30,42 @@ body {
   box-sizing: border-box;
 }
 
-.service-main-left h1 {
+.serv-heading {
   font-size: 3.8rem;
   font-weight: 700;
   letter-spacing: -1px;
   color: #e1b711;
 }
 
-.service-main-left h2 {
+.serv-title {
   font-family: "Oswald", sans-serif;
   font-weight: 700;
   font-size: 2.4rem;
   letter-spacing: -1px;
 }
 
-.service-main-left h3 {
+.serv-sub-heading {
   font-style: italic;
   font-size: 2.4rem;
   font-weight: 600;
   letter-spacing: 1px;
 }
 
-.service-main-left p {
+.serv-text {
   font-size: 2.2rem;
   font-weight: 400;
   letter-spacing: 0.2px;
+  line-height: 1.5;
 }
 
-.service-main-left a {
-  font-size: 2.2rem;
-  font-weight: 400;
-  letter-spacing: -0.5px;
-  color: #e1b711;
-}
-
-.service-main-left ul {
+.serv-list {
   list-style-type: circle;
   font-size: 2.2rem;
   font-weight: 400;
   letter-spacing: -0.5px;
 }
 
-.service-main-left li,
-p {
+.serv-list-item {
   line-height: 1.5;
 }
 
@@ -104,11 +97,11 @@ p {
   margin: 2rem 1rem 1rem 0;
 }
 
-.service-main-right h4 {
+.serv-name {
   font-size: 3rem;
 }
 
-.service-main-right h5 {
+.serv-info {
   margin-top: 0.1rem;
   margin-bottom: 1rem;
 }
