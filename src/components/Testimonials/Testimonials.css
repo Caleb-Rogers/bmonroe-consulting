@@ -119,6 +119,7 @@ body {
   background-color: #333437;
   border-radius: 50%;
   transform: translateY(15px);
+  opacity: 1;
 }
 
 .nav-btn:hover {
@@ -170,4 +171,288 @@ body {
 .autoplay-progress span {
   color: #333437;
   font-size: 14px;
+}
+
+/* RESPONSIVENESS */
+
+@media only screen and (max-width: 1622px) {
+  .test-sub-heading {
+    font-size: 3.1rem;
+  }
+  .test-heading {
+    font-size: 7.2rem;
+  }
+  .test-quote {
+    font-size: 2.7rem;
+  }
+  .test-name {
+    font-size: 1.7rem;
+  }
+  .test-title {
+    font-size: 1.6rem;
+  }
+}
+
+@media only screen and (max-width: 1494px) {
+  .test-sub-heading {
+    font-size: 3rem;
+  }
+  .test-heading {
+    font-size: 6.8rem;
+  }
+  .test-quote {
+    font-size: 2.6rem;
+  }
+  .test-name {
+    font-size: 1.6rem;
+  }
+  .test-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 1305px) {
+  .test-sub-heading {
+    font-size: 2.9rem;
+  }
+  .test-heading {
+    font-size: 6.2rem;
+  }
+  .test-quote {
+    font-size: 2.4rem;
+  }
+  .test-name {
+    font-size: 1.5rem;
+  }
+  .test-title {
+    font-size: 1.4rem;
+  }
+}
+
+@media only screen and (max-width: 1142px) {
+  .test-sub-heading {
+    font-size: 2.8rem;
+  }
+  .test-heading {
+    font-size: 6rem;
+  }
+  .test-quote {
+    font-size: 2.2rem;
+  }
+  .test-name {
+    font-size: 1.4rem;
+  }
+  .test-title {
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 998px) {
+  .test-container {
+    width: 700px;
+  }
+  .test-row {
+    max-width: 700px;
+  }
+  .test-box {
+    row-gap: 25px;
+  }
+  .nav-btn {
+    opacity: 0;
+  }
+  .test-quote {
+    padding: 0;
+  }
+  .test-sub-heading {
+    font-size: 3rem;
+  }
+  .test-heading {
+    font-size: 6.6rem;
+  }
+  .test-quote {
+    font-size: 2.6rem;
+  }
+  .test-name {
+    font-size: 1.8rem;
+  }
+  .test-title {
+    font-size: 1.7rem;
+  }
+}
+
+@media only screen and (max-width: 772px) {
+  .test-container {
+    width: 600px;
+  }
+  .test-row {
+    max-width: 600px;
+  }
+  .test-box {
+    row-gap: 20px;
+  }
+  .test-sub-heading {
+    font-size: 2.8rem;
+  }
+  .test-heading {
+    font-size: 6.2rem;
+  }
+  .test-quote {
+    font-size: 2.4rem;
+  }
+  .test-name {
+    font-size: 1.8rem;
+  }
+  .test-title {
+    font-size: 1.7rem;
+  }
+}
+
+@media only screen and (max-width: 626px) {
+  .test-container {
+    width: 500px;
+  }
+  .test-row {
+    max-width: 500px;
+  }
+  .test-box {
+    row-gap: 15px;
+  }
+  .test-sub-heading {
+    font-size: 2.4rem;
+  }
+  .test-heading {
+    font-size: 5.2rem;
+  }
+  .test-quote {
+    font-size: 2rem;
+  }
+  .test-name {
+    font-size: 1.7rem;
+  }
+  .test-title {
+    font-size: 1.6rem;
+  }
+}
+
+@media only screen and (max-width: 508px) {
+  .test-container {
+    width: 400px;
+  }
+  .test-row {
+    max-width: 400px;
+  }
+  .test-box {
+    row-gap: 0;
+  }
+  .test-sub-heading {
+    font-size: 2.3rem;
+  }
+  .test-heading {
+    font-size: 4.4rem;
+  }
+  .test-quote {
+    font-size: 1.8rem;
+  }
+  .test-name {
+    font-size: 1.6rem;
+  }
+  .test-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 435px) {
+  .test-container {
+    width: 350px;
+  }
+  .test-row {
+    max-width: 350px;
+  }
+  .test-sub-heading {
+    font-size: 2.1rem;
+  }
+  .test-heading {
+    font-size: 5rem;
+  }
+  .test-quote {
+    font-size: 1.9rem;
+  }
+  .test-name {
+    font-size: 1.6rem;
+  }
+  .test-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .test-container {
+    width: 300px;
+  }
+  .test-row {
+    max-width: 300px;
+  }
+  .test-sub-heading {
+    font-size: 2rem;
+  }
+  .test-heading {
+    font-size: 5rem;
+  }
+  .test-quote {
+    font-size: 1.4rem;
+  }
+  .test-name {
+    font-size: 1.6rem;
+  }
+  .test-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 372px) {
+  .test-container {
+    width: 275px;
+  }
+  .test-row {
+    max-width: 275px;
+  }
+  .test-sub-heading {
+    font-size: 1.9rem;
+  }
+  .test-heading {
+    font-size: 4.8rem;
+  }
+  .test-quote {
+    font-size: 1.6rem;
+  }
+  .test-name {
+    font-size: 1.5rem;
+  }
+  .test-title {
+    font-size: 1.4rem;
+  }
+}
+
+@media only screen and (max-width: 284px) {
+  .test-container {
+    width: 250px;
+  }
+  .test-row {
+    max-width: 250px;
+  }
+  .test-sub-heading {
+    font-size: 1.5rem;
+  }
+  .test-heading {
+    font-size: 4.2rem;
+  }
+  .test-quote {
+    font-size: 1.3rem;
+  }
+  .test-name {
+    font-size: 1.2rem;
+  }
+  .test-title {
+    font-size: 1.1rem;
+  }
 }

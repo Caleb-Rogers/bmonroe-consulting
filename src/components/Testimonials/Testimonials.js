@@ -69,7 +69,7 @@ export default function Testimonials() {
               responsive to needs of her customers. Barb Monroe helped us through a challenging issue and her professionalism and focus
               was what helped us get through it.
             </p>
-            <box-icon type='solid' name="quote-alt-left" color="#ff6584" size="35px"></box-icon>
+            <box-icon className="quote" type='solid' name="quote-alt-left" color="#ff6584" size="35px"></box-icon>
             <div className="test-details">
               <span className="test-name">Joe & Pam Stagliano</span>
               <span className="test-title">Stagliano Inc.</span>
@@ -82,7 +82,7 @@ export default function Testimonials() {
               navigating the intricacies of permits and codes, Barb's expertise was evident every step of the way. She provided invaluable 
               insights, kept the project on track, and demonstrated a commitment to excellence that is truly commendable...
             </p>
-            <box-icon type='solid' name="quote-alt-left" color="#ff6584" size="35px"></box-icon>
+            <box-icon className="quote" type='solid' name="quote-alt-left" color="#ff6584" size="35px"></box-icon>
             <div className="test-details">
               <span className="test-name">First Last</span>
               <span className="test-title">Random, LLC.</span>
@@ -95,7 +95,7 @@ export default function Testimonials() {
               Barb's knowledge of construction project management is unmatched, and her ability to navigate the complexities of permits and 
               codes made the entire process seamless...
             </p>
-            <box-icon type='solid' name="quote-alt-left" color="#ff6584" size="35px"></box-icon>
+            <box-icon className="quote" type='solid' name="quote-alt-left" color="#ff6584" size="35px"></box-icon>
             <div className="test-details">
               <span className="test-name">First Last</span>
               <span className="test-title">Random, LLC.</span>
@@ -108,7 +108,7 @@ export default function Testimonials() {
               coupled with her attention to detail, proved to be invaluable throughout the entire process. She skillfully guided us through the complexities 
               of permits and codes, ensuring a smooth and efficient project timeline...
             </p>
-            <box-icon type='solid' name="quote-alt-left" color="#ff6584" size="35px"></box-icon>
+            <box-icon className="quote" type='solid' name="quote-alt-left" color="#ff6584" size="35px"></box-icon>
             <div className="test-details">
               <span className="test-name">First Last</span>
               <span className="test-title">Random, LLC.</span>
