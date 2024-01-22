@@ -7,6 +7,9 @@ import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 export default function Testimonials() {
 
   useEffect(() => {
+    const progressNumber = document.querySelector(".progress-number");
+    const pauseBtn = document.querySelector(".pause");
+
     try {
       if (typeof Swiper === "undefined") {
         console.error("Swiper is not defined. Make sure it is properly loaded.");
@@ -15,7 +18,6 @@ export default function Testimonials() {
 
       const swiperContainer = document.querySelector(".mySwiper");
       const progressCircle = document.querySelector(".autoplay-progress svg");
-      const progressNumber = document.querySelector(".autoplay-progress span");
 
       if (!swiperContainer || !progressCircle || !progressNumber) {
         return;
@@ -54,8 +56,12 @@ export default function Testimonials() {
     const handlePause = () => {
       if (swiper.autoplay.running) {
         swiper.autoplay.stop();
+        progressNumber.classList.add("progress-number--hidden");
+        pauseBtn.classList.remove("pause--hidden");
       } else {
         swiper.autoplay.start();
+        progressNumber.classList.remove("progress-number--hidden");
+        pauseBtn.classList.add("pause--hidden");
       }
     };
     document.querySelector('.autoplay-progress').addEventListener('click', handlePause);
@@ -128,10 +134,13 @@ export default function Testimonials() {
         <div className="swiper-button-prev nav-btn"></div>
         <div className="swiper-pagination"></div>
         <div className="autoplay-progress">
+          <div class="pause pause--hidden">
+            <box-icon name='pause'></box-icon>
+          </div>
           <svg viewBox="0 0 48 48">
             <circle cx="24" cy="24" r="20"></circle>
           </svg>
-          <span></span>
+          <span className="progress-number"></span>
         </div>
       </div>
       <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>

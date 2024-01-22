@@ -168,9 +168,26 @@ body {
   transform: rotate(-90deg);
 }
 
-.autoplay-progress span {
+.progress-number {
   color: #333437;
   font-size: 14px;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.progress-number--hidden {
+  opacity: 0;
+}
+
+.pause {
+  position: absolute;
+  top: 12px;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.pause--hidden {
+  opacity: 0;
 }
 
 /* RESPONSIVENESS */
