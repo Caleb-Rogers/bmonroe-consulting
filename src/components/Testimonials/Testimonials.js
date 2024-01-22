@@ -50,6 +50,15 @@ export default function Testimonials() {
     } catch (error) {
       console.error("Swiper initialization error:", error);
     }
+
+    const handlePause = () => {
+      if (swiper.autoplay.running) {
+        swiper.autoplay.stop();
+      } else {
+        swiper.autoplay.start();
+      }
+    };
+    document.querySelector('.autoplay-progress').addEventListener('click', handlePause);
   }, []);
 
   return (
