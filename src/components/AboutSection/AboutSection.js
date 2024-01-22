@@ -12,26 +12,10 @@ export default function AboutSection() {
   useEffect(() => {
 
     const tertiaryBtn = document.getElementById("tertiary-btn");
-
-    // Tertiary Button Spotlight Effect
-    tertiaryBtn.onmousemove = function (e) {
-      const x = e.pageX - tertiaryBtn.offsetLeft;
-      const y = e.pageY - tertiaryBtn.offsetTop;
-      tertiaryBtn.style.setProperty("--x", x + "px");
-      tertiaryBtn.style.setProperty("--y", y + "px");
-    };
-
     const aboutText = document.getElementById("about-sec-text");
     const aboutImg = document.getElementById("about-sec-img-box");
     const heroOverlay = document.getElementById("about-overlay");
-
-    // Animate Color Traversal Overlay Upon Tertiary Button Click
-    tertiaryBtn.addEventListener("click", (e) => {
-      e.preventDefault();
-      tertiaryBtn.classList.add("tertiary-btn--clicked");
-      heroOverlay.classList.add("hero-overlay--tertiary-initial");
-      animateTertiaryOverlay(aboutText, aboutImg, heroOverlay, router);
-    });
+    var isMobile = false;
 
     // Check viewport width on load and resize
     function checkViewportWidth() {
@@ -39,15 +23,35 @@ export default function AboutSection() {
       if (viewportWidth <= 998) {
         tertiaryBtn.classList.remove("tertiary-btn");
         tertiaryBtn.classList.add("tertiary-btn--mobile");
+        isMobile = true;
       } else {
         tertiaryBtn.classList.add("tertiary-btn");
         tertiaryBtn.classList.remove("tertiary-btn--mobile");
+        isMobile = false;
       }
     }
 
     // Call the function on initial load and when the window is resized
     window.addEventListener('resize', checkViewportWidth);
     checkViewportWidth();
+
+    if (!isMobile) {
+      // Tertiary Button Spotlight Effect
+      tertiaryBtn.onmousemove = function (e) {
+        const x = e.pageX - tertiaryBtn.offsetLeft;
+        const y = e.pageY - tertiaryBtn.offsetTop;
+        tertiaryBtn.style.setProperty("--x", x + "px");
+        tertiaryBtn.style.setProperty("--y", y + "px");
+      };
+
+      // Animate Color Traversal Overlay Upon Tertiary Button Click
+      tertiaryBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        tertiaryBtn.classList.add("tertiary-btn--clicked");
+        heroOverlay.classList.add("hero-overlay--tertiary-initial");
+        animateTertiaryOverlay(aboutText, aboutImg, heroOverlay, router);
+      });
+    }
   }, []);
 
   return (

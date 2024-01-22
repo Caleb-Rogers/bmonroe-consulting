@@ -386,7 +386,7 @@ body {
   .primary-btn--mobile,
   .secondary-btn--mobile {
     transition: none;
-    transition-duration: 0.4s;
+    transition-duration: 0.2s;
   }
   .primary-btn--mobile:after,
   .secondary-btn--mobile:after {
@@ -399,7 +399,7 @@ body {
     width: 100%;
     height: 100%;
     opacity: 0;
-    transition: all 0.5s;
+    transition: all 0.2s;
     box-shadow: 0 0 2.4rem 4rem #333437;
   }
   .primary-btn--mobile:active:after,
