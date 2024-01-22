@@ -134,7 +134,7 @@ export default function Testimonials() {
         <div className="swiper-button-prev nav-btn"></div>
         <div className="swiper-pagination"></div>
         <div className="autoplay-progress">
-          <div class="pause pause--hidden">
+          <div className="pause pause--hidden">
             <box-icon name='pause'></box-icon>
           </div>
           <svg viewBox="0 0 48 48">
