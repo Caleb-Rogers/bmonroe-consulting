@@ -12,11 +12,11 @@ function Hero() {
 
   useEffect(() => {
 
-    const primaryBtn = document.getElementById("primary-btn");
-    const secondaryBtn = document.getElementById("secondary-btn");
-    const heroText = document.getElementById("hero-text");
-    const heroImg = document.getElementById("hero-img-box");
-    const heroOverlay = document.getElementById("hero-overlay");
+    const primaryBtn = document.querySelector(".primary-btn");
+    const secondaryBtn = document.querySelector(".secondary-btn");
+    const heroText = document.querySelector(".hero-text");
+    const heroImg = document.querySelector(".hero-img-box");
+    const heroOverlay = document.querySelector(".hero-overlay");
     var isMobile = false;
 
     // Check if the elements are found in the DOM
