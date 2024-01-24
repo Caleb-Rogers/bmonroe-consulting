@@ -81,7 +81,7 @@ body {
 }
 
 .hero-sub-heading {
-  font-size: clamp(2rem, 2.3vw, 3rem);
+  font-size: clamp(1.6rem, 2.3vw, 3rem);
   font-weight: 600;
   line-height: 1.15;
   margin-bottom: 10px;
@@ -182,7 +182,7 @@ body {
   }
   .hero-btn {
     font-size: clamp(1.4rem, 1.9vw, 2rem);
-    padding: clamp(1rem, 2.5vw, 1.8rem) clamp(1.2rem, 2.5vw, 1.8rem);
+    padding: clamp(1.6rem, 2.5vw, 1.8rem) clamp(1.2rem, 2.5vw, 1.8rem);
   }
 }
 
@@ -193,9 +193,10 @@ body {
     max-width: 90%;
   }
   .hero-text {
-    margin: 22% 0 4%;
+    margin: calc(20% + 9%) 0 4%;
   }
   .hero-sub-heading {
+    font-weight: 700;
     margin-bottom: 7px;
   }
   .hero-heading {
