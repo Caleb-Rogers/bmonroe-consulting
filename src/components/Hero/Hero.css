@@ -24,9 +24,9 @@ body {
 .hero {
   background-color: var(--primary-white);
   background: linear-gradient(
-    135deg,
-    rgba(245, 245, 245, 1) 35%,
-    rgba(51, 52, 55, 1) 100%
+    163deg,
+    rgba(245, 245, 245, 1) 30%,
+    rgba(51, 52, 55, 1) 81%
   );
   color: var(--secondary-dark-grey);
 }
