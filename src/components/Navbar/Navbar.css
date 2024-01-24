@@ -101,7 +101,7 @@ body {
   border-radius: 40px;
   background-color: #333437;
   position: relative;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
   cursor: pointer;
 }
 
