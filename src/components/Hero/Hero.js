@@ -82,9 +82,9 @@ function Hero() {
 
   return (
     <main className="hero">
-      <div id="hero-overlay" className="hero-overlay"></div>
+      <div className="hero-overlay"></div>
       <section className="hero-section">
-        <div className="hero-text" id="hero-text">
+        <div className="hero-text">
           <div className="hero-line"></div>
           <h2 className="hero-sub-heading">
             Navigating Complexity, Delivering Excellence
@@ -95,15 +95,15 @@ function Hero() {
             With 20+ years of experience in this field, I can establish your project's designs, permitting, and development to surpass standards.
           </p>
           <div className="hero-btns">
-            <Link href="/contact" className="hero-btn primary-btn" id="primary-btn">
+            <Link href="/contact" className="hero-btn primary-btn">
               <span>Work With Us</span>
             </Link>
-            <Link href="/services" className="hero-btn secondary-btn" id="secondary-btn">
+            <Link href="/services" className="hero-btn secondary-btn">
               <span>Discover Our Services</span>
             </Link>
           </div>
         </div>
-        <div className="hero-img-box" id="hero-img-box">
+        <div className="hero-img-box">
           <img src="hero.svg" className="hero-img" alt="Working Woman" />
         </div>
       </section>
