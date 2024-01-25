@@ -28,17 +28,13 @@ function Hero() {
     // Check viewport width on load and resize
     function checkViewportWidth() {
       var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
-      if (viewportWidth <= 998) {
+      if (viewportWidth <= 903) {
         primaryBtn.classList.remove("primary-btn");
-        primaryBtn.classList.add("primary-btn--mobile");
         secondaryBtn.classList.remove("secondary-btn");
-        secondaryBtn.classList.add("secondary-btn--mobile");
         isMobile = true;
       } else {
         primaryBtn.classList.add("primary-btn");
-        primaryBtn.classList.remove("primary-btn--mobile");
         secondaryBtn.classList.add("secondary-btn");
-        secondaryBtn.classList.remove("secondary-btn--mobile");
         isMobile = false;
       }
     }
@@ -83,7 +79,7 @@ function Hero() {
   return (
     <main className="hero">
       <div className="hero-overlay"></div>
-      <section className="hero-section">
+      <div className="hero-container">
         <div className="hero-text">
           <div className="hero-line"></div>
           <h2 className="hero-sub-heading">
@@ -106,7 +102,7 @@ function Hero() {
         <div className="hero-img-box">
           <img src="hero.svg" className="hero-img" alt="Working Woman" />
         </div>
-      </section>
+      </div>
     </main>
   );
 }

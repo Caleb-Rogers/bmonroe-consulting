@@ -4,6 +4,7 @@
   --primary-white: #f5f5f5;
   --secondary-dark-grey: #333437;
   --tertiary-light-grey: #909090;
+  --tertiary-darker-grey: #4e4e4e;
   --accent-yellow: #e1b711;
   --accent-pink: #ff6584;
   --accent-blue: #4b77bc;
@@ -26,7 +27,7 @@ body {
   background: linear-gradient(
     163deg,
     rgba(245, 245, 245, 1) 30%,
-    rgba(51, 52, 55, 1) 81%
+    rgba(51, 52, 55, 1) clamp(81%, calc(40% + 2.3vw), 40%)
   );
   color: var(--secondary-dark-grey);
 }
@@ -44,14 +45,14 @@ body {
 }
 
 .hero-overlay--primary-initial {
-  background-color: #e1b711;
+  background-color: var(--accent-yellow);
 }
 
 .hero-overlay--secondary-initial {
-  background-color: #ff6584;
+  background-color: var(--accent-pink);
 }
 
-.hero-section {
+.hero-container {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -60,7 +61,7 @@ body {
   margin: 0 auto;
 }
 
-.hero-section > * {
+.hero-container > * {
   flex: 1 1 40em;
   transition: margin-left 0.3s ease;
 }
@@ -75,7 +76,7 @@ body {
 .hero-line {
   width: 80px;
   height: 5px;
-  background-color: #ff6584;
+  background-color: var(--accent-pink);
   border-radius: 9px;
   margin-bottom: 1rem;
 }
@@ -117,7 +118,7 @@ body {
   padding: clamp(0.5rem, 1.5vw, 2rem) clamp(0.7rem, 1.5vw, 3rem);
   border-radius: 9px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-  background-color: var(--secondary-dark-grey);
+  background-color: var(--tertiary-darker-grey);
   color: var(--primary-white);
   overflow: hidden;
   transition: 0.6s cubic-bezier(0.01, 1.69, 0.99, 0.94);
@@ -132,7 +133,6 @@ body {
   color: var(--primary-white);
 }
 
-.hero-btn::before,
 .hero-btn::before {
   content: "";
   position: absolute;
@@ -146,11 +146,11 @@ body {
 }
 
 .primary-btn::before {
-  background-color: #e1b711;
+  background-color: var(--accent-yellow);
 }
 
 .secondary-btn::before {
-  background-color: #ff6584;
+  background-color: var(--accent-pink);
 }
 
 .hero-btn:hover::before {
@@ -189,7 +189,7 @@ body {
 
 /* Switch from Landscape to Portrait */
 @media only screen and (max-width: 903px) {
-  .hero-section {
+  .hero-container {
     min-height: 80%;
     max-width: 90%;
   }
