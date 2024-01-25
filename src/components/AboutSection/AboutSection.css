@@ -112,8 +112,9 @@ body {
 }
 
 .about-sec-cta {
-  display: flex;
+  display: inline-flex;
   align-items: center;
+  gap: 35px;
 }
 
 .about-sec-icons {
@@ -124,9 +125,8 @@ body {
   width: 65px;
 }
 
-/* OVERFLOW (sorta) WORKS HERE BUT NOT FOR about-sec-btn... */
 .about-sec-btn-box {
-  overflow: hidden;
+  display: flex;
 }
 
 .about-sec-btn {
