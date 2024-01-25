@@ -14,11 +14,13 @@ export default function AboutSection() {
     const tertiaryBtn = document.querySelector(".tertiary-btn");
     const aboutText = document.querySelector(".about-sec-text");
     const aboutImg = document.querySelector(".about-sec-img-box");
+    const desktopImg = document.getElementById("desktop");
+    const mobileImg = document.getElementById("mobile");
     const heroOverlay = document.querySelector(".about-overlay");
     var isMobile = false;
 
       // Check if the elements are found in the DOM
-      if (!tertiaryBtn || !aboutText || !aboutImg || !heroOverlay) {
+      if (!tertiaryBtn || !desktopImg || !mobileImg || !aboutText || !aboutImg || !heroOverlay) {
         console.error("One or more elements not found in the DOM");
         return;
       }
@@ -26,11 +28,15 @@ export default function AboutSection() {
     // Check viewport width on load and resize
     function checkViewportWidth() {
       var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
-      if (viewportWidth <= 998) {
+      if (viewportWidth <= 903) {
         tertiaryBtn.classList.remove("tertiary-btn");
+        desktopImg.classList.add("img-hidden");
+        mobileImg.classList.remove("img-hidden");
         isMobile = true;
       } else {
         tertiaryBtn.classList.add("tertiary-btn");
+        desktopImg.classList.remove("img-hidden");
+        mobileImg.classList.add("img-hidden");
         isMobile = false;
       }
     }
@@ -62,7 +68,7 @@ export default function AboutSection() {
     <section className="about-section">
       <div className="about-overlay"></div>
       <div className="about-sec-container">
-        <div className="about-sec-img-box">
+        <div className="about-sec-img-box desktop-img" id="desktop">
           <img src="headshot.png" className="about-sec-img" alt="B. Monroe Headshot" />
         </div>
         <div className="about-sec-text">
@@ -70,6 +76,9 @@ export default function AboutSection() {
           <h2 className="about-sec-sub-heading">About Barbara Monroe</h2>
           <h1 className="about-sec-heading">Mastering Construction<br></br>Project Success</h1>
           <h3 className="about-sec-titles"><span>Zoning & Code Enforcement Officer</span><span className="dot"> • </span><span>Construction PM Consultant</span><span className="dot"> • </span><span>Site Plan Designer</span></h3>
+          <div className="about-sec-img-box mobile-img" id="mobile">
+            <img src="headshot.png" className="about-sec-img" alt="B. Monroe Headshot" />
+          </div>
           <p className="about-sec-description">
             With a track record of steering projects over obstacles to approval,
             I, Barbara Monroe, blend expertise with passion. My commitment is simple:

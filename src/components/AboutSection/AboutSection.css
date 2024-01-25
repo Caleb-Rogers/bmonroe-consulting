@@ -45,16 +45,10 @@ body {
 
 .about-sec-container {
   display: flex;
-  flex-wrap: wrap-reverse;
   align-items: center;
   min-height: 100vh;
   max-width: 90%;
   margin: 0 auto;
-}
-
-.about-sec-container > * {
-  flex: 1 1 40em;
-  transition: margin-left 0.3s ease;
 }
 
 .about-sec-img {
@@ -64,12 +58,17 @@ body {
   box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.5);
 }
 
+.img-hidden {
+  display: none;
+}
+
 .about-sec-text {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   text-align: right;
   margin: 0 auto;
+  max-width: 60%;
 }
 
 .about-sec-line {
@@ -198,22 +197,22 @@ body {
 /* Switch from Landscape to Portrait */
 @media only screen and (max-width: 903px) {
   .about-sec-container {
+    display: flex;
     align-items: flex-start;
     min-height: 80%;
     max-width: 90%;
-    gap: 40px;
   }
   .about-sec-img-box {
-    text-align: center;
-    margin-bottom: calc(0% + 9%);
+    margin-bottom: calc(0% + 2%);
   }
   .about-sec-img {
-    max-width: 103%;
+    max-width: 70%;
   }
   .about-sec-text {
     align-items: flex-start;
     text-align: left;
-    margin-top: calc(0% + 9%);
+    margin: calc(10% + 9%) 0 0;
+    max-width: 100%;
   }
   .about-sec-sub-heading {
     font-weight: 700;
@@ -225,11 +224,20 @@ body {
   .about-sec-titles {
     margin-bottom: 10px;
   }
+  .about-sec-titles span {
+    display: flex;
+    flex-direction: column;
+    line-height: 0.6;
+  }
+  .dot {
+    visibility: collapse;
+  }
   .about-sec-description {
     margin-bottom: 12px;
   }
   .about-sec-cta {
     flex-direction: row-reverse;
+    margin: 0 0 calc(10% + 9%);
   }
   .about-sec-btn {
     overflow: visible;
