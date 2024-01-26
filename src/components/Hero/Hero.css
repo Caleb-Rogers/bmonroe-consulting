@@ -30,6 +30,7 @@ body {
     rgba(51, 52, 55, 1) clamp(81%, calc(40% + 2.3vw), 40%)
   );
   color: var(--secondary-dark-grey);
+  overflow: hidden;
 }
 
 .hero-overlay {
