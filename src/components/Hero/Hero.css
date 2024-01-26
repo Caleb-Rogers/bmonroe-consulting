@@ -188,7 +188,7 @@ body {
 }
 
 /* Switch from Landscape to Portrait */
-@media only screen and (max-width: 903px) {
+@media only screen and (max-width: 888px) {
   .hero-container {
     min-height: 80%;
     max-width: 90%;

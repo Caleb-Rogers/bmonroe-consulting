@@ -87,15 +87,15 @@ body {
 }
 
 .about-sec-heading {
-  font-size: clamp(4rem, 7vw, 9rem);
+  font-size: clamp(4rem, 7vw, 8rem);
   font-weight: 700;
-  line-height: 0.8;
-  margin-bottom: 20px;
+  line-height: 1;
+  margin-bottom: 40px;
 }
 
 .about-sec-titles {
   color: var(--tertiary-light-grey);
-  font-size: clamp(2rem, 2.3vw, 3.2rem);
+  font-size: clamp(2rem, 2.3vw, 2.2rem);
   line-height: 1.15;
   margin-bottom: 20px;
 }

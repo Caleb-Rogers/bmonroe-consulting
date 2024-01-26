@@ -12,8 +12,8 @@ body {
   font-family: "Sacramento", cursive;
   position: absolute;
   top: 3rem;
-  left: 10.5rem;
-  font-size: 6rem;
+  left: 3.5%;
+  font-size: clamp(4rem, 5vw, 6rem);
   font-weight: 900;
   cursor: pointer;
   z-index: 20;
@@ -90,8 +90,8 @@ body {
 
 .hamburger-pos {
   position: fixed;
-  top: 20px;
-  right: 40px;
+  top: 30px;
+  right: 50px;
   z-index: 40;
 }
 
@@ -159,81 +159,19 @@ body {
   transform: translateX(-50%) translateY(-50%) rotate(-135deg);
 }
 
-/* RESPONSIVENESS */
+/** RESPONSIVENESS **/
 
-@media only screen and (max-width: 1622px) {
-  .nav-logo {
-    left: 8.5rem;
-    font-size: 5.8rem;
+/* Switch from Landscape to Portrait */
+@media only screen and (max-width: 903px) {
+  .hamburger-pos {
+    right: 30px;
   }
-}
-
-@media only screen and (max-width: 1494px) {
-  .nav-logo {
-    left: 6.5rem;
-    font-size: 5.2rem;
+  .hamburger {
+    width: 50px;
+    height: 50px;
   }
-}
-
-@media only screen and (max-width: 1305px) {
-  .nav-logo {
-    left: 4.5rem;
-    font-size: 4.8rem;
-  }
-}
-
-@media only screen and (max-width: 1142px) {
-  .nav-logo {
-    left: 2.5rem;
-    font-size: 4.4rem;
-  }
-}
-
-@media only screen and (max-width: 998px) {
-  .nav-logo {
-    left: 1rem;
-    font-size: 4.8rem;
-  }
-}
-
-@media only screen and (max-width: 772px) {
-  .nav-logo {
-    font-size: 4rem;
-  }
-}
-
-@media only screen and (max-width: 626px) {
-  .nav-logo {
-    font-size: 3.6rem;
-  }
-}
-
-@media only screen and (max-width: 508px) {
-  .nav-logo {
-    font-size: 3.2rem;
-  }
-}
-
-@media only screen and (max-width: 435px) {
-  .nav-logo {
-    font-size: 2.8rem;
-  }
-}
-
-@media only screen and (max-width: 372px) {
-  .nav-logo {
-    font-size: 2.6rem;
-  }
-}
-
-@media only screen and (max-width: 310px) {
-  .nav-logo {
-    font-size: 2.2rem;
-  }
-}
-
-@media only screen and (max-width: 260px) {
-  .nav-logo {
-    font-size: 1.8rem;
+  .hamburger div {
+    width: 18px;
+    height: 2.5px;
   }
 }
