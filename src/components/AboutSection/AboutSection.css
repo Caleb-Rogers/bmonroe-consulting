@@ -87,17 +87,17 @@ body {
 }
 
 .about-sec-heading {
-  font-size: clamp(4rem, 7vw, 8rem);
+  font-size: clamp(4rem, 5vw, 6.5rem);
   font-weight: 700;
   line-height: 1;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .about-sec-titles {
   color: var(--tertiary-light-grey);
   font-size: clamp(2rem, 2.3vw, 2.2rem);
   line-height: 1.15;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .dot {

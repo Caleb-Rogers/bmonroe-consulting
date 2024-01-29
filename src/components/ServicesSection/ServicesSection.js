@@ -6,12 +6,12 @@ import { faFileInvoice, faGavel, faCompassDrafting, faScaleBalanced, faBolt, faE
 export default function ServicesSection() {
   return (
     <section className="serv-section">
-      <div className="serv-sec-text">
-        <div className="serv-sec-line"></div>
-        <div className="serv-sec-sub-heading">My Services</div>
-        <div className="serv-sec-heading">What Monroe Consulting Can Do For YOU</div>
-      </div>
       <div className="serv-container">
+        <div className="serv-sec-text">
+          <div className="serv-sec-line"></div>
+          <div className="serv-sec-sub-heading">My Services</div>
+          <div className="serv-sec-heading">What Monroe Consulting Can Do For YOU</div>
+        </div>
         <div className="serv-row">
           <div className="serv-box">
             <FontAwesomeIcon icon={faFileInvoice} className="serv-icon" />
