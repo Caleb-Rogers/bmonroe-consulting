@@ -32,15 +32,15 @@ export default function About() {
       }, []);
     return (
       <>
-        <div className="about-container">
-            <div className="about-main">
+        <main className="about-main">
+            <div className="about-container">
                 <div className="about-main-left">
                     <p className="about-text">Hello 👋</p>
                     <br></br>
                     <h1 className="about-heading">I’m Barbara Monroe, founder of B. Monroe Consulting. I offer zoning and project management services
                         that create happy clients through meticulous and forward-thinking plans and execution.</h1>
                     <br></br>
-                    <p className="about-text">I have over two decades of experience as a zoning enforcement officer. As of recent years, I have
+                    <p className="about-text ml">I have over two decades of experience as a zoning enforcement officer. As of recent years, I have
                         transitioned and adapted to consulting contractors on their construction projects. With my acquired
                         experience, I can create site plans, dispute variance issues, and aid you through the tedious legal
                         process to getting your project APPROVED.
@@ -52,7 +52,7 @@ export default function About() {
                         <h2 className="about-sub-heading">WORK THAT I'M PROUD OF</h2>
                         <br></br>
                         <p className="about-text">Mostly:</p>
-                        <p className="about-text">I was the lead project manager for <a className="about-link" href="https://www.redpointny.com/" target="_blank">Red Point</a>. During my
+                        <p className="about-text ml">I was the lead project manager for <a className="about-link" href="https://www.redpointny.com/" target="_blank">Red Point</a>. During my
                             time in that role I designed site plans and processed permits to get approved, allowing the business
                             to execute on their construction project. I cultivated meaningful relationships with with my clients
                             and am regarded as a efficient and effective member that can improve any team I join.
@@ -120,13 +120,13 @@ export default function About() {
                     <div className="hidden">
                         <h2 className="about-sub-heading">ABOUT ME</h2>
                         <br></br>
-                        <h3 className="about-title">Family movie nights</h3>
-                        <h3 className="about-title">Draft Beer</h3>
-                        <h3 className="about-title">Dinner and drinks</h3>
-                        <h3 className="about-title">Amy Schumer</h3>
-                        <h3 className="about-title">Daptone Records</h3>
-                        <h3 className="about-title">Pasta</h3>
-                        <h3 className="about-title">Sunday hangs</h3>
+                        <h3 className="about-text">Family movie nights</h3>
+                        <h3 className="about-text">Draft Beer</h3>
+                        <h3 className="about-text">Dinner and drinks</h3>
+                        <h3 className="about-text">Amy Schumer</h3>
+                        <h3 className="about-text">Daptone Records</h3>
+                        <h3 className="about-text">Pasta</h3>
+                        <h3 className="about-text">Sunday hangs</h3>
                     </div>
                 </div>
                 <div className="about-main-right">
@@ -135,10 +135,14 @@ export default function About() {
                       <h4 className="about-name">Barbara Monroe</h4>
                       <h5 className="about-info">Founder at <Link className="founder" href="/">MONROE CONSULTING</Link></h5>
                     </div>
-                    <Link className="about-pg-cta" href="/contact">Work With Me</Link>
+                    <div className="about-btn-box">
+                      <Link href="/contact" className="about-btn">
+                        <span>Work With Me</span>
+                      </Link>
+                    </div>
                 </div>
             </div>
-        </div>
+        </main>
       </>
     );
   };
