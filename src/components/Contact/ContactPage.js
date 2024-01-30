@@ -27,15 +27,15 @@ export default function Contact() {
     useEffect(() => {
         const handleFocus = function () {
           this.parentElement.querySelector("label").style.transform = "translateY(-20px)";
-          this.parentElement.querySelector("label").style.fontSize = "14px";
+          this.parentElement.querySelector("label").style.fontSize = "1.3rem";
           this.parentElement.querySelector("label").style.color = "#e1b711";
         };
 
         const handleBlur = function () {
           if (this.value === "") {
             this.parentElement.querySelector("label").style.transform = "translateY(0)";
-            this.parentElement.querySelector("label").style.fontSize = "16px";
-            this.parentElement.querySelector("label").style.color = "#d1d0c5";
+            this.parentElement.querySelector("label").style.fontSize = "2rem";
+            this.parentElement.querySelector("label").style.color = "#909090";
           }
         };
 
@@ -53,58 +53,62 @@ export default function Contact() {
         };
     }, []);
     return (
-        <section className="contact">
-            <div className="content">
-                <h2>Contact Us</h2>
-                <p>Reach out to initiate conversation on the logistics and pricing of
-                    your construction project</p>
-            </div>
-            <div className="container">
-                <div className="contact-info">
-                    <div className="box">
-                        <div className="icon"><img src="address-100-yellow.png" alt="Address Icon" /></div>
-                        <div className="text">
-                            <h3>Location</h3>
-                            <p>Laurens, NY, 13796<br></br>Otsego County</p>
+        <main className="contact-main">
+            <div className="contact-container">
+                <div className="contact-text">
+                    <h2 className="contact-heading">Contact Us</h2>
+                    <p className="contact-sub-heading">
+                        Reach out to initiate conversation on the logistics and pricing of
+                        your construction project
+                    </p>
+                </div>
+                <div className="contact-cta">
+                    <div className="contact-main-left">
+                        <div className="contact-box">
+                            <div className="contact-icon"><img src="address-100-yellow.png" alt="Address Icon" /></div>
+                            <div className="contact-details">
+                                <h4 className="contact-title">Location</h4>
+                                <p className="contact-desc">Laurens, NY, 13796<br></br>Otsego County</p>
+                            </div>
+                        </div>
+                        <div className="contact-box">
+                            <div className="contact-icon"><img src="phone-500-yellow.png" alt="Address Icon" /></div>
+                            <div className="contact-details">
+                                <h4 className="contact-title">Phone</h4>
+                                <p className="contact-desc">(607) 267-7687</p>
+                            </div>
+                        </div>
+                        <div className="contact-box">
+                            <div className="contact-icon"><img src="email-64-yellow.png" alt="Address Icon" /></div>
+                            <div className="contact-details">
+                                <h4 className="contact-title">Email</h4>
+                                <p className="contact-desc">bmonroeconsulting@gmail.com</p>
+                            </div>
                         </div>
                     </div>
-                    <div className="box">
-                        <div className="icon"><img src="phone-500-yellow.png" alt="Address Icon" /></div>
-                        <div className="text">
-                            <h3>Phone</h3>
-                            <p>(607) 267-7687</p>
-                        </div>
-                    </div>
-                    <div className="box">
-                        <div className="icon"><img src="email-64-yellow.png" alt="Address Icon" /></div>
-                        <div className="text">
-                            <h3>Email</h3>
-                            <p>bmonroeconsulting@gmail.com</p>
-                        </div>
+                    <div className="contact-main-right">
+                        <form className="contact-form" onSubmit={handleSubmit(onSubmit)}>
+                            <h3 className="contact-form-heading">Send Barb An Email</h3>
+                            <div className="input-field">
+                                <label>Full Name</label>
+                                <input {...register("name")} type="text" name="name" required ></input>
+                            </div>
+                            <div className="input-field">
+                                <label>Email</label>
+                                <input {...register("email")} type="text" name="email" required ></input>
+                            </div>
+                            <div className="input-field">
+                                <label>Message</label>
+                                <textarea {...register("message")} type="text" name="message" required ></textarea>
+                            </div>
+                            <div className="contact-send-btn">
+                                <button role="submit">{isSubmitting ? "SENDING" : "SEND"}</button>
+                                    {successMessage && <p>{successMessage}</p>}
+                            </div>
+                        </form>
                     </div>
                 </div>
-                <div className="contact-form">
-                    <form onSubmit={handleSubmit(onSubmit)}>
-                        <h2>Send Barb An Email</h2>
-                        <div className="input-field">
-                            <label>Full Name</label>
-                            <input {...register("name")} type="text" name="name" required ></input>
-                        </div>
-                        <div className="input-field">
-                            <label>Email</label>
-                            <input {...register("email")} type="text" name="email" required ></input>
-                        </div>
-                        <div className="input-field">
-                            <label>Message</label>
-                            <textarea {...register("message")} type="text" name="message" required ></textarea>
-                        </div>
-                        <div className="send-btn">
-                            <button role="submit">{isSubmitting ? "SENDING" : "SEND"}</button>
-                                {successMessage && <p>{successMessage}</p>}
-                        </div>
-                    </form>
-                </div>
             </div>
-        </section>
+        </main>
     )
 }
