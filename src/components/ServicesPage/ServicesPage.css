@@ -49,14 +49,14 @@ body {
 }
 
 .serv-heading {
-  font-size: clamp(2.4rem, 2.3vw, 3.8rem);
+  font-size: clamp(2.2rem, 2.3vw, 3.8rem);
   font-weight: 700;
   letter-spacing: -1px;
   color: var(--accent-yellow);
 }
 
 .serv-sub-heading {
-  font-size: clamp(2rem, 2.3vw, 2.6rem);
+  font-size: clamp(1.8rem, 2.3vw, 2.6rem);
   font-weight: 700;
   letter-spacing: 3px;
   color: var(--primary-white);
@@ -65,14 +65,14 @@ body {
 
 .serv-title {
   font-style: italic;
-  font-size: clamp(2rem, 2.3vw, 2.6rem);
+  font-size: clamp(1.8rem, 2.3vw, 2.6rem);
   font-weight: 600;
   letter-spacing: -0.5px;
   color: var(--accent-blue);
 }
 
 .serv-text {
-  font-size: clamp(1.6rem, 2.3vw, 2.2rem);
+  font-size: clamp(1.8rem, 2.3vw, 2.2rem);
   font-weight: 400;
   letter-spacing: -0.5px;
   line-height: 1.5;
@@ -80,7 +80,7 @@ body {
 
 .serv-list {
   list-style-type: circle;
-  font-size: clamp(1.6rem, 2.3vw, 2.2rem);
+  font-size: clamp(1.8rem, 2.3vw, 2.2rem);
   font-weight: 400;
   letter-spacing: -0.5px;
 }
@@ -114,20 +114,20 @@ body {
 }
 
 .serv-name {
-  font-size: clamp(2rem, 2.3vw, 3.2rem);
+  font-size: clamp(3rem, 2.3vw, 3.2rem);
   font-weight: 600;
   letter-spacing: -0.5px;
   color: #d1d0c5;
 }
 
 .serv-info {
-  font-size: clamp(1rem, 2.3vw, 1.6rem);
+  font-size: 1.6rem;
   font-weight: 400;
   margin-bottom: 1rem;
 }
 
 .founder {
-  font-size: clamp(1rem, 2.3vw, 1.6rem);
+  font-size: 1.6rem;
   font-weight: 700;
   letter-spacing: -0.5px;
   color: var(--accent-yellow);
@@ -149,10 +149,10 @@ body {
   text-decoration: none;
   user-select: none;
   cursor: pointer;
-  font-size: clamp(0.8rem, 2.3vw, 1.4rem);
+  font-size: clamp(1.4rem, 2.3vw, 1.6rem);
   font-weight: 500;
   letter-spacing: 1px;
-  padding: clamp(0.8rem, 1.3vw, 1rem) clamp(1rem, 1.3vw, 2rem);
+  padding: clamp(1rem, 1.3vw, 1.2rem) clamp(1.2rem, 1.3vw, 2.2rem);
   border-radius: 9px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
   background-color: var(--tertiary-darker-grey);
@@ -194,10 +194,16 @@ body {
 /* Switch from Landscape to Portrait */
 @media only screen and (max-width: 1000px) {
   .service-main {
-    padding: 12rem 4rem 6rem;
+    padding: 12rem 2rem 6rem;
   }
   .service-main-left {
     flex: auto;
+  }
+  .serv-text {
+    line-height: 1.2;
+  }
+  .serv-list-item {
+    line-height: 1.2;
   }
   .service-main-right {
     flex: auto;

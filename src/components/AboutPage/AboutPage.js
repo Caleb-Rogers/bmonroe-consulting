@@ -63,13 +63,13 @@ export default function About() {
                         <p className="about-text">But also:</p>
                         <ul className="about-list ml">
                             <li className="about-list-item">Built and structured the Construction Project Manager Consultant role from the ground up</li>
-                            <li>Outlined preliminary structure for facilitating streamlined and efficient communication between internal teams</li>
-                            <li>Shifted primary focus of ongoing partnerships from a task based structure to strategy based structure</li>
-                            <li>Created customized strategic planning recommendations matching clients exact needs</li>
-                            <li>Conducted creative, strategic planning, and problem solving sessions with Red Point and client teams</li>
-                            <li>Translated company capabilities into formal client strategic planning, proposal and pitch documentation</li>
-                            <li>Served as client archive and record for case study development and relationship engagement</li>
-                            <li>Maintained and increased healthy client relationships</li>
+                            <li className="about-list-item">Outlined preliminary structure for facilitating streamlined and efficient communication between internal teams</li>
+                            <li className="about-list-item">Shifted primary focus of ongoing partnerships from a task based structure to strategy based structure</li>
+                            <li className="about-list-item">Created customized strategic planning recommendations matching clients exact needs</li>
+                            <li className="about-list-item">Conducted creative, strategic planning, and problem solving sessions with Red Point and client teams</li>
+                            <li className="about-list-item">Translated company capabilities into formal client strategic planning, proposal and pitch documentation</li>
+                            <li className="about-list-item">Served as client archive and record for case study development and relationship engagement</li>
+                            <li className="about-list-item">Maintained and increased healthy client relationships</li>
                         </ul>
                         <br></br>
                         <br></br>
