@@ -1,24 +1,38 @@
 /** ServicesPage.css **/
 
-*,
-html,
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+:root {
+  --primary-white: #f5f5f5;
+  --secondary-dark-grey: #333437;
+  --tertiary-light-grey: #909090;
+  --tertiary-darker-grey: #4e4e4e;
+  --accent-yellow: #e1b711;
+  --accent-dark-yellow: #e1b71190;
+  --accent-pink: #ff6584;
+  --accent-blue: #4b77bc;
 }
 
-.service-container {
-  padding: 16rem 12rem 9rem;
-  background-color: #333437;
-  color: #d1d0c5;
-  font-family: "Cormorant Garamond", serif;
+*,
+*:before,
+*:after,
+html,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
 }
 
 .service-main {
+  background-color: var(--secondary-dark-grey);
+  color: var(--tertiary-light-grey);
+  padding: 18rem 0 6rem 8rem;
+}
+
+.service-container {
   display: flex;
-  align-items: flex-start;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
+  max-width: 100%;
+  font-family: "Cormorant Garamond", serif;
 }
 
 /* LEFT PAGE */
@@ -30,37 +44,43 @@ body {
   box-sizing: border-box;
 }
 
-.serv-heading {
-  font-size: 3.8rem;
-  font-weight: 700;
-  letter-spacing: -1px;
-  color: #e1b711;
+.ml {
+  margin-left: 8px;
 }
 
-.serv-title {
-  font-family: "Oswald", sans-serif;
+.serv-heading {
+  font-size: clamp(2.4rem, 2.3vw, 3.8rem);
   font-weight: 700;
-  font-size: 2.4rem;
   letter-spacing: -1px;
+  color: var(--accent-yellow);
 }
 
 .serv-sub-heading {
+  font-size: clamp(2rem, 2.3vw, 2.6rem);
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: var(--primary-white);
+  font-family: "Oswald", sans-serif;
+}
+
+.serv-title {
   font-style: italic;
-  font-size: 2.4rem;
+  font-size: clamp(2rem, 2.3vw, 2.6rem);
   font-weight: 600;
-  letter-spacing: 1px;
+  letter-spacing: -0.5px;
+  color: var(--accent-blue);
 }
 
 .serv-text {
-  font-size: 2.2rem;
+  font-size: clamp(1.6rem, 2.3vw, 2.2rem);
   font-weight: 400;
-  letter-spacing: 0.2px;
+  letter-spacing: -0.5px;
   line-height: 1.5;
 }
 
 .serv-list {
   list-style-type: circle;
-  font-size: 2.2rem;
+  font-size: clamp(1.6rem, 2.3vw, 2.2rem);
   font-weight: 400;
   letter-spacing: -0.5px;
 }
@@ -74,11 +94,11 @@ body {
 .service-main-right {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   position: sticky;
-  top: 0;
   flex: 1;
-  z-index: 1;
+  top: 0;
+  margin-left: 10rem;
 }
 
 .service-main-right .headshot {
@@ -94,47 +114,60 @@ body {
 }
 
 .serv-name {
-  font-size: 3rem;
+  font-size: clamp(2rem, 2.3vw, 3.2rem);
   font-weight: 600;
   letter-spacing: -0.5px;
   color: #d1d0c5;
 }
 
 .serv-info {
-  font-size: 1.4rem;
+  font-size: clamp(1rem, 2.3vw, 1.6rem);
+  font-weight: 400;
   margin-bottom: 1rem;
 }
 
 .founder {
-  font-size: 1.2rem;
+  font-size: clamp(1rem, 2.3vw, 1.6rem);
   font-weight: 700;
   letter-spacing: -0.5px;
-  color: #e1b711;
+  color: var(--accent-yellow);
   text-decoration: none;
   transition: all 0.2s;
 }
 
 .founder:hover {
-  color: #e1b71190;
+  color: var(--accent-dark-yellow);
 }
 
-.service-main-right .service-pg-cta:link,
-.service-main-right .service-pg-cta:visited {
-  display: inline-block;
+.service-btn-box {
+  display: flex;
+}
+
+.service-btn {
+  box-sizing: border-box;
+  position: relative;
   text-decoration: none;
+  user-select: none;
+  cursor: pointer;
+  font-size: clamp(0.8rem, 2.3vw, 1.4rem);
   font-weight: 500;
-  font-size: 1.2rem;
-  transition: all 0.3s;
-  padding: 1rem 1.8rem;
-  margin: 1rem 1.5rem 0 0;
+  letter-spacing: 1px;
+  padding: clamp(0.8rem, 1.3vw, 1rem) clamp(1rem, 1.3vw, 2rem);
   border-radius: 9px;
-  color: #333437;
-  background-color: #d1d0c5;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  background-color: var(--tertiary-darker-grey);
+  color: var(--primary-white);
+  overflow: hidden;
+  transition: 0.6s cubic-bezier(0.01, 1.69, 0.99, 0.94);
 }
 
-.service-main-right .service-pg-cta:hover,
-.service-main-right .service-pg-cta:active {
-  background-color: #e1b711;
+.service-btn span {
+  position: relative;
+  z-index: 1;
+}
+
+.service-btn:hover {
+  color: var(--primary-white);
 }
 
 /* SCROLL ANIMATION */
@@ -156,114 +189,19 @@ body {
   filter: blur(0);
 }
 
-/* RESPONSIVENESS */
+/** RESPONSIVENESS **/
 
-@media only screen and (max-width: 1200px) {
-  .service-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem 2rem 9rem;
-  }
-
+/* Switch from Landscape to Portrait */
+@media only screen and (max-width: 1000px) {
   .service-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    padding: 12rem 4rem 6rem;
   }
-
+  .service-main-left {
+    flex: auto;
+  }
   .service-main-right {
-    display: flex;
-    flex: 1;
-    order: -1;
-    top: 0;
+    flex: auto;
     position: relative;
-  }
-
-  .service-main-right h4 {
-    margin: 50px 0 0 20px;
-  }
-
-  .service-main-right h5 {
-    margin: 4px 0 0 22px;
-  }
-
-  .service {
-    margin: 65px 0 0 20px;
-  }
-
-  .service-main-right .service-pg-cta:link,
-  .service-main-right .service-pg-cta:visited {
-    display: inline-block;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 1.2rem;
-    transition: all 0.3s;
-    border-radius: 9px;
-    color: #333437;
-    background-color: #d1d0c5;
-    text-align: center;
-    height: 40px;
-    width: 105px;
-    margin: 60px 0 20px 20px;
-    padding: 10px 0 0 0;
-  }
-
-  .service-main-right .service-pg-cta:hover,
-  .service-main-right .service-pg-cta:active {
-    background-color: #e1b711;
-  }
-}
-
-@media only screen and (max-width: 873px) {
-  .service-main-right {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: auto;
-    width: auto;
-  }
-
-  .service-main-right .headshot {
-    margin-top: 20px;
-  }
-
-  .service-main-right h4 {
-    margin: 0 0 0 20px;
-  }
-
-  .service-main-right h5 {
-    margin: 4px 0 0 20px;
-  }
-  .socials {
-    margin: 15px 10px 0 0;
-  }
-
-  .service-main-right .service-pg-cta:link,
-  .service-main-right .service-pg-cta:visited {
-    margin: 20px 8px 40px 0;
-  }
-
-  .service-main-left p {
-    font-size: 1.8rem;
-  }
-
-  .service-main-left h2 {
-    font-size: 2rem;
-  }
-
-  .service-main-left ul,
-  .service-main-left a {
-    font-size: 1.8rem;
-  }
-
-  .service-main-left h3 {
-    font-size: 2rem;
-  }
-
-  .service-main-left h4 {
-    font-size: 2.4rem;
+    margin: 0 0 6rem;
   }
 }

@@ -32,8 +32,8 @@ export default function Service() {
       }, []);
     return (
       <>
-        <div className="service-container">
-            <div className="service-main">
+        <main className="service-main">
+            <div className="service-container">
                 <div className="service-main-left">
                     <p className="serv-text">What I Do 🙌</p>
                     <br></br>
@@ -53,7 +53,7 @@ export default function Service() {
                         <br></br>
                         <h2 className="serv-title">Zoning, Land Use, & Research</h2>
                         <p className="serv-text">Comprehensive analysis of zoning regulations and land use potential.</p>
-                        <ul className="serv-list">
+                        <ul className="serv-list ml">
                             <li className="serv-list-item">Zoning and land use research</li>
                             <li className="serv-list-item">Location analysis</li>
                             <li className="serv-list-item">Site plan approvals</li>
@@ -73,7 +73,7 @@ export default function Service() {
                         <br></br>
                         <h2 className="serv-title">Code Enforcement</h2>
                         <p className="serv-text">Diligent adherence to building codes for successful project outcomes.</p>
-                        <ul className="serv-list">
+                        <ul className="serv-list ml">
                             <li className="serv-list-item">Demolition permits</li>
                             <li className="serv-list-item">Building Codes Analysis</li>
                             <li className="serv-list-item">uilding Permits</li>
@@ -88,7 +88,7 @@ export default function Service() {
                         <br></br>
                         <h2 className="serv-title">Design</h2>
                         <p className="serv-text">Collaborative pre-design work ensuring alignment with construction codes.</p>
-                        <ul className="serv-list">
+                        <ul className="serv-list ml">
                             <li className="serv-list-item">Pre-design work to ensure compliance with the Code</li>
                             <li className="serv-list-item">Site plan design</li>
                             <li className="serv-list-item">Pre-design work for engineers and architects</li>
@@ -99,7 +99,7 @@ export default function Service() {
                         <br></br>
                         <h2 className="serv-title">Environment Permitting & Meeting Representation</h2>
                         <p className="serv-text">Skilled representation before architectural review boards for project approvals.</p>
-                        <ul className="serv-list">
+                        <ul className="serv-list ml">
                             <li className="serv-list-item">Architectural Review Boards</li>
                             <li className="serv-list-item">Historic District Commissions</li>
                             <li className="serv-list-item">Planning Commissions</li>
@@ -115,7 +115,7 @@ export default function Service() {
                         <br></br>
                         <h2 className="serv-title">Energy Analysis</h2>
                         <p className="serv-text">Expert certified BPI analysis for efficient project energy solutions.</p>
-                        <ul className="serv-list">
+                        <ul className="serv-list ml">
                             <li className="serv-list-item">Certified BPI Infiltration and Duct Leakage (Blower Door Testing)</li>
                             <li className="serv-list-item">Home efficiency analysis</li>
                         </ul>
@@ -125,7 +125,7 @@ export default function Service() {
                         <br></br>
                         <h2 className="serv-title">Land Management</h2>
                         <p className="serv-text">Strategic planning of scope, phasing, and project delivery for optimal results.</p>
-                        <ul className="serv-list">
+                        <ul className="serv-list ml">
                             <li className="serv-list-item">Analyzing feasibility for the highest and best use for the asset or land</li>
                             <li className="serv-list-item">Researching property history and allowable uses</li>
                             <li className="serv-list-item">Coordinating permitting</li>
@@ -141,10 +141,14 @@ export default function Service() {
                       <h4 className="serv-name">Barbara Monroe</h4>
                       <h5 className="serv-info">Founder at <Link className="founder" href="/">MONROE CONSULTING</Link></h5>
                     </div>
-                    <Link className="service-pg-cta" href="/contact">Work With Me</Link>
+                    <div className="service-btn-box">
+                      <Link href="/contact" className="service-btn">
+                        <span>Work With Me</span>
+                      </Link>
+                    </div>
                 </div>
             </div>
-        </div>
+        </main>
       </>
     );
   };

@@ -40,7 +40,7 @@ export default function About() {
                     <h1 className="about-heading">I’m Barbara Monroe, founder of B. Monroe Consulting. I offer zoning and project management services
                         that create happy clients through meticulous and forward-thinking plans and execution.</h1>
                     <br></br>
-                    <p className="about-text ml">I have over two decades of experience as a zoning enforcement officer. As of recent years, I have
+                    <p className="about-text">I have over two decades of experience as a zoning enforcement officer. As of recent years, I have
                         transitioned and adapted to consulting contractors on their construction projects. With my acquired
                         experience, I can create site plans, dispute variance issues, and aid you through the tedious legal
                         process to getting your project APPROVED.
@@ -61,7 +61,7 @@ export default function About() {
                     </div>
                     <div className="hidden">
                         <p className="about-text">But also:</p>
-                        <ul className="about-list">
+                        <ul className="about-list ml">
                             <li className="about-list-item">Built and structured the Construction Project Manager Consultant role from the ground up</li>
                             <li>Outlined preliminary structure for facilitating streamlined and efficient communication between internal teams</li>
                             <li>Shifted primary focus of ongoing partnerships from a task based structure to strategy based structure</li>
