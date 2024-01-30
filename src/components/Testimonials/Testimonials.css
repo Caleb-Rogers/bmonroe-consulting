@@ -1,48 +1,39 @@
 /** Testimonials.css **/
 
+:root {
+  --primary-white: #f5f5f5;
+  --secondary-dark-grey: #333437;
+  --tertiary-light-grey: #909090;
+  --tertiary-darker-grey: #4e4e4e;
+  --accent-yellow: #e1b711;
+  --accent-pink: #ff6584;
+  --accent-blue: #4b77bc;
+}
+
 *,
+*:before,
+*:after,
 html,
 body {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  font-weight: 400;
 }
 
 .test-sec {
+  background-color: #333437;
+  color: #f5f5f5;
+  overflow: hidden;
+}
+
+.test-container {
   display: flex;
   flex-direction: column;
-  min-height: 82vh;
-  width: 100%;
-  overflow: hidden;
-  background: #f5f5f5;
-  color: #333437;
+  min-height: 75vh;
+  max-width: 75%;
+  margin: 0 auto 85px;
   font-family: "Cormorant Garamond", serif;
-}
-
-.test-text {
-  text-align: center;
-  margin: 40px 0 20px;
-}
-
-.test-sec-line {
-  width: 95px;
-  height: 5px;
-  background-color: #ff6584;
-  border-radius: 9px;
-  margin: 0 auto;
-  margin-bottom: 1rem;
-}
-
-.test-sub-heading {
-  font-size: 3.2rem;
-  font-weight: 600;
-  letter-spacing: -1px;
-}
-
-.test-heading {
-  font-size: 6rem;
-  font-weight: 800;
-  letter-spacing: -1.5px;
 }
 
 .swiper {
@@ -50,12 +41,34 @@ body {
   height: 100%;
 }
 
-.test-container {
-  position: relative;
-  justify-content: center;
+.test-text {
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  width: 900px;
-  margin-bottom: 30px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.test-sec-line {
+  width: 80px;
+  height: 5px;
+  background-color: var(--accent-pink);
+  border-radius: 9px;
+  margin-bottom: 1rem;
+}
+
+.test-sub-heading {
+  font-size: clamp(1.6rem, 2.3vw, 3rem);
+  font-weight: 600;
+  line-height: 1.15;
+  margin-bottom: 10px;
+}
+
+.test-heading {
+  font-size: clamp(4rem, 5vw, 6.5rem);
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 40px;
 }
 
 .test-row {
@@ -84,10 +97,9 @@ body {
 .test-quote {
   text-align: center;
   padding: 0 100px;
-  font-size: 2rem;
+  font-size: clamp(2rem, 1.8vw, 2.2rem);
   font-weight: 400;
-  letter-spacing: 0.5px;
-  line-height: 1.2;
+  line-height: 1.15;
 }
 
 .test-details {
@@ -97,15 +109,16 @@ body {
 }
 
 .test-name {
-  font-size: 1.8rem;
-  font-weight: 600;
-  letter-spacing: -0.5px;
+  font-size: clamp(2.2rem, 1.8vw, 3rem);
+  font-weight: 800;
+  line-height: 0.95;
+  margin-bottom: 8px;
 }
 
 .test-title {
-  font-size: 1.7rem;
-  font-weight: 500;
-  letter-spacing: -0.5px;
+  font-size: clamp(2rem, 1.8vw, 2.2rem);
+  font-weight: 400;
+  line-height: 1.15;
 }
 
 .swiper {
@@ -116,25 +129,30 @@ body {
 .nav-btn {
   height: 40px;
   width: 40px;
-  background-color: #333437;
+  background-color: var(--tertiary-darker-grey);
   border-radius: 50%;
-  transform: translateY(15px);
+  transform: translateY(85px);
   opacity: 1;
 }
 
 .nav-btn:hover {
-  background-color: #4b77bc;
+  background-color: var(--primary-white);
   transition: 0.2s;
 }
 
 .nav-btn::after,
 .nav-btn::before {
   font-size: 20px;
-  color: #f5f5f5;
+  color: var(--primary-white);
+}
+
+.nav-btn:hover::after,
+.nav-btn:hover::before {
+  color: var(--secondary-dark-grey);
 }
 
 .swiper-pagination-bullet {
-  background-color: #333437;
+  background-color: var(--primary-white);
 }
 
 .autoplay-progress {
@@ -150,7 +168,6 @@ body {
   cursor: pointer;
   user-select: none;
   font-weight: bold;
-  color: #333437;
   font-family: "Crimson Pro", serif;
 }
 
@@ -163,7 +180,7 @@ body {
   width: 100%;
   height: 100%;
   stroke-width: 4px;
-  stroke: #ff6584;
+  stroke: var(--accent-pink);
   fill: none;
   stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
   stroke-dasharray: 125.6;
@@ -171,7 +188,7 @@ body {
 }
 
 .progress-number {
-  color: #333437;
+  color: var(--primary-white);
   font-size: 14px;
   opacity: 1;
   transition: opacity 0.3s ease;
@@ -183,7 +200,8 @@ body {
 
 .pause {
   position: absolute;
-  top: 12px;
+  top: 13px;
+  color: var(--primary-white);
   opacity: 1;
   transition: opacity 0.3s ease;
 }
@@ -194,284 +212,17 @@ body {
 
 /* RESPONSIVENESS */
 
-@media only screen and (max-width: 1622px) {
-  .test-sub-heading {
-    font-size: 3.1rem;
-  }
-  .test-heading {
-    font-size: 7.2rem;
-  }
-  .test-quote {
-    font-size: 2.7rem;
-  }
-  .test-name {
-    font-size: 1.7rem;
-  }
-  .test-title {
-    font-size: 1.6rem;
-  }
-}
-
-@media only screen and (max-width: 1494px) {
-  .test-sub-heading {
-    font-size: 3rem;
-  }
-  .test-heading {
-    font-size: 6.8rem;
-  }
-  .test-quote {
-    font-size: 2.6rem;
-  }
-  .test-name {
-    font-size: 1.6rem;
-  }
-  .test-title {
-    font-size: 1.5rem;
-  }
-}
-
-@media only screen and (max-width: 1305px) {
-  .test-sub-heading {
-    font-size: 2.9rem;
-  }
-  .test-heading {
-    font-size: 6.2rem;
-  }
-  .test-quote {
-    font-size: 2.4rem;
-  }
-  .test-name {
-    font-size: 1.5rem;
-  }
-  .test-title {
-    font-size: 1.4rem;
-  }
-}
-
-@media only screen and (max-width: 1142px) {
-  .test-sub-heading {
-    font-size: 2.8rem;
-  }
-  .test-heading {
-    font-size: 6rem;
-  }
-  .test-quote {
-    font-size: 2.2rem;
-  }
-  .test-name {
-    font-size: 1.4rem;
-  }
-  .test-title {
-    font-size: 1.3rem;
-  }
-}
-
-@media only screen and (max-width: 998px) {
+@media only screen and (max-width: 1168px) {
   .test-container {
-    width: 700px;
+    max-width: 90%;
   }
-  .test-row {
-    max-width: 700px;
-  }
-  .test-box {
-    row-gap: 25px;
-  }
+}
+
+@media only screen and (max-width: 655px) {
   .nav-btn {
     opacity: 0;
   }
   .test-quote {
     padding: 0;
-  }
-  .test-sub-heading {
-    font-size: 3rem;
-  }
-  .test-heading {
-    font-size: 6.6rem;
-  }
-  .test-quote {
-    font-size: 2.6rem;
-  }
-  .test-name {
-    font-size: 1.8rem;
-  }
-  .test-title {
-    font-size: 1.7rem;
-  }
-}
-
-@media only screen and (max-width: 772px) {
-  .test-container {
-    width: 600px;
-  }
-  .test-row {
-    max-width: 600px;
-  }
-  .test-box {
-    row-gap: 20px;
-  }
-  .test-sub-heading {
-    font-size: 2.8rem;
-  }
-  .test-heading {
-    font-size: 6.2rem;
-  }
-  .test-quote {
-    font-size: 2.4rem;
-  }
-  .test-name {
-    font-size: 1.8rem;
-  }
-  .test-title {
-    font-size: 1.7rem;
-  }
-}
-
-@media only screen and (max-width: 626px) {
-  .test-container {
-    width: 500px;
-  }
-  .test-row {
-    max-width: 500px;
-  }
-  .test-box {
-    row-gap: 15px;
-  }
-  .test-sub-heading {
-    font-size: 2.4rem;
-  }
-  .test-heading {
-    font-size: 5.2rem;
-  }
-  .test-quote {
-    font-size: 2rem;
-  }
-  .test-name {
-    font-size: 1.7rem;
-  }
-  .test-title {
-    font-size: 1.6rem;
-  }
-}
-
-@media only screen and (max-width: 508px) {
-  .test-container {
-    width: 400px;
-  }
-  .test-row {
-    max-width: 400px;
-  }
-  .test-box {
-    row-gap: 0;
-  }
-  .test-sub-heading {
-    font-size: 2.3rem;
-  }
-  .test-heading {
-    font-size: 4.4rem;
-  }
-  .test-quote {
-    font-size: 1.8rem;
-  }
-  .test-name {
-    font-size: 1.6rem;
-  }
-  .test-title {
-    font-size: 1.5rem;
-  }
-}
-
-@media only screen and (max-width: 435px) {
-  .test-container {
-    width: 350px;
-  }
-  .test-row {
-    max-width: 350px;
-  }
-  .test-sub-heading {
-    font-size: 2.1rem;
-  }
-  .test-heading {
-    font-size: 5rem;
-  }
-  .test-quote {
-    font-size: 1.9rem;
-  }
-  .test-name {
-    font-size: 1.6rem;
-  }
-  .test-title {
-    font-size: 1.5rem;
-  }
-}
-
-@media only screen and (max-width: 390px) {
-  .test-container {
-    width: 300px;
-  }
-  .test-row {
-    max-width: 300px;
-  }
-  .test-sub-heading {
-    font-size: 2rem;
-  }
-  .test-heading {
-    font-size: 5rem;
-  }
-  .test-quote {
-    font-size: 1.4rem;
-  }
-  .test-name {
-    font-size: 1.6rem;
-  }
-  .test-title {
-    font-size: 1.5rem;
-  }
-}
-
-@media only screen and (max-width: 372px) {
-  .test-container {
-    width: 275px;
-  }
-  .test-row {
-    max-width: 275px;
-  }
-  .test-sub-heading {
-    font-size: 1.9rem;
-  }
-  .test-heading {
-    font-size: 4.8rem;
-  }
-  .test-quote {
-    font-size: 1.6rem;
-  }
-  .test-name {
-    font-size: 1.5rem;
-  }
-  .test-title {
-    font-size: 1.4rem;
-  }
-}
-
-@media only screen and (max-width: 284px) {
-  .test-container {
-    width: 250px;
-  }
-  .test-row {
-    max-width: 250px;
-  }
-  .test-sub-heading {
-    font-size: 1.5rem;
-  }
-  .test-heading {
-    font-size: 4.2rem;
-  }
-  .test-quote {
-    font-size: 1.3rem;
-  }
-  .test-name {
-    font-size: 1.2rem;
-  }
-  .test-title {
-    font-size: 1.1rem;
   }
 }

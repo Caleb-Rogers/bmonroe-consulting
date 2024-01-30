@@ -69,12 +69,12 @@ export default function Testimonials() {
 
   return (
     <section className="test-sec">
-      <div className="test-text">
-        <div className="test-sec-line"></div>
-        <h2 className="test-sub-heading">Testimonials</h2>
-        <h1 className="test-heading">What Past Clients Have Said</h1>
-      </div>
       <div className="test-container swiper mySwiper">
+        <div className="test-text">
+          <div className="test-sec-line"></div>
+          <h2 className="test-sub-heading">Testimonials</h2>
+          <h1 className="test-heading">What Past Clients Have Said</h1>
+        </div>
         <div className="test-row swiper-wrapper">
           <div className="test-box swiper-slide">
             <img className="test-img" src="stagliano.png" alt="Testimonial Image" ></img>
@@ -135,7 +135,7 @@ export default function Testimonials() {
         <div className="swiper-pagination"></div>
         <div className="autoplay-progress">
           <div className="pause pause--hidden">
-            <box-icon name='pause'></box-icon>
+            <box-icon name='pause' color='#ff6584'></box-icon>
           </div>
           <svg viewBox="0 0 48 48">
             <circle cx="24" cy="24" r="20"></circle>
