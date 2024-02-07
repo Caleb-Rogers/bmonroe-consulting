@@ -27,7 +27,7 @@ function Homepage() {
 
   return (
     <div className="wrapper">
-      <Navbar visible={visible} logoColor={"#333437"} />
+      <Navbar visible={visible} logoColor={"#f5f5f5"} />
       <Hero />
       <About />
       <Services />

@@ -18,7 +18,7 @@ export default function Contact() {
           .post("https://eow6tlxc2ivnglb.m.pipedream.net", data)
           .then((response) => {
             setSuccessMessage(
-              `Thanks for signing up! Check your inbox for updates 😊`
+              `Thanks for signing up! Check your inbox for updates`
             );
           })
           .catch((e) => console.error(e));
